@@ -1,0 +1,166 @@
+[
+    {
+        "name": "not_relevant",
+        "description": "The commit contents do not reflect a change related to cost awareness"
+    },
+    {
+        "name": "digitalocean",
+        "description": "Specific to Digital Ocean"
+    },
+    {
+        "name": "aws",
+        "description": "Specific to Amazon Web Services"
+    },
+    {
+        "name": "gcp",
+        "description": "Specific to Google Cloud Platform"
+    },
+    {
+        "name": "azure",
+        "description": "Specific to Azure"
+    },
+    {
+        "name": "smaller_disk",
+        "description": "Use a smaller disk size"
+    },
+    {
+        "name": "cheaper_disk_type",
+        "description": "Use a cheaper disk type"
+    },
+    {
+        "name": "remove_loadbalancer",
+        "description": "Disable load balancer"
+    },
+    {
+        "name": "cheaper_instance",
+        "description": "Use a cheaper compute instance"
+    },
+    {
+        "name": "new_gen",
+        "description": "Newer resource generations tend to be cheaper"
+    },
+    {
+        "name": "remove_dataflow",
+        "description": "Stop using Google Dataflow"
+    },
+    {
+        "name": "reduce_subnets",
+        "description": "Reduce the number of subnets"
+    },
+    {
+        "name": "remove_nat",
+        "description": "Stop using NAT"
+    },
+    {
+        "name": "add_lifecycle_rule",
+        "description": "Add lifecycle rules to S3 buckets to drop old data"
+    },
+    {
+        "name": "cheaper_volume",
+        "description": "Use a cheaper storage volume"
+    },
+    {
+        "name": "reduce_nat_gateways",
+        "description": "Reduce the number of NAT gateways"
+    },
+    {
+        "name": "remove_nat_gateway",
+        "description": "Disable NAT gateway"
+    },
+    {
+        "name": "remove_eks",
+        "description": "Stop using EKS"
+    },
+    {
+        "name": "add_preemptible",
+        "description": "Use preemptible compute instances"
+    },
+    {
+        "name": "reduce_vpc_endpoint_subnets",
+        "description": "Reduce the number of VPC endpoint subnets"
+    },
+    {
+        "name": "remove_iops",
+        "description": "Remove provisioned IOPS to use cheaper storage"
+    },
+    {
+        "name": "cheaper_redis_cache",
+        "description": "Use a cheaper Redis cache"
+    },
+    {
+        "name": "cheaper_os",
+        "description": "Use a cheaper operating system"
+    },
+    {
+        "name": "reduce_az",
+        "description": "Reduce the number of availability zones used"
+    },
+    {
+        "name": "remove_iam",
+        "description": "Remove IAM"
+    },
+    {
+        "name": "use_global_loadbalancing",
+        "description": "Use global HTTP/TCP proxy load balancing instead of regional network load balancers"
+    },
+    {
+        "name": "remove_private_subnet",
+        "description": "Remove private VPC subnet"
+    },
+    {
+        "name": "use_spot_fleet",
+        "description": "Use AWS Spot Fleet instead of EC2"
+    },
+    {
+        "name": "remove_vpn",
+        "description": "Remove use of VPN"
+    },
+    {
+        "name": "remove_gcp",
+        "description": "Stop using GCP entirely"
+    },
+    {
+        "name": "dynamo_on_demand",
+        "description": "Use PAY_PER_REQUEST billing type for DynamoDB"
+    },
+    {
+        "name": "remove_dynamo_global_secondary_indices",
+        "description": "Stop using global secondary indices in Dynamo"
+    },
+    {
+        "name": "use_spot_instance",
+        "description": "Use AWS Spot instances "
+    },
+    {
+        "name": "remove_firewall",
+        "description": "Remove firewall"
+    },
+    {
+        "name": "remove_cloudwatch_metrics",
+        "description": "Remove CloudWatch metrics"
+    },
+    {
+        "name": "cheaper_image",
+        "description": "Use cheaper machine image"
+    },
+    {
+        "name": "remove_cloudwatch_logs",
+        "description": "Stop using CloudWatch logs"
+    },
+    {
+        "name": "cheaper_area",
+        "description": "Move to a cheaper region/area"
+    },
+    {
+        "name": "cheaper_rds_cluster",
+        "description": "Use a cheaper RDS instance"
+    },
+    {
+        "name": "lambda_less_memory",
+        "description": "Use less memory for a Lambda"
+    },
+    {
+        "name": "auto_stop_1h",
+        "description": "Use an auto_stop of at least 1h"
+    }
+]

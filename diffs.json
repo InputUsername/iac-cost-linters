@@ -30,7 +30,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
+    "codes": ["digitalocean", "not_relevant"],
     "notes": "The commit only adds code to provision a Digital Ocean droplet"
   },
   {
@@ -84,8 +84,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_area"],
+    "notes": "Moving from sa-east-1 to us-east-1 which was cheaper according to the commit message"
   },
   {
     "url": "https://github.com/JamesWoolfenden/terraform-aws-codebuild-container/commit/4a00ffcbf9576d7e5febdbdf94a31d4735fc8035",
@@ -170,8 +170,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "Only changes the name of a variable (billing_account to billing_account_id)"
   },
   {
     "url": "https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7",
@@ -229,8 +229,8 @@
       "saving",
       "cluster"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "smaller_disk", "cheaper_disk_type", "remove_loadbalancer"],
+    "notes": "Use a smaller disk (20 -> 10gb), cheaper disk type (pd-ssd -> pd-standard) (both not in a Terraform file); remove the use of a load balancer"
   },
   {
     "url": "https://github.com/tooxie/terraform-workshop/commit/002bcce28e46728714fa1e0d20bec6f2559caba2",
@@ -302,8 +302,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Moving from t2.large to t2.medium"
   },
   {
     "url": "https://github.com/aws-observability/aws-otel-test-framework/commit/c928fe0a05d1e9b8f1ecb1a7dacffecc2800e038",
@@ -356,8 +356,8 @@
       "saving",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_rds_cluster"],
+    "notes": "Move from db.r3.large to db.r2.small"
   },
   {
     "url": "https://github.com/chad-russell-git/terraform-oci-cis-landing-zone/commit/6a696dfa2dd5716a65b10fc3277cd9e994b8b30a",
@@ -456,8 +456,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "lambda_less_memory"],
+    "notes": "Reducing the memory size of a Lambda"
   },
   {
     "url": "https://github.com/UriKatsirPrivate/gcp-landing-zone/commit/0160ab1f89489abec4120ef4102bf5964b0af2fe",
@@ -634,8 +634,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.nano to t3.nano"
   },
   {
     "url": "https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942",
@@ -653,8 +653,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_instance"],
+    "notes": "Move from Standard_A0 to Standard_B2s"
   },
   {
     "url": "https://github.com/cloudchacho/terraform-google-hedwig-subscription/commit/ab8808de2e078c572e9d88fdc57ff91b8e4acc36",
@@ -688,8 +688,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "remove_dataflow"],
+    "notes": "Stop using Dataflow which is 'prohibitively expensive' according to the commit message"
   },
   {
     "url": "https://github.com/ohoareau/terraform-modules/commit/d066b8dfa3b03df200afa9a521126a83884cdfb3",
@@ -758,8 +758,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_subnets", "remove_nat"],
+    "notes": "Move to one subnet, removing 'costly' NAT"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/6488091456429ed61264b9cad841eeb6bf871e32",
@@ -853,8 +853,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from m4.large to m5.large"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/aeb3bfbe393cdfc02e62b812843ed75cf5f245e4",
@@ -888,8 +888,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from m4.xlarge to m5.xlarge"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/5fa5da9756f12559b490217dd5b173db48e7f2a9",
@@ -907,8 +907,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from m4.xlarge to m5.xlarge"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/2ee1ff690416016dfed50dab6f516559f2270bf9",
@@ -927,8 +927,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Move to a larger/more expensive instance due to CPU limitations"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/19d187e4a29147cbcf1cfae456cfcbfa8ad52b45",
@@ -946,8 +946,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "new_gen"],
+    "notes": "Move from db.m4.xlarge to db.m5.2xlarge because of CPU limitations; the newer gen is cheaper, but the instance is more expensive"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/5d30d7d7ca658bed21677b1aa56c72a0e0cd737b",
@@ -966,8 +966,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Move to a larger/more expensive instance to reduce computation time; cost is not affected according to the commit"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/fbd513a3c74bf20ecdb67a4243d30356e8b86a01",
@@ -985,8 +985,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Move to a larger/more expensive instance due to CPU limits, without affecting cost"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/74fe1ac392549eb3aad67d239310b92cc9f0dd10",
@@ -1020,8 +1020,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not make cost-related changes"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/e91c7912b25beb51199ccfff2414668bcc69186e",
@@ -1039,8 +1039,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Move to a larger/more expensive instance due to RAM limitations, without affecting cost"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/ef79a5aec29133d4c479652863c61f943fbdb42b",
@@ -1060,8 +1060,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Move to a larger/more expensive instance due to CPU limitations, increasing cost"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/6283dd7b80fd26ff09d242555a6e56c2eb75471b",
@@ -1088,8 +1088,8 @@
       "instance",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Move to a larger/more expensive instance due to RDS limitations, increasing cost"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/b4094f63c5d4a216ed7ade1a51ea3653222cf222",
@@ -1116,8 +1116,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "No change, only abstracting an instance type to a variable"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c",
@@ -1135,8 +1135,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_lifecycle_rule"],
+    "notes": "Add lifecycle rules for S3 buckets to drop old data and save costs"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/806b1a2a47f2f4e580e524b2cf8cc5928749d972",
@@ -1154,8 +1154,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "notes": "Move from gp2 to gp3 which is 'cheaper and faster'"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/8d7d2ebe0dbe9ebf8009572d1d710c4700cf245e",
@@ -1181,8 +1181,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "notes": "Move from gp2 to gp3 which is 'cheaper and faster'"
   },
   {
     "url": "https://github.com/joshuaspence/infrastructure/commit/d8e1979ea7954076f64ab4d3337b95f14a06fc31",
@@ -1200,8 +1200,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_nat_gateways"],
+    "notes": "Reduce the number of NAT gateways, which are expensive (use_single_nat_gateway = true)"
   },
   {
     "url": "https://github.com/joshuaspence/infrastructure/commit/b9b9465314e3b5ada78340d06b90703136cdf3dc",
@@ -1219,8 +1219,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_nat_gateway"],
+    "notes": "Disable the VPC NAT gateway (vpc_enable_nat_gateway = false) to reduce costs"
   },
   {
     "url": "https://github.com/joshuaspence/infrastructure/commit/0cea1cf84859055ff5107fc8d8514475e7036bee",
@@ -1278,8 +1278,8 @@
       "saving",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_eks"],
+    "notes": "Move from EKS to a self-managed Minikube"
   },
   {
     "url": "https://github.com/openinfrastructure/terraform-google-gitlab-runner/commit/8429375df72b04cc6fedc1ebb5f2c2e4ba18b9f2",
@@ -1305,8 +1305,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "add_preemptible"],
+    "notes": "Move to preemptible compute instances (preemptible = true) which are cheaper"
   },
   {
     "url": "https://github.com/dexterchan/Terraform_Webserver/commit/af5af0b8e6a59a9c5879fde7eaaa86d694c2bfa2",
@@ -1380,8 +1380,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_vpc_endpoint_subnets"],
+    "notes": "Reduce the number of VPC endpoint subnets to 1, saving cost"
   },
   {
     "url": "https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02",
@@ -1459,8 +1459,8 @@
       "feature",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_iops"],
+    "notes": "Remove provisioned IOPS from a DB instance to use cheaper storage"
   },
   {
     "url": "https://github.com/hashicorp/terraform-azurerm-terraform-enterprise/commit/b2fe861f1949f5f9f5bad0b4ca4ee6b6cb65485f",
@@ -1479,8 +1479,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_redis_cache"],
+    "notes": "Move from P3 to P1 Redis cache size"
   },
   {
     "url": "https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720",
@@ -1720,8 +1720,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_os", "cheaper_instance", "new_gen"],
+    "notes": "Move from RHEL to CentOS; move from t2 instances to t3"
   },
   {
     "url": "https://github.com/fahdr/asz-dbz/commit/f5b50d8dfbec87dba0b824369021dc6b22058840",
@@ -1763,8 +1763,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_az"],
+    "notes": "Reduce the number of availability zones used for EKS to 1 to save costs"
   },
   {
     "url": "https://github.com/kmalkin/tf-aws-pi-hole/commit/066049972b995fb019bf29be7f0f307064a2f00e",
@@ -2126,8 +2126,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_iam"],
+    "notes": "Remove IAM user 'as its just creating cost / confusion issues'"
   },
   {
     "url": "https://github.com/poseidon/terraform-google-kubernetes/commit/189d96ce0f96c107ebf62dbaf73734e6fd20883a",
@@ -2186,8 +2186,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "use_global_loadbalancing"],
+    "notes": "Move Ingress from regional network load balancers to global HTTP/TCP Proxy load balancing; Google bills the first 5 global and regional forwarding rules separately."
   },
   {
     "url": "https://github.com/austin1237/clip-stitcher/commit/4eed76f9bfd4f93181660178ea689d98cd6d66d5",
@@ -2245,8 +2245,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_private_subnet", "remove_nat"],
+    "notes": "Remove private subnet and NAT to reduce costs"
   },
   {
     "url": "https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54",
@@ -2362,8 +2362,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_spot_fleet"],
+    "notes": "Add support for using AWS Spot Fleet instead of an EC2 instance"
   },
   {
     "url": "https://github.com/public-transport/infrastructure/commit/64bfc57cef180a90c4dfe91801e7e1a4c66c3151",
@@ -2467,8 +2467,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_vpn"],
+    "notes": "Stop using VPN 'since it is too expensive'"
   },
   {
     "url": "https://github.com/mdcurran/terraform-infrastructure/commit/d7f24bafaa9f80e9d3e834dc34b8fbe950a6c437",
@@ -2486,8 +2486,8 @@
       "saving",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "remove_gcp"],
+    "notes": "The commit moves away from GCP entirely to save on cost"
   },
   {
     "url": "https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/e5dd13d33c1e927f932971d067d8f70e9041b5f3",
@@ -2514,8 +2514,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from r5.2xlarge to r5.xlarge"
   },
   {
     "url": "https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/fdd3a7dcb787a6a24e34b93a6aa124c94e93cb0e",
@@ -2586,8 +2586,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.medium to t3.medium"
   },
   {
     "url": "https://github.com/cisagov/cyhy_amis/commit/4e67a501bb3f5187a3e9af523921ac62b8a88469",
@@ -2606,8 +2606,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from r4.4xlarge to r4.xlarge"
   },
   {
     "url": "https://github.com/cisagov/cyhy_amis/commit/7b8d9247a679295e0e1791b13d6c437c473e44b8",
@@ -2705,8 +2705,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "notes": "Move from gp2 to gp3"
   },
   {
     "url": "https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7",
@@ -2724,8 +2724,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_on_demand"],
+    "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
     "url": "https://github.com/InvictrixRom/website-infrastructure/commit/09e400452c1bde25fe393dd56c2fd608b84a18ac",
@@ -3018,8 +3018,8 @@
       "saving",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Reverts the prior commit which was meant to make the infrastructure more cost effective"
   },
   {
     "url": "https://github.com/InvictrixRom/website-infrastructure/commit/44d66328ea4467d05d7fb8092631aff5afbd8b26",
@@ -3054,8 +3054,8 @@
       "saving",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_private_subnet", "remove_nat"],
+    "notes": "Remove private subnet and NAT to reduce costs"
   },
   {
     "url": "https://github.com/tjpotenza/kubernetes-modules/commit/d750e25615e7e37914119cb257fbd9c7fad3a52a",
@@ -3211,8 +3211,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "remove_gcp"],
+    "notes": "The commit stops using GCP entirely to save on cost"
   },
   {
     "url": "https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987",
@@ -3270,7 +3270,7 @@
       "saving",
       "feature"
     ],
-    "codes": [],
+    "codes": ["aws", "remove_dynamo_global_secondary_indices"],
     "notes": ""
   },
   {
@@ -3339,8 +3339,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_spot_instance"],
+    "notes": "Use Spot instances 'to get cheaper instances/hour'"
   },
   {
     "url": "https://github.com/JamesWoolfenden/terraform-aws-codepipeline/commit/cf842d48df037476a754b221f7b4115bb4f5ddf1",
@@ -3409,8 +3409,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_on_demand"],
+    "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
     "url": "https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/636097557e403eb1d6b6211b09e30c47e7f39466",
@@ -3428,8 +3428,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance"],
+    "notes": "Move from n1-standard-32 to n1-standard-16"
   },
   {
     "url": "https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be",
@@ -3455,8 +3455,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_disk_type"],
+    "notes": "Move from pd-balanced to pd-standard"
   },
   {
     "url": "https://github.com/forgotpw/forgotpw-infrastructure/commit/f4363ad27d366385f2388d073ce8af796e035406",
@@ -3517,8 +3517,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from t2.medium to t2.small"
   },
   {
     "url": "https://github.com/sworisbreathing/splunk-refactor-poc/commit/5be96c3735b14c16dbe87f4c544f5ab1c75ab93a",
@@ -3568,8 +3568,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "auto_stop_1h"],
+    "notes": "Set auto_stop for aws_instances to 1h since that is the minimum billing period according to the commit"
   },
   {
     "url": "https://github.com/pvandervelde/infrastructure.azure.core.network.hub/commit/0ecf0a154918bd9bdc0f53557bc1f80920da6b14",
@@ -3595,8 +3595,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "remove_firewall"],
+    "notes": "Stop using firewall because of cost and lack of public IP"
   },
   {
     "url": "https://github.com/yardbirdsax/elasticsearch-the-hard-way/commit/521bae59a4002a616eac44c1681ca5066bbd00c8",
@@ -3678,8 +3678,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.small to t3.small"
   },
   {
     "url": "https://github.com/geraldwuhoo/homelab-iac/commit/3228ee1c5bfdf89e57e898659b086364122d58c1",
@@ -3745,8 +3745,8 @@
       "saving",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["not_relevant"],
+    "notes": "The commit does not make cost-related changes"
   },
   {
     "url": "https://github.com/firehawkvfx/firehawk-main/commit/aef45215a4fe18d7fd03b7556fa3070815c57a22",
@@ -3791,8 +3791,8 @@
       "billing_mode",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_on_demand"],
+    "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
     "url": "https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1",
@@ -3866,8 +3866,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_cloudwatch_metrics"],
+    "notes": "Made CloudWatch metrics configurable/optional to allow cost saving"
   },
   {
     "url": "https://github.com/bretmullinix/terraform-for-beginners/commit/3a3e9f6d19da0730f2b077b0c160a467102f5666",
@@ -3925,8 +3925,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_image"],
+    "notes": "Use a different machine image (AMI) which is cheaper"
   },
   {
     "url": "https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e",
@@ -3944,8 +3944,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_cloudwatch_logs"],
+    "notes": "Stop using CloudWatch logs (logging_level = OFF for aws_apigatewayv2_stage) and set limited retention_in_days for CloudWatch log group"
   },
   {
     "url": "https://github.com/JamesWoolfenden/terraform-azurerm-sql/commit/4fe0be131b0f6b5f073391227b9fe54372506b42",
