@@ -3988,8 +3988,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_nat_gateway", "remove_eip"],
+    "notes": "Remove NAT gateway and elastic IP to reduce costs"
   },
   {
     "url": "https://github.com/Midas-Protocol/webtwo-infra/commit/2809f4e2d78ff33b48e9c1742b58a256ebce986d",
@@ -4006,8 +4006,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "This commit only removes variables, likely due to being missed in a previous commit"
   },
   {
     "url": "https://github.com/ImminentDomain/immdom-terraform/commit/a49aaeed1776f0991256221e61ebc868ae5b60cb",
@@ -4044,8 +4044,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.micro to t3.nano"
   },
   {
     "url": "https://github.com/GBergeret/tf-vpc-module/commit/5e63c8390cb1001daf4ad74bb2926cc060c0de08",
@@ -4155,8 +4155,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["alicloud", "less_cpu_cores", "less_memory"],
+    "notes": "Use fewer CPU cores and less memory for a compute instance"
   },
   {
     "url": "https://github.com/Cinegy/terraform-cinegy-modules/commit/09636724e63599b1f589065c92074575471ac234",
@@ -4197,8 +4197,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_az"],
+    "notes": "Made using a secondary availability zone configurable/optional"
   },
   {
     "url": "https://github.com/SUSE/caps-automation/commit/5675965b57d05932ae8b806bad2cd219d15fe516",
@@ -4232,8 +4232,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_single_instance_aurora"],
+    "notes": "The commit moves from a regular RDS instance to an Aurora cluster with one instance, which is cheaper according to the commit message"
   },
   {
     "url": "https://github.com/akshay3030/dockerized-jenkins-master/commit/4356e9ebf89921898e9459f85f1173d44f3a3a6f",
@@ -4354,8 +4354,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not make cost-related changes, only introduces 'cost-optimized EBS'"
   },
   {
     "url": "https://github.com/00inboxtest/cloud-foundation-fabric/commit/3a8a040ff3efcec38c423d5249625ed2d87ab261",
@@ -4456,8 +4456,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_area"],
+    "notes": "Move from westeurope to northeurope which is 'mo cheapo'"
   },
   {
     "url": "https://github.com/AwakeningSV/live-infrastructure/commit/43bba3db97631d8730160950395fde42793adbc2",
@@ -4492,8 +4492,8 @@
       "awareness",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["digitalocean", "azure", "cheaper_provider"],
+    "notes": "The commit moves from Digital Ocean to Azure, since Microsoft provides $5000 of credits to non-profits"
   },
   {
     "url": "https://github.com/alphagov/govuk-terraform-provisioning/commit/ed67711a54ca65473c9c7b788161d680914ef1c7",
@@ -4511,8 +4511,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit only mentions low-cost without any related change; it also mentions that Terraform did not support lifecycle management for S3 buckets at that time, which it now does"
   },
   {
     "url": "https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8",
@@ -4530,8 +4530,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_lifecycle_rule"],
+    "notes": "Add lifecycle rules for S3 buckets to drop old data and save costs"
   },
   {
     "url": "https://github.com/JamesWoolfenden/terraform-aws-glue-crawler/commit/484b85587d32f2f2a6d54ffe16d5c759841961f8",
@@ -4734,7 +4734,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
+    "codes": ["aws", "use_alb"],
     "notes": ""
   },
   {
@@ -4753,8 +4753,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_instance"],
+    "notes": "Move from Standard_E4s_v4 to Standard_B1s"
   },
   {
     "url": "https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/516075e2987bdd1063f22768d451c1c1eb647175",
@@ -4827,8 +4827,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_spot_instance"],
+    "notes": "Add the ability to configure Spot instances and autoscaling groups"
   },
   {
     "url": "https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/840ed0938bea8867caba921446b8a77a2f1c9e7d",
@@ -4921,8 +4921,8 @@
       "feature",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_lifecycle_rule"],
+    "notes": "Add a (configurable) lifecycle rule to change storage class after 30 days"
   },
   {
     "url": "https://github.com/nmaupu/auto-gcp/commit/ef1df1044df317c78987f7f8398b4e45f5a3ee0a",

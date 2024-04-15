@@ -20,6 +20,10 @@
         "description": "Specific to Azure"
     },
     {
+        "name": "alicloud",
+        "description": "Specific to Alibaba Cloud"
+    },
+    {
         "name": "smaller_disk",
         "description": "Use a smaller disk size"
     },
@@ -162,5 +166,29 @@
     {
         "name": "auto_stop_1h",
         "description": "Use an auto_stop of at least 1h"
+    },
+    {
+        "name": "remove_eip",
+        "description": "Remove elastic IP"
+    },
+    {
+        "name": "less_cpu_cores",
+        "description": "Use fewer CPU cores"
+    },
+    {
+        "name": "less_memory",
+        "description": "Use less memory"
+    },
+    {
+        "name": "use_single_instance_aurora",
+        "description": "Use RDS Aurora with one instance instead of a regular RDS instance"
+    },
+    {
+        "name": "cheaper_provider",
+        "description": "Move to a cheaper cloud provider"
+    },
+    {
+        "name": "use_alb",
+        "description": "Use ALB instead of ELB"
     }
 ]
