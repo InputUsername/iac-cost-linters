@@ -24,6 +24,10 @@
         "description": "Specific to Alibaba Cloud"
     },
     {
+        "name": "scaleway",
+        "description": "Specific to Scaleway"
+    },
+    {
         "name": "smaller_disk",
         "description": "Use a smaller disk size"
     },
@@ -230,5 +234,9 @@
     {
         "name": "dynamo_reduce_rw_capacity",
         "description": "Reduce read/write capacity for DynamoDB"
+    },
+    {
+        "name": "reduce_rds_capacity",
+        "description": "Reduce the maximum RDS cluster capacity"
     }
 ]

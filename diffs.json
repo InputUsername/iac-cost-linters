@@ -9687,8 +9687,8 @@
       "saving",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_loadbalancer"],
+    "notes": "The commit contains many changes but the cost-related one is removing ALB"
   },
   {
     "url": "https://github.com/eutambem/eutambem-serverless/commit/43182470f02a463a4b9ee5ed3ec899f5d7de9653",
@@ -9706,8 +9706,8 @@
       "saving",
       "cluster"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_rds_capacity"],
+    "notes": "Explicitly configure the RDS cluster scaling_configuration max_capacity to limit it to 4"
   },
   {
     "url": "https://github.com/openfun/jitsi-meet-torture-rocket/commit/349c94aeffffb4eef513107d281d59ef6dd33962",
@@ -9741,8 +9741,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["scaleway", "not_relevant"],
+    "notes": "'Cheap' mentioned in the commit message only refers to using cheap instances, there is no underlying cost smell"
   },
   {
     "url": "https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d",
@@ -9760,8 +9760,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume"],
+    "notes": "Move from gp3 to st1"
   },
   {
     "url": "https://github.com/HumanCellAtlas/dcp-monitoring/commit/4fd89da7e37ce7f22d920e3584761f702383a8ba",
