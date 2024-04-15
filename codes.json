@@ -190,5 +190,45 @@
     {
         "name": "use_alb",
         "description": "Use ALB instead of ELB"
+    },
+    {
+        "name": "add_placement_strategy",
+        "description": "Add placement strategies to an ECS service"
+    },
+    {
+        "name": "add_s3_vpc_endpoint",
+        "description": "Add a VPC endpoint for S3"
+    },
+    {
+        "name": "remove_route_table",
+        "description": "Remove route table"
+    },
+    {
+        "name": "remove_route",
+        "description": "Remove route"
+    },
+    {
+        "name": "reduce_cloudfront_cache_allowed_methods",
+        "description": "Reduce allowed methods for CloudFront distribution (default) cache behavior"
+    },
+    {
+        "name": "reduce_node_pools",
+        "description": "Reduce the number of GKE container node pools"
+    },
+    {
+        "name": "cheaper_service_plan",
+        "description": "Move to a cheaper service plan tier"
+    },
+    {
+        "name": "add_iam_policy",
+        "description": "Add IAM policy to deny creation of expensive resources"
+    },
+    {
+        "name": "nat_host_custom_machine_type",
+        "description": "Use custom machine type for GCE NAT hosts"
+    },
+    {
+        "name": "dynamo_reduce_rw_capacity",
+        "description": "Reduce read/write capacity for DynamoDB"
     }
 ]

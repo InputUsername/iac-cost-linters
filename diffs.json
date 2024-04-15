@@ -5032,8 +5032,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit moves to a more expensive instance; the keyword 'cost' refers to the new instance costing 2x more"
   },
   {
     "url": "https://github.com/rbabyuk/terra/commit/beae899804779adf914c08f290c5d71b542c9ed1",
@@ -5058,8 +5058,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance"],
+    "notes": "Move from e2-medium to e2-micro"
   },
   {
     "url": "https://github.com/ministryofjustice/hmpps-delius-core-terraform/commit/6e25b2cfb1cb80fd45ab6627a04e52735bb2fb5e",
@@ -5085,8 +5085,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_placement_strategy"],
+    "notes": "The commit message mentions that adding placement strategies for ECS saves on EC2 costs"
   },
   {
     "url": "https://github.com/wellcomecollection/goobi-infrastructure/commit/271bf02f91bfe5e8fc7ea9f94bfe56fd49a8d8e0",
@@ -5105,8 +5105,8 @@
       "saving",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_s3_vpc_endpoint"],
+    "notes": "According to the commit message, the lack of a VPC endpoint for S3 has nontrivial cost"
   },
   {
     "url": "https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b",
@@ -5123,8 +5123,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_instance", "cheaper_disk_type"],
+    "notes": "Move from Standard_D2s_v3 to Standard_DS1_v2"
   },
   {
     "url": "https://github.com/jjffggpp/jjffggpp/commit/0e69a9978eae9e3432de8f16c2ca1b38033c23a7",
@@ -5328,8 +5328,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "notes": "Move from gp2 to gp3"
   },
   {
     "url": "https://github.com/lwilliams1990/deepfence-threatmapper-lab/commit/cbd8ce761041eac3afbdfbf74e001895895682f2",
@@ -5554,8 +5554,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_lifecycle_rule"],
+    "notes": "Large commit, but the cost-related change is adding lifecycle rules to S3 buckets"
   },
   {
     "url": "https://github.com/ecsworkshop2018/expertalk-2018-ecs-workshop/commit/034908d914982eacea51b0ac61f2781069387412",
@@ -5597,8 +5597,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_eip", "remove_nat_gateway", "remove_route_table", "remove_route"],
+    "notes": "The commit essentially makes the EIP, NAT gateway, route table and route for a private subnet configurable to (optionally) save costs"
   },
   {
     "url": "https://github.com/amezousan/serverless-blog-in-aws/commit/c130862a29878f0e483551bc115d2ca5bdc4bf5c",
@@ -5624,8 +5624,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_cloudfront_cache_allowed_methods"],
+    "notes": "The commit message mentions that reducing the number of allowed methods for a cloudfront_distribution's default_cache_behavior reduces cost"
   },
   {
     "url": "https://github.com/alphagov/prometheus-aws-configuration-beta/commit/0edcb1dbd7337eab4155be2f2a7683a77cc3cc6d",
@@ -5643,8 +5643,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit only adds a variable; the actual change likely reduces the number of NAT gateways, but this cannot be derived from just the variable change"
   },
   {
     "url": "https://github.com/hmcts/cnp-module-api-mgmt/commit/038d43dc5f17870bc6681e1d8699e0a0951a859e",
@@ -5670,8 +5670,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The change actually increases cost by using Premium tier in production instead of Developer tier"
   },
   {
     "url": "https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6",
@@ -5705,8 +5705,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume", "new_gen", "smaller_disk"],
+    "notes": "Move from gp2 to gp3 and reduce size, except in production"
   },
   {
     "url": "https://github.com/UCDenver-ccp/Translator-TM-Provider-Infrastructure-Modules/commit/ddc29467494ee63c323d0eb6493de6e8440c113e",
@@ -5803,8 +5803,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "reduce_node_pools"],
+    "notes": "The commit consolidates GKE container node pools into one larger node pool to save cost"
   },
   {
     "url": "https://github.com/emyasa/hashicorp-consul-setup/commit/0c38902905b96c598715a08d5c3880ad01ce5fea",
@@ -5873,8 +5873,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from m4.2xlarge to t3.2xlarge, t2.2xlarge to t3.2xlarge"
   },
   {
     "url": "https://github.com/linuxlsr/azureLearning/commit/163a9de084161e21cb62c19033b4bff7d3a5e649",
@@ -5924,8 +5924,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
     "url": "https://github.com/linuxlsr/azureLearning/commit/e2a2ef243deb0374ccfe3f37e0d1395d4338969c",
@@ -5951,8 +5951,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
     "url": "https://github.com/bh1m2rn/gitlab-environment-toolkit/commit/b9750f0bb88bc22256085b6bc8f060055e90a8c4",
@@ -6003,8 +6003,8 @@
       "instance",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "notes": "Move from gp2 to gp3"
   },
   {
     "url": "https://github.com/dankline/waapdemo/commit/087f2caeff6ecaa2a18ecc2f20b7313a70d2d191",
@@ -6022,8 +6022,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_service_plan"],
+    "notes": "Move from Standard S1 to Basic B1"
   },
   {
     "url": "https://github.com/Katesagay/terraform-repo/commit/9aacfbe12e3e7c1e726b9a3d834211aae01f419c",
@@ -6108,8 +6108,8 @@
       "saving",
       "cluster"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit moves to a more expensive instance family (t2.xlarge to c4.xlarge)"
   },
   {
     "url": "https://github.com/sastels/learn-AWS-terraform/commit/0816f145a8b709df6af66a7dad229a4ff31619ba",
@@ -6175,8 +6175,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/schramm-famm/bespin/commit/cff3747c70722eba940317dec58dc9c22b3b4939",
@@ -6262,8 +6262,8 @@
       "saving",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_iam_policy"],
+    "notes": "Adds IAM policies to deny creation of expensive EC2, RDS and reserved instances"
   },
   {
     "url": "https://github.com/cbChgit/testrepo/commit/803640f6e77857520f69700ccc27c772ee7564e4",
@@ -6316,8 +6316,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance"],
+    "notes": "Move from n1-standard-8 to e1-standard-8"
   },
   {
     "url": "https://github.com/travis-ci/terraform-config/commit/4f641b162fa877aef842481631906d5bfe874781",
@@ -6336,8 +6336,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from c3.4xlarge to c4.large and t2.medium to t2.micro"
   },
   {
     "url": "https://github.com/travis-ci/terraform-config/commit/0e2fc3ca535ca4a1fe3097b336fb145e6c73cde6",
@@ -6356,8 +6356,8 @@
       "saving",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "nat_host_custom_machine_type"],
+    "notes": "Use a custom machine type for NAT hosts 'reducing monthly costs by ~$21/host'"
   },
   {
     "url": "https://github.com/bhavikkumar/terraform-master/commit/8a71bbe9588b78351fe231a4341d07a5e2101ebb",
@@ -6402,8 +6402,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from t2.small to t2.nano"
   },
   {
     "url": "https://github.com/robinbryce/iona/commit/e89519dc59655ddbd3ecf56a4d680d7d01128152",
@@ -6430,8 +6430,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
     "url": "https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30",
@@ -6458,8 +6458,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_on_demand"],
+    "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
     "url": "https://github.com/wallnerryan/terraform-scaleio/commit/605e74facfa2ff519ba5cda6e57474666901bd8c",
@@ -6544,8 +6544,8 @@
       "saving",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit makes ALB configurable/optional but there is no underlying cost smell"
   },
   {
     "url": "https://github.com/byu-oit/terraform-aws-rds/commit/86a0795540edb426c3226775d73fcd4ce807d36a",
@@ -6563,8 +6563,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.small to t3.small"
   },
   {
     "url": "https://github.com/akaron/kubeadm_aws/commit/2e2092ec94b27a4c3f0b9f4ee4d46a1983a72518",
@@ -6737,8 +6737,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from m4.2xlarge to t2.small"
   },
   {
     "url": "https://github.com/darogina/terragrunt-aws-modules/commit/9c84d03bde131e7f349dcd493ba5b7e55bf8ae2c",
@@ -7505,8 +7505,8 @@
       "saving",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_os"],
+    "notes": "Move from ami-ubuntu to ami-amazonlinux2"
   },
   {
     "url": "https://github.com/Terraform-Projects/lead-terraform-Dashboard/commit/71a0250ad3aeed1da2b11734ac22c21831f3595d",
@@ -7773,8 +7773,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_lifecycle_rule"],
+    "notes": "Add lifecycle rules for S3 buckets"
   },
   {
     "url": "https://github.com/cds-snc/terraform-modules/commit/75fc899c58848b290a31ff92bab92c27b3f6bf53",
@@ -7906,8 +7906,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_disk_type"],
+    "notes": "Move from pd-ssd to pd-balanced"
   },
   {
     "url": "https://github.com/cookpad/terraform-aws-eks/commit/59c40286757e1fa5cb5391421c5380e5ad506387",
@@ -7926,8 +7926,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from p2.xlarge + p3.2xlarge to g4dn.xlarge"
   },
   {
     "url": "https://github.com/robertlupinek/rh-ex407/commit/0c679d7adfa5bf38d5c7846958f3508fc036b3e9",
@@ -8051,8 +8051,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
     "url": "https://github.com/ndebuhr/cloud-native-workstation/commit/301244e00d9f359f964242849462704f80e8db13",
@@ -8113,8 +8113,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["digitalocean", "not_relevant"],
+    "notes": "The change increases cost by doubling the number of Droplets"
   },
   {
     "url": "https://github.com/ayltai/hknews-infrastructure/commit/68171be117d3997b84253258f41fad6daedbc76a",
@@ -8132,8 +8132,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from t2.micro to t3a.micro"
   },
   {
     "url": "https://github.com/skehlet/aws-batch-processing/commit/decdbce98d33cf2599aee554779ef5d8b5361d8f",
@@ -8346,8 +8346,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit does not make cost-related changes, only enables Infracost in CI"
   },
   {
     "url": "https://github.com/ae-lexs/terraform_modules/commit/84628710c900b2d1db058aa0e339134f24e6d20c",
@@ -8549,8 +8549,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_reduce_rw_capacity"],
+    "notes": "Reduce the read and write capacity for DynamoDB from 20 to 1"
   },
   {
     "url": "https://github.com/joelchrist/terraform/commit/bbf18d695bd7597977ea7a97d5434ca7f1a37d57",
@@ -8568,8 +8568,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance"],
+    "notes": "Move from n1-standard-1 to g1-small"
   },
   {
     "url": "https://github.com/ToruMakabe/aks-anti-dry-iac/commit/4ba7a9dc3085ab701c85737a4f36dd57fcd7596f",
@@ -9102,8 +9102,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_reduce_rw_capacity"],
+    "notes": "Reduce the read and write capacity for DynamoDB from 5 to 1"
   },
   {
     "url": "https://github.com/chetanbothra/Terraform_AWS_Billing_Alert/commit/43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a",
@@ -9200,8 +9200,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit moves data into S3 buckets which are cheaper than the previous solution, but there is no underlying cost smell"
   },
   {
     "url": "https://github.com/poseidon/terraform-aws-kubernetes/commit/12f8972a912d97427fe0ef1b84becdc8a2993022",
@@ -9296,8 +9296,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.small to t3.small"
   },
   {
     "url": "https://github.com/paperphyte/terraform-drone/commit/79f4b7c2cf3ad2d1a6d2646eaf27a08fd2611d07",
@@ -9388,8 +9388,8 @@
       "instance",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_spot_fleet"],
+    "notes": "Use AWS Spot Fleet"
   },
   {
     "url": "https://github.com/paperphyte/terraform-drone/commit/f62bfebb54530c9466cfdb21336794f24bcd63a7",
