@@ -11273,8 +11273,8 @@
       "domain",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "remove_dns_zones"],
+    "notes": "Made DNS zones configurable/optional"
   },
   {
     "url": "https://github.com/rajesh-nitc/gcp-foundation/commit/0db462f5528100ece08d85366fc777cd59fad473",
@@ -11348,8 +11348,8 @@
       "domain",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "remove_dns_zones"],
+    "notes": "Made DNS zones configurable/optional"
   },
   {
     "url": "https://github.com/datarootsio/terraform-module-azure-datalake/commit/4907fd7598d0083705494182d985c6b3b58db2c0",
@@ -11407,8 +11407,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_area"],
+    "notes": "Move from eastus to eastus2"
   },
   {
     "url": "https://github.com/mintak21/terraform-old/commit/c10b476d869282ed6cf55def47445b9c703788fe",
@@ -11605,8 +11605,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_disk_type", "remove_iops"],
+    "notes": "Remove provisioned IOPS for EBS cost reduction and move from io1 to gp2 disk type"
   },
   {
     "url": "https://github.com/ministryofjustice/hmpps-env-configs/commit/28e80387490ac5303782b4762f1d42cac394464c",

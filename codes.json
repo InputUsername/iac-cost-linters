@@ -254,5 +254,9 @@
     {
         "name": "use_fargate_spot_capacity_provider",
         "description": "Use Fargate Spot capacity provider for ECS"
+    },
+    {
+        "name": "remove_dns_zones",
+        "description": "Remove DNS zones"
     }
 ]
