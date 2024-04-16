@@ -137,7 +137,7 @@
     },
     {
         "name": "use_spot_instance",
-        "description": "Use AWS Spot instances "
+        "description": "Use Spot instances"
     },
     {
         "name": "remove_firewall",
@@ -238,5 +238,21 @@
     {
         "name": "reduce_rds_capacity",
         "description": "Reduce the maximum RDS cluster capacity"
+    },
+    {
+        "name": "remove_audit_logs",
+        "description": "Remove GCP audit logs"
+    },
+    {
+        "name": "use_same_az_public_private_subnet",
+        "description": "Use the same availability zone for public and private subnets"
+    },
+    {
+        "name": "less_cpu",
+        "description": "Reduce CPU utilization"
+    },
+    {
+        "name": "use_fargate_spot_capacity_provider",
+        "description": "Use Fargate Spot capacity provider for ECS"
     }
 ]

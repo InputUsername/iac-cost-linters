@@ -10004,8 +10004,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "remove_audit_logs"],
+    "notes": "Make audit logs configurable, since using more logs may cost more"
   },
   {
     "url": "https://github.com/filhodanuvem/from-dev-to-ops/commit/998be8119321e8812884075b078a1d5fb36cfa69",
@@ -10023,8 +10023,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_spot_instance"],
+    "notes": "Set spot_price to use Spot instances and reduce cost"
   },
   {
     "url": "https://github.com/sivaganesan23/EKS-Terraform/commit/c82a19d98673c1aeeb1fa26afb983acbfbea272f",
@@ -10058,8 +10058,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Introduces a Terraform module but there is no underlying cost smell"
   },
   {
     "url": "https://github.com/andreishappy/clouduru-infra/commit/991915ce492e074d8df658aa54c902b52f9c4cc5",
@@ -10109,8 +10109,8 @@
       "saving",
       "cluster"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not make cost-related changes"
   },
   {
     "url": "https://github.com/andyfangdz/aws-crawler/commit/7f2ffcc3cbb8538f82cb14377edb08b49105baf7",
@@ -10168,8 +10168,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/mudathirlawal/azure-terraform-packer-iac/commit/587d3a91c12aae8f0dd4b34a46d03f919ea385c6",
@@ -10282,8 +10282,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_same_az_public_private_subnet"],
+    "notes": "Using the same availability zone for public and private subnets avoids data transfer costs"
   },
   {
     "url": "https://github.com/StratusGrid/terraform-aws-single-account-starter/commit/c291c0954c89e1bfbdb76d4c8990baf9db986343",
@@ -10368,8 +10368,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from t2.micro to t2.nano"
   },
   {
     "url": "https://github.com/robertdebock/terraform-azurerm-container-group/commit/c0d6578f1ebbdcc9cab091017259e4d596bfe8c9",
@@ -10387,8 +10387,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "less_cpu", "less_memory"],
+    "notes": "Reduce CPU from 0.5 to 0.1 and memory from 1.5 to 0.1"
   },
   {
     "url": "https://github.com/nsbno/terraform-aws-cost-alarm/commit/7e135499d33f0a5c51602a506fefe258cac072c6",
@@ -10473,8 +10473,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/stephaneclavel/terraform/commit/74b4ba406b9ea761d27298165d0e0de45c9d8491",
@@ -10492,8 +10492,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "use_spot_instance"],
+    "notes": "Use Spot instances"
   },
   {
     "url": "https://github.com/64kramsystem/ultimate_aws_certified_cloud_practitioner_course_terraform_configuration/commit/2f36b8a5f2f818138da72d218c1f3c9666ed54aa",
@@ -10578,8 +10578,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
     "url": "https://github.com/kelledge/idkfa/commit/25cda0b77ff329a89551cc6f14fe8c62820fd424",
@@ -10632,8 +10632,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance"],
+    "notes": "Move from n1-standard-1 to g1-small"
   },
   {
     "url": "https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed",
@@ -10706,8 +10706,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_eip"],
+    "notes": "Comment out the EIP"
   },
   {
     "url": "https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c",
@@ -10768,8 +10768,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_spot_instance"],
+    "notes": "Use aws_spot_instance_request instead of aws_instance to use Spot instances and save cost"
   },
   {
     "url": "https://github.com/oke-py/aws-tf/commit/ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced",
@@ -10953,8 +10953,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit does not make cost-related changes"
   },
   {
     "url": "https://github.com/combinator-ml/terraform-google-kubernetes/commit/27deaade65fd58e978b0a604c6c3fcd6683306bb",
@@ -11121,8 +11121,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from db.r5.large to db.r6g.large"
   },
   {
     "url": "https://github.com/JaredStufftGD/grok-airflow/commit/7ac9544b0c651fd8193eb063079514d0aa41e290",
@@ -11139,8 +11139,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_fargate_spot_capacity_provider"],
+    "notes": "Use Fargate Spot capacity provider for ECS instead of regular Fargate using capacity_provider_strategy capacity_provider = 'FARGATE_SPOT'"
   },
   {
     "url": "https://github.com/rajesh-nitc/gcp-foundation/commit/fc054a7183757d1e51e371e7329c5cf848cc6dd8",
@@ -11238,8 +11238,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit comments out code, but there is no underlying cost smell"
   },
   {
     "url": "https://github.com/rajesh-nitc/gcp-foundation/commit/eaf81b5f5ca1dbdd8951d4179a631818139566a5",
