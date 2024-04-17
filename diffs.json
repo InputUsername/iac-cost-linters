@@ -13602,8 +13602,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_nat_gateway"],
+    "notes": "Remove NAT gateway in VPC"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/bbfbd2484ace2819ffceac9155b995ab870ee3a3",
@@ -13621,8 +13621,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_nat_gateway"],
+    "notes": "Remove NAT gateway in VPC"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/2afa0c4652393014778f9b2fefcf975d6ca22ae2",
@@ -13655,8 +13655,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/0208ae3bc238f029b1faf6bdc3552dbe6147657b",
@@ -13762,8 +13762,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "The commit message mentions disabling NAT gateway but the only cost-related change is moving from t2.medium to t2.small"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/c00d24a1626e7d88a33431e4b403651acf158e05",
@@ -13781,8 +13781,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit message mentions disabling NAT gateway but this does not appear in the commit contents"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/0662f7e1bfc70e21d8229e142b98b6c303addbc3",
@@ -13942,8 +13942,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit moves to a different machine image, but not for cost reasons (the previous one was also free)"
   },
   {
     "url": "https://github.com/renovate-tests/hackstack-local/commit/5e8b6f6b88db49a0508ea670d71070c92cfdbaca",
@@ -14392,8 +14392,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
     "url": "https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb",
@@ -14410,8 +14410,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_status_check"],
+    "notes": "Disables several health checks to reduce costs"
   },
   {
     "url": "https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9",
@@ -14452,8 +14452,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_status_check"],
+    "notes": "Makes Route53 status checks configurable/optional to save costs"
   },
   {
     "url": "https://github.com/fpco/terraform-aws-foundation/commit/cfe92035f1b281cddfcf62664ec6b96e85e0ac32",
@@ -14591,8 +14591,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "Move from t2.small to t2.micro"
   },
   {
     "url": "https://github.com/aiidalab/aiidalab-k8s/commit/65e44242c0b5f27d64ff714e5a8eed71ca02ab26",
@@ -14674,8 +14674,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_area"],
+    "notes": "Move from eu-west-1 to eu-north-1"
   },
   {
     "url": "https://github.com/robgmills/jumpbox/commit/028bbe114d099b0388be9a46adcab80d9383a518",
@@ -14728,8 +14728,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "ebs_delete_on_termination"],
+    "notes": "Delete EC2 root block device on termination instead of keeping it in EBS"
   },
   {
     "url": "https://github.com/alphagov/paas-alpha-tsuru-terraform/commit/6085ce34a95fbc4a8d651a3f6a0405811952af93",
@@ -14755,8 +14755,8 @@
       "saving",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
     "url": "https://github.com/KiaraGrouwstra/sentia-data-engineering-assignment/commit/7e5c997c23683a707aa384b6a07801210b1839b8",
@@ -14906,8 +14906,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit switches to a different type of resources but there is not cost smell"
   },
   {
     "url": "https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/59477d3dc237e72252bde005b783213b7e8ed961",
@@ -15157,8 +15157,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_instance"],
+    "notes": "Move from Standard_S1 to Basic_B1"
   },
   {
     "url": "https://github.com/mhemeryck/iac/commit/9ec3047d95969e8d2b729e6545672c3084ea846d",
@@ -15200,8 +15200,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["digitalocean", "hcloud", "cheaper_provider"],
+    "notes": "Move from DigitalOcean to Hetzner for Kubernetes cluster since it is cheaper"
   },
   {
     "url": "https://github.com/ibm-cloud-architecture/iks_vpc_lab/commit/629819ce0c440760be155874cb42ab497f0304bd",
@@ -15219,8 +15219,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["ibm", "cheaper_instance"],
+    "notes": "Move from bx2.4x16 to bx2.2x8"
   },
   {
     "url": "https://github.com/opszero/terraform-aws-kubespot/commit/ac39d3b9140e90bfd4b9eaa01200385bf10cc15d",
@@ -15650,8 +15650,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_disk_type", "smaller_disk", "smaller_image"],
+    "notes": "Move from pd-ssd to pd-standard, move from 60GB to 10GB for disk, and move from 128GB to 40GB for image"
   },
   {
     "url": "https://github.com/goodpen/gke-v.1.0/commit/45053a0862bf97f0525862c411fa4da5d59ac397",
@@ -15669,8 +15669,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance"],
+    "notes": "Move from n1-standard-2 to e2-standard-2"
   },
   {
     "url": "https://github.com/RavenProject/seed-node-fallback-domain-config/commit/5ba235b0c935de75c2cb2f57686bc246816a7f74",
@@ -15687,8 +15687,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit removes several IPs from a list due to 'excessively high bandwidth costs' but it is not clear from the change how this saves on cost"
   },
   {
     "url": "https://github.com/Pavel-Hrabec/Azure-Terraform-Budget/commit/4759aa86a84ee099d6ce3f3987520a5b6cd1ffd3",
@@ -15757,8 +15757,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance"],
+    "notes": "Move from n1-standard-2 to n1-standard-1"
   },
   {
     "url": "https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f",
@@ -15803,8 +15803,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.micro to t3.micro"
   },
   {
     "url": "https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7",
@@ -15831,8 +15831,8 @@
       "instance",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "cheaper_instance", "smaller_disk", "add_preemptible"],
+    "notes": "Move from n1-standard-1 to g1-small, reduce instance boot disk size from 32 to 16, and use preemptible scheduling"
   },
   {
     "url": "https://github.com/relaycorp/cloud-gateway/commit/759b1d641a430bf189354e9a4866e72fe56c22dc",
@@ -15893,8 +15893,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_eip", "reduce_nat_gateways"],
+    "notes": "Made the level of redundancy configurable to reduce the number of EIPs and NAT gateways to 1 in non-production environments"
   },
   {
     "url": "https://github.com/Azure/devops-governance/commit/4894def3589d532789cc8af0c0b197727e0fb3f4",
@@ -15920,8 +15920,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "remove_container_registry"],
+    "notes": "Stop using the Azure Container Registry for purported cost savings"
   },
   {
     "url": "https://github.com/thatscotdatasci/terraform-lambda/commit/6e85cf4f7e7f76c159c2e30952a775d6facaf638",
@@ -15982,8 +15982,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "notes": "Move from gp2 to gp3"
   },
   {
     "url": "https://github.com/imma/fogg-tf/commit/6089a019df4c39231e596af627ebd910877d11d0",
@@ -16001,8 +16001,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Removes Fargate ECS without an underlying cost smell other than 'cost monies'"
   },
   {
     "url": "https://github.com/lean-delivery/terraform-module-aws-core/commit/25bbff736936b64a6120ef9608498830ecec33c0",
@@ -16111,8 +16111,8 @@
       "saving",
       "area"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/dmcgowandmc/minifoundations/commit/941e316bcd70779e868311253f663f8acd5ef155",
@@ -16146,8 +16146,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_ssm_endpoint"],
+    "notes": "Remove SSM endpoints due to cost"
   },
   {
     "url": "https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc",
@@ -16216,8 +16216,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_lifecycle_rule"],
+    "notes": "Add lifecycle rules for S3 buckets to move data to a cheaper storage class"
   },
   {
     "url": "https://github.com/alphagov/verify-infrastructure/commit/d34dcd505074546f77367786f5362891050c3440",
@@ -16391,8 +16391,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "Removes self-hosted resources in favor of a cloud version, but there is no cost smell"
   },
   {
     "url": "https://github.com/poseidon/terraform-digitalocean-kubernetes/commit/bacda9d75b329997eb849183cf36ff8f97a9ee83",
@@ -16444,8 +16444,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
     "url": "https://github.com/itzik-bd/parking-status/commit/5f9f8fb118a42d7b18ec082be41665ed2b9eb992",
@@ -16609,8 +16609,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "smaller_disk"],
+    "notes": "Move from 20GB to 15GB for root disk"
   },
   {
     "url": "https://github.com/ministryofjustice/modernisation-platform-environments/commit/ec5ec7bac99558a4e95e95788f846eb618edb861",
@@ -16628,8 +16628,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
     "url": "https://github.com/ckilpatrick20/github-actions/commit/1ab89439a42782f55a2ad591530118dbabd9a447",

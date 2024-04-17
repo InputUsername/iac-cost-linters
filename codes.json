@@ -28,6 +28,14 @@
         "description": "Specific to Scaleway"
     },
     {
+        "name": "hcloud",
+        "description": "Specific to Hetzner Cloud"
+    },
+    {
+        "name": "ibm",
+        "description": "Specific to IBM Cloud"
+    },
+    {
         "name": "smaller_disk",
         "description": "Use a smaller disk size"
     },
@@ -286,5 +294,17 @@
     {
         "name": "expressroute_local_tier",
         "description": "Use Local tier for ExpressRoute to save egress traffic costs"
+    },
+    {
+        "name": "ebs_delete_on_termination",
+        "description": "Delete EC2 root block device on termination instead of keeping it in EBS"
+    },
+    {
+        "name": "smaller_image",
+        "description": "Use a smaller image size"
+    },
+    {
+        "name": "remove_container_registry",
+        "description": "Stop using a specific container registry"
     }
 ]
