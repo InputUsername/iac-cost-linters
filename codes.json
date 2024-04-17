@@ -258,5 +258,33 @@
     {
         "name": "remove_dns_zones",
         "description": "Remove DNS zones"
+    },
+    {
+        "name": "reduce_iops",
+        "description": "Reduce volume IOPS"
+    },
+    {
+        "name": "remove_ssm_endpoint",
+        "description": "Disable SSM endpoint"
+    },
+    {
+        "name": "reduce_node_count",
+        "description": "Reduce the number of nodes used by a node pool"
+    },
+    {
+        "name": "remove_status_check",
+        "description": "Remove Route53 status check"
+    },
+    {
+        "name": "cheaper_container_registry",
+        "description": "Use a cheaper container registry"
+    },
+    {
+        "name": "explicit_value",
+        "description": "Explicitly specify a value because the default is (too) high"
+    },
+    {
+        "name": "expressroute_local_tier",
+        "description": "Use Local tier for ExpressRoute to save egress traffic costs"
     }
 ]
