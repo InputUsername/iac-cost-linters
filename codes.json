@@ -306,5 +306,33 @@
     {
         "name": "remove_container_registry",
         "description": "Stop using a specific container registry"
+    },
+    {
+        "name": "remove_glacier_transition",
+        "description": "Remove a lifecycle rule transition on S3 buckets to Glacier"
+    },
+    {
+        "name": "remove_cloudfront_logs",
+        "description": "Stop using logs for CloudFront"
+    },
+    {
+        "name": "remove_dataflow_job",
+        "description": "Stop using a Google DataFlow job"
+    },
+    {
+        "name": "reduce_s3_expiration",
+        "description": "Reduce the expiration time of S3 data"
+    },
+    {
+        "name": "reduce_instance_count",
+        "description": "Reduce the number of instances"
+    },
+    {
+        "name": "remove_node_pool_autoscaling",
+        "description": "Remove autoscaling from a GCP container node pool"
+    },
+    {
+        "name": "add_ecr_lifecycle_policy",
+        "description": "Add a lifecycle policy for ECR to drop images after some time"
     }
 ]
