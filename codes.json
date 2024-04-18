@@ -334,5 +334,13 @@
     {
         "name": "add_ecr_lifecycle_policy",
         "description": "Add a lifecycle policy for ECR to drop images after some time"
+    },
+    {
+        "name": "reduce_dynamodb_tables",
+        "description": "Reduce the number of DynamoDB tables"
+    },
+    {
+        "name": "remove_alb",
+        "description": "Remove ALB"
     }
 ]
