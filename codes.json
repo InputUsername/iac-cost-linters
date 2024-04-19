@@ -336,11 +336,19 @@
         "description": "Add a lifecycle policy for ECR to drop images after some time"
     },
     {
-        "name": "reduce_dynamodb_tables",
+        "name": "reduce_dynamo_tables",
         "description": "Reduce the number of DynamoDB tables"
     },
     {
         "name": "remove_alb",
         "description": "Remove ALB"
+    },
+    {
+        "name": "remove_external_vpc_endpoint",
+        "description": "Remove an external VPC endpoint"
+    },
+    {
+        "name": "reduce_eip",
+        "description": "Reduce the number of EIPs"
     }
 ]
