@@ -40,6 +40,10 @@
         "description": "Specific to Oracle Cloud"
     },
     {
+        "name": "ovh",
+        "description": "Specific to OVHcloud"
+    },
+    {
         "name": "smaller_disk",
         "description": "Use a smaller disk size"
     },
@@ -362,5 +366,25 @@
     {
         "name": "add_billing_alarm",
         "description": "Add a CloudWatch alarm for a monthly billing threshold"
+    },
+    {
+        "name": "reduce_efs_ia_transition",
+        "description": "Reduce the transition time to Infrequent Access for EFS"
+    },
+    {
+        "name": "cheaper_aks_loadbalancer",
+        "description": "Use Basic instead of Standard load balancer SKU for AKS"
+    },
+    {
+        "name": "use_ec2_as_nat_gateway",
+        "description": "Use EC2 instance as a NAT gateway"
+    },
+    {
+        "name": "replace_billing_alarm_budget",
+        "description": "Use an AWS budget instead of a CloudWatch billing alarm"
+    },
+    {
+        "name": "add_shared_vpc_host_project",
+        "description": "Add a shared VPC host project to only allocate one NAT instance"
     }
 ]

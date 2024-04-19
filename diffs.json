@@ -2381,8 +2381,8 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["ovh", "not_relevant"],
+    "notes": "The commit increases node count and enables monthly billing, which immediately charges for a full month, hence increasing costs when experimenting"
   },
   {
     "url": "https://github.com/IncredibleHolg/infra-aws-code/commit/70904707a36ff8e5167e695de3529d8318911ba4",
@@ -2408,8 +2408,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_efs_ia_transition", "cheaper_instance"],
+    "notes": "Transition EFS to infrequent access after 7 days instead of 30 and move from m5.xlarge to t2.micro"
   },
   {
     "url": "https://github.com/IoT-Data-Marketplace/mp-infrastructure/commit/5afcf39a85fc972eb9bb3486e5dc8aeeba77d3ee",
@@ -2567,8 +2567,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit message mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/dotancohen81/Rancher/commit/90944271b4e8bd46e3d42ac64bc4964a33a8fdc3",
@@ -3176,8 +3176,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit lays groundwork for cost savings, but the commit itself does not address a cost smell"
   },
   {
     "url": "https://github.com/Harmelodic/automation-infrastructure/commit/8b563a7d3c7d90ddd2359500d9781547347cc56a",
@@ -3296,8 +3296,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_aks_loadbalancer"],
+    "notes": "Move from Standard to Basic load balancer SKU"
   },
   {
     "url": "https://github.com/naciriii/terraform-ec2-gitlab-runner/commit/f8af6bc22bd3d827566e7e65deb63c13cdaf6031",
@@ -3390,8 +3390,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not make cost-related changes"
   },
   {
     "url": "https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2",
@@ -3498,8 +3498,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_billing_alarm"],
+    "notes": "The commit adds billing alarms, although it does so using an external Terraform module"
   },
   {
     "url": "https://github.com/dshmelev/aws_kube_tc/commit/853298ac74250964aa2d2ea921daa5905528b3a9",
@@ -3962,8 +3962,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit does not make cost-related changes"
   },
   {
     "url": "https://github.com/Midas-Protocol/webtwo-infra/commit/25ed0319bf8099f0cc79eceba9104c73d9507e0d",
@@ -4025,8 +4025,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit only updates the source of an external module related to billing alarms"
   },
   {
     "url": "https://github.com/GBergeret/tf-vpc-module/commit/34d80ece7d0ef598414baffceb074c6580dd819b",
@@ -4137,8 +4137,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_ec2_as_nat_gateway"],
+    "notes": "Add configuration to use an EC2 instance instead of a NAT gateway for cost savings"
   },
   {
     "url": "https://github.com/chaspy/terraform-alibaba-isucon8/commit/53588dad5dd4c13903a6c582f74e1afe2671d33e",
@@ -4853,8 +4853,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit updates a cost estimation in the readme, there are no relevant changes to Terraform files"
   },
   {
     "url": "https://github.com/ExpediaGroup/apiary-data-lake/commit/47e62f2fc73a96611606cd619c084d1ded9d844d",
@@ -5347,8 +5347,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit explicitly sets the instance type to m5.large which is supposedly less than the default, but the default value is unknown"
   },
   {
     "url": "https://github.com/adeelbarki/aws-with-terraform-and-ansible/commit/742f35a1fdf66b24ddb1f6a514b2af5a1f2b4282",
@@ -5365,8 +5365,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "explicit_value"],
+    "notes": "The commit explicitly specifies storage_type = gp2 for an aws_db_instance, for cost savings"
   },
   {
     "url": "https://github.com/EOjeah/route53-ps/commit/1c619d5df3f2e7f49dd9a3a47150aa41b0de497f",
@@ -5391,8 +5391,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec",
@@ -5854,8 +5854,8 @@
       "saving",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/circleci/enterprise-setup/commit/26cc5295c2bb9d8756e450712e0f5f75af440c4a",
@@ -6065,8 +6065,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_billing_alarm"],
+    "notes": "Add a CloudWatch billing alarm"
   },
   {
     "url": "https://github.com/wellcomecollection/loris-infrastructure/commit/77c58fa499829785825e45aa90e1bb6c7058c5a2",
@@ -6203,8 +6203,8 @@
       "awareness",
       "increase"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/zoitech/terraform-aws-account/commit/2eb42357d986ad2c3d8693907df99895cee25c63",
@@ -6297,8 +6297,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/EngineerBetter/kf-infra/commit/fa5f7fb35b0b44020fb81dd5c4e3b9ceaca1f967",
@@ -6375,8 +6375,8 @@
       "awareness",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit only adds a billing policy to the admin group"
   },
   {
     "url": "https://github.com/KoutaroNohira/hashicat/commit/81dc1d3f98034672d5f62f440f2cc3abc58ce2a2",
@@ -6493,8 +6493,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance"],
+    "notes": "The commit makes instances configurable and moves from i2.xlarge to r3.2xlarge and from m4.xlarge to m3.medium"
   },
   {
     "url": "https://github.com/cloudposse/terraform-aws-alb/commit/c3c8dd8bebf14f91518253cadadc6d8a88b5ea09",
@@ -6621,8 +6621,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "smaller_disk", "reduce_instance_count"],
+    "notes": "The commit makes the size of the root_block_device of aws_launch_configuration instances configurable, and reduces it from 11 to 10 for both control plane and workers; also reduces the number of control plane instances in the control plane auto scaling group from 3 to 1"
   },
   {
     "url": "https://github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules/commit/c50fd3b3f25f87a6326684ad44d507d187e24874",
@@ -6648,8 +6648,8 @@
       "awareness",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit introduces new functionality which does not cost anything"
   },
   {
     "url": "https://github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules/commit/d9b4b9dcb95b96bdfb09f9631acd91ab34aa7dcf",
@@ -6691,8 +6691,8 @@
       "awareness",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit introduces new functionality which does not cost anything"
   },
   {
     "url": "https://github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules/commit/72e7126b0baf6e039f70c12262d11e7ea7562189",
@@ -6710,8 +6710,8 @@
       "awareness",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "not_relevant"],
+    "notes": "The commit makes a cost-sensitive value (SKU) explicit so developers are aware of it, but there is no clear cost smell"
   },
   {
     "url": "https://github.com/UrbanOS-Examples/common/commit/206394bcc75866953f64cbf3bd6214e4e6f96e91",
@@ -6764,8 +6764,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "replace_billing_alarm_budget"],
+    "notes": "Replaces the existing CloudWatch billing alarm by an AWS budget"
   },
   {
     "url": "https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944",
@@ -7318,8 +7318,8 @@
       "awareness",
       "increase"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "add_shared_vpc_host_project"],
+    "notes": "Add a shared VPC host project to allow allocating a single cloud NAT instance"
   },
   {
     "url": "https://github.com/kitchen/personal-terraform/commit/e3d337caa558830f8e337d24edaab577ee9d43a2",
@@ -7352,8 +7352,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/kitchen/personal-terraform/commit/bc22c89eabce912e3bb5ced85348d37df351b06d",
@@ -7379,8 +7379,8 @@
       "domain",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
     "url": "https://github.com/kitchen/personal-terraform/commit/fe1f2665b198308a438ec3d46b24843089df1a2a",
@@ -7399,8 +7399,8 @@
       "awareness",
       "increase"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "remove_nat"],
+    "notes": "Remove NAT instance because of cost"
   },
   {
     "url": "https://github.com/glenngillen/terraform-demo-cost-estimation-azure/commit/f29cf1138d21a2eba8aaccec3185e461cb8675bd",
@@ -7417,8 +7417,8 @@
     "existing_codes": [
       "increase"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit increases the instance type and size of an autoscaling group, increasing cost"
   },
   {
     "url": "https://github.com/glenngillen/terraform-demo-cost-estimation-azure/commit/dfc9a7ea4a62b6e6c14e09b2f08c7fb5c63ca711",
@@ -7435,8 +7435,8 @@
     "existing_codes": [
       "increase"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit increases the instance size and with it, cost"
   },
   {
     "url": "https://github.com/acmucsd/tech-stack/commit/e78aad174927ca59a43a622d7e82f664e3005790",
@@ -7462,8 +7462,8 @@
       "awareness",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/alstard/terraform/commit/17463f89d0801c30bbca8ad5f0c4ef7f6f15e49f",
@@ -22257,7 +22257,7 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": ["aws", "remove_nat_gateway", "use_ec2_as_nat_gateway"],
     "notes": "Remove NAT gateway in favor of regular EC2 Spot instances configured as NAT boxes"
   },
   {
