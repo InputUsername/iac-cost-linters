@@ -1,7 +1,7 @@
 [
     {
         "name": "not_relevant",
-        "description": "The commit contents do not reflect a change related to cost awareness"
+        "description": "The commit contents do not reflect a change related to cost awareness or cost savings"
     },
     {
         "name": "digitalocean",
@@ -34,6 +34,10 @@
     {
         "name": "ibm",
         "description": "Specific to IBM Cloud"
+    },
+    {
+        "name": "oracle",
+        "description": "Specific to Oracle Cloud"
     },
     {
         "name": "smaller_disk",
@@ -350,5 +354,13 @@
     {
         "name": "reduce_eip",
         "description": "Reduce the number of EIPs"
+    },
+    {
+        "name": "use_full_glacier_time",
+        "description": "Use at least 90 days for Glacier S3 archives, since that is the minimum billed period"
+    },
+    {
+        "name": "add_billing_alarm",
+        "description": "Add a CloudWatch alarm for a monthly billing threshold"
     }
 ]

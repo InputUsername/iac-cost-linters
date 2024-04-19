@@ -57,8 +57,8 @@
       "networking",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_nat_gateway"],
+    "notes": "Comment out the NAT gateway"
   },
   {
     "url": "https://github.com/stealthHat/k8s-terraform/commit/4193db798227c6538c61d55a906ed9ac997563f7",
@@ -143,8 +143,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/dannysievers/gcp-project/commit/88303c62ab59b1e7a538289112cf19354a8ed05f",
@@ -264,8 +264,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit makes prod/non-prod environments configurable for potential cost savings in non-prod, but the cost savings are not implemented"
   },
   {
     "url": "https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a",
@@ -283,8 +283,8 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_on_demand"],
+    "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
     "url": "https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db",
@@ -329,8 +329,8 @@
       "saving",
       "billing_mode"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/ken-matsui/poac-infrastructure/commit/02c710b8259f493c475021fc9eac23b871305ae6",
@@ -375,8 +375,8 @@
       "awareness",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["oracle", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/chad-russell-git/terraform-oci-cis-landing-zone/commit/7247909ecd98c2d511316392f22cb3877f05250b",
@@ -402,8 +402,8 @@
       "awareness",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["oracle", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/ministryofjustice/modernisation-platform/commit/bc346a5604045d29b4b427c926f3e70d69440698",
@@ -422,8 +422,8 @@
       "increase",
       "provider"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit enables functionality with 'negligible' cost"
   },
   {
     "url": "https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1",
@@ -499,8 +499,8 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit adds a variable for a billing account"
   },
   {
     "url": "https://github.com/AJarombek/global-aws-infrastructure/commit/4a89f4b8235961275fa0e6aaf20848f2b8b7e733",
@@ -575,8 +575,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit enables cost management functionality, but there is no cost smell"
   },
   {
     "url": "https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
@@ -707,8 +707,8 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit set read/write capacity to 0 if billing mode is PAY_PER_REQUEST, but this does not do anything"
   },
   {
     "url": "https://github.com/structurefall/jamulus-builder/commit/7190744187e0aed2df8ce84f2a944294d6d4fc5b",
@@ -777,8 +777,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "use_full_glacier_time"],
+    "notes": "Glacier charges an 'early deletion fee' when deleting data before 90 days have passed by charging for the 90 days anyway; using the full 90 days therefore does not cost more and is more cost-effective"
   },
   {
     "url": "https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4",
@@ -1439,8 +1439,8 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "dynamo_on_demand"],
+    "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
     "url": "https://github.com/DoSomething/infrastructure/commit/a2dbfe25699f574b5ad4540063e4208ea8b04b4e",
@@ -1506,8 +1506,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_billing_alarm"],
+    "notes": "The commit adds a CloudWatch alarm for billing; there is no cost smell, but this may be useful as a recommendation"
   },
   {
     "url": "https://github.com/stuartellis/stuartellis-org-tf-modules/commit/39a9cabac6765c75591ba258fef0d10ba7ae0f9e",
@@ -1541,8 +1541,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_billing_alarm"],
+    "notes": "Add a CloudWatch billing alarm"
   },
   {
     "url": "https://github.com/greenbrian/musical-spork/commit/24c07bfd5c31438fff6374e9ba3d577e6402d777",
@@ -2335,8 +2335,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "reduce_node_count", "cheaper_disk_type"],
+    "notes": "Move from 4 to 3 nodes and from Premium_LRS to Standard_LRS storage"
   },
   {
     "url": "https://github.com/kathputli/terraform-aws/commit/321b1aee88f7d15dafe46aede2b86ced70061025",
