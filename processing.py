@@ -18,10 +18,15 @@ with open('diffs.json', 'r') as diffs_file:
 
 #     input()
 
+i = 0
+c = len([d for d in diffs if len(d['codes']) == 0])
+
 for d in diffs:
-    if 'saving' not in d['existing_codes'] or len(d['codes']) != 0:
+    if len(d['codes']) != 0:
         continue
 
-    print(d['url'])
+    i += 1
+
+    print(f'{i}/{c}', d['url'])
     webbrowser.open(d['url'])
     input()
