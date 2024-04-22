@@ -549,8 +549,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_budget"],
+    "notes": "Adds a budget to receive billing alarms"
   },
   {
     "url": "https://github.com/AJarombek/global-aws-infrastructure/commit/61e07012be3f140daf18d33b3be19c80147f12f2",
@@ -2533,8 +2533,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/ministryofjustice/cloud-platform-terraform-elasticache-cluster/commit/ddcc1a8abc1d29e8e32ed3c2e92ed9755dd17014",
@@ -3771,8 +3771,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f",
@@ -4437,8 +4437,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit introduces a module for billing budget alerts, but there is no cost smell"
   },
   {
     "url": "https://github.com/laurijssen/tform_azure/commit/6f802267c2d43803eebbdb383da9e3815c1c68bd",
@@ -4692,8 +4692,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/GBergeret/micro-service-as-code/commit/46f76d50b8569f450ce909e04f3c5fa81b97737a",
@@ -5012,8 +5012,8 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "reduce_az"],
+    "notes": "Reduce the number of zones used by the GKE master to 1"
   },
   {
     "url": "https://github.com/jenkins-infra/aws/commit/4a9e2c05092acca34f0608394638776c75496a99",
@@ -5181,8 +5181,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "azure", "gcp", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/jjffggpp/jjffggpp/commit/948727c5b1e87b970a7a9dee4cd67bb84d19abf8",
@@ -5287,8 +5287,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "azure", "gcp", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/jjffggpp/jjffggpp/commit/93ee12adde6ac773c76b590fe89c24df372f326b",
@@ -5307,8 +5307,8 @@
       "instance",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "cheaper_instance"],
+    "notes": "Move from Standard_D2s_v3 to Standard_DS1_v2"
   },
   {
     "url": "https://github.com/cisagov/vulnerable-instances/commit/f70410061b8c6b9249895571e05dfb7a142efb18",
@@ -7282,8 +7282,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["scaleway", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/kitchen/personal-terraform/commit/b0660183c95f4b938dbf33c5607381b8e4e2bd68",
@@ -9277,8 +9277,8 @@
       "saving",
       "cluster"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_nlb"],
+    "notes": "Reduce the number of NLBs to one per cluster"
   },
   {
     "url": "https://github.com/poseidon/terraform-aws-kubernetes/commit/e09126b45746f1c967d1990fa04ce781a0478c6d",
@@ -9950,8 +9950,8 @@
       "saving",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "use_mssql_serverless"],
+    "notes": "Use serverless azurerm_mssql_database instead of azurerm_sql_database"
   },
   {
     "url": "https://github.com/picatz/terraform-google-nomad/commit/3c48151cd75447f7fbd3e6ce14c491cd28e2442c",
@@ -14177,8 +14177,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/mads-hartmann/cloud.mads-hartmann.com/commit/667f5715c19534bfe5b01ad692979447412fd033",
@@ -17254,8 +17254,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/cjbischoff/tf-terraform-management/commit/e357e4e6879f9f6fb09cf28a40684d30d0e63400",
@@ -17580,8 +17580,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["not_relevant"],
+    "notes": "The commit updates functionality and mentions cost but there is no cost smell"
   },
   {
     "url": "https://github.com/patheard/terraform-cantrill-aws-associate/commit/bc7484cd34698f2724e5d9f241fd9f53d953e3a3",
@@ -17805,8 +17805,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "reduce_nat_gateways", "reduce_eip"],
+    "notes": "Makes redundancy of the NAT setup configurable"
   },
   {
     "url": "https://github.com/jonbamber/terraform_state_bucket/commit/8c7ca9bbb2c89d622129ace7b10b655851615982",
@@ -18054,8 +18054,8 @@
       "saving",
       "instance"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/wellcomecollection/buildkite-infrastructure/commit/300ed87cba6912103723b03d62c9b0bf93df36ea",
@@ -18489,8 +18489,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t3a.micro to t3a.nano, move from t3a.medium to t3a.nano, move from t2.medium to t3a.nano"
   },
   {
     "url": "https://github.com/ninthnails/terraform-aws-camellia/commit/9438dcebde79c0726d69ae6a15c99b9c5c0f461c",
@@ -18555,8 +18555,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
     "url": "https://github.com/maddevsio/aws-eks-base/commit/c528b5e97d9d1b57087bd60644a885dd9b4a2294",
@@ -20113,8 +20113,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_transit_gateway"],
+    "notes": "Makes using a transit gateway configurable (although defaulted to true)"
   },
   {
     "url": "https://github.com/ministryofjustice/network-access-control-infrastructure/commit/95c70a0a304c55adacc3ba0605dd2b9aa2730f6f",
@@ -20627,8 +20627,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_sns_alarm"],
+    "notes": "Disable SNS alarms in development"
   },
   {
     "url": "https://github.com/gedejong/infra/commit/df7d6a56fb9c390574c45500fbae61dbba0044d8",
@@ -20646,8 +20646,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_guard_duty"],
+    "notes": "Set check_guard_duty to false (using the trussworks/config/aws external module)"
   },
   {
     "url": "https://github.com/v3nd3774/AWSEMRInferencePipelinePOC/commit/75771876ca81699edfb4bb1afa202d6426abae1e",
@@ -22123,8 +22123,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "explicit_value", "use_standard_sql_db_edition", "cheaper_service_objective"],
+    "notes": "Explicitly specify edition = 'Standard' and requested_service_objective_name = 'S0'"
   },
   {
     "url": "https://github.com/robertdebock/git-terraform-demo/commit/5638b1a044215292a5e3fa405b6a0567c6b35436",

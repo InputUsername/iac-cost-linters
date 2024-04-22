@@ -454,5 +454,25 @@
     {
         "name": "use_standard_credit_specification",
         "description": "Use standard credit specification instead of unlimited"
+    },
+    {
+        "name": "cheaper_codebuild_compute",
+        "description": "Use cheaper compute for CodeBuild"
+    },
+    {
+        "name": "reduce_nlb",
+        "description": "Reduce the number of network load balancers"
+    },
+    {
+        "name": "use_mssql_serverless",
+        "description": "Use serverless SKU type for MSSQL database"
+    },
+    {
+        "name": "remove_transit_gateway",
+        "description": "Stop using a transit gateway"
+    },
+    {
+        "name": "remove_sns_alarm",
+        "description": "Stop using SNS alarms"
     }
 ]
