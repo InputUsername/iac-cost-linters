@@ -20713,8 +20713,8 @@
       "cluster",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/cloud-geek/AWS-Cloud-Architect-master/commit/a662717d80209735e93b6b8e537f21b53c06b469",
@@ -20939,8 +20939,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces a practice project for cost optimization but there is not cost smell"
   },
   {
     "url": "https://github.com/AndreasSko/infrastructure/commit/e7c56ae03560224a4d40370ce812f05662cee20b",
@@ -20959,8 +20959,8 @@
       "increase",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["hcloud", "not_relevant"],
+    "notes": "The commit increases the instance size from cx11 to cpx11"
   },
   {
     "url": "https://github.com/cliffano/feedpaper/commit/d13218e98814d7ac3bc65fc862c0119123f44d68",
@@ -21056,8 +21056,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_billing_alarm"],
+    "notes": "Add a CloudWatch billing alarm"
   },
   {
     "url": "https://github.com/akerl/aws-account/commit/9fcff4b82a2ad4d0ed24656243da51f767f2968a",
@@ -21075,8 +21075,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "increase_billing_alarm_period"],
+    "notes": "Increase the billing alarm period to reduce cost"
   },
   {
     "url": "https://github.com/zbmowrey/cloud-admin/commit/738d187f603e5a52e6c6338abcd6096e22e819a0",
@@ -21126,8 +21126,8 @@
       "awareness",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/poseidon/typhoon/commit/85252dec6ed7f0b24517089150ec89bf32b45fb2",
@@ -21561,8 +21561,8 @@
       "awareness",
       "increase"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_codebuild_compute", "cheaper_os"],
+    "notes": "Move from BUILD_GENERAL1_2XLARGE to BUILD_GENERAL1_LARGE and from aws/codebuild/standard:5.0 to aws/codebuild/amazonlinux2-x86_64-standard:3.0"
   },
   {
     "url": "https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0",
@@ -21908,8 +21908,8 @@
       "awareness",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_iam_policy"],
+    "notes": "Adds IAM policies to deny creation of EC2 instances"
   },
   {
     "url": "https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
@@ -21967,8 +21967,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "notes": "Move from t2.nano to t3.nano"
   },
   {
     "url": "https://github.com/jeffawang/infrastructure/commit/9f610811aea8c523332e9dccad9bb0800b70691e",
@@ -22213,8 +22213,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "not_relevant"],
+    "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
     "url": "https://github.com/stephengrier/my-infra/commit/e5742d6f4f93dd432c9d8d0a31493d43c45aaff1",
@@ -22748,8 +22748,8 @@
       "networking",
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_nat_gateway", "remove_nat"],
+    "notes": "Makes NAT and NAT gateway configurable, although defaulting to true"
   },
   {
     "url": "https://github.com/bjacobel/terraform/commit/27738267ad6467f453f998419eca4b870b824faa",
@@ -22767,8 +22767,8 @@
       "awareness",
       "policy"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "explicit_value", "use_standard_credit_specification"],
+    "notes": "Explicitly set credit specification to standard because T3 instances are unlimited by default"
   },
   {
     "url": "https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354",
@@ -22933,8 +22933,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "add_billing_alarm"],
+    "notes": "Add a CloudWatch billing alarm"
   },
   {
     "url": "https://github.com/singaporewaketools/iaac/commit/cebf7f883b1325a4db1c0e7b3cd0d6684a7c41b0",
@@ -22968,8 +22968,8 @@
       "alert",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit fixes a billing alarm but there is no cost smell"
   },
   {
     "url": "https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93",
@@ -23093,8 +23093,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "not_relevant"],
+    "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
     "url": "https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028",

@@ -446,5 +446,13 @@
     {
         "name": "use_mssql_vm_payg",
         "description": "Use PAYG SQL license type for MSSQL virtual machines"
+    },
+    {
+        "name": "increase_billing_alarm_period",
+        "description": "Increase the billing alarm period"
+    },
+    {
+        "name": "use_standard_credit_specification",
+        "description": "Use standard credit specification instead of unlimited"
     }
 ]
