@@ -386,5 +386,41 @@
     {
         "name": "add_shared_vpc_host_project",
         "description": "Add a shared VPC host project to only allocate one NAT instance"
+    },
+    {
+        "name": "remove_codebuild",
+        "description": "Remove CodeBuild"
+    },
+    {
+        "name": "add_delete_marker_replication",
+        "description": "Enable delete marker replication on S3 buckets when using a replication configuration"
+    },
+    {
+        "name": "remove_transfer_acceleration",
+        "description": "Remove transfer acceleration from S3 buckets"
+    },
+    {
+        "name": "associate_public_ip",
+        "description": "Allow public IP addresses on instances instead of using NAT"
+    },
+    {
+        "name": "add_budget",
+        "description": "Use an AWS budget to receive billing alarms"
+    },
+    {
+        "name": "reduce_spot_fleet_price",
+        "description": "Use a lower price for Spot fleet requests"
+    },
+    {
+        "name": "remove_waf",
+        "description": "Disable WAF"
+    },
+    {
+        "name": "add_resource_group_cost_management_export",
+        "description": "Add a cost management export to a resource gropu"
+    },
+    {
+        "name": "reduce_mssql_min_capacity",
+        "description": "Reduce the minimum capacity of an MSSQL database"
     }
 ]
