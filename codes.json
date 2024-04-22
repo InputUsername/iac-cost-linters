@@ -474,5 +474,17 @@
     {
         "name": "remove_sns_alarm",
         "description": "Stop using SNS alarms"
+    },
+    {
+        "name": "remove_guard_duty",
+        "description": "Stop using GuardDuty"
+    },
+    {
+        "name": "use_standard_sql_db_edition",
+        "description": "Use Standard edition for an SQL database"
+    },
+    {
+        "name": "cheaper_service_objective",
+        "description": "Use a cheaper service objective for an SQL database"
     }
 ]
