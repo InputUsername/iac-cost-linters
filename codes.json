@@ -422,5 +422,29 @@
     {
         "name": "reduce_mssql_min_capacity",
         "description": "Reduce the minimum capacity of an MSSQL database"
+    },
+    {
+        "name": "add_consumption_budget_resource_group",
+        "description": "Add a consumption budget for a resource group"
+    },
+    {
+        "name": "use_default_kms_key",
+        "description": "Use the default KMS key for a service instead of creating one"
+    },
+    {
+        "name": "use_bucket_key",
+        "description": "Use S3 Bucket Keys for SSE-KMS"
+    },
+    {
+        "name": "remove_fluentbit_annotations",
+        "description": "Disable annotations in Fluent Bit logs to reduce CloudWatch log size"
+    },
+    {
+        "name": "remove_fluentbit_labels",
+        "description": "Disable labels in Fluent Bit logs to reduce CloudWatch log size"
+    },
+    {
+        "name": "use_mssql_vm_payg",
+        "description": "Use PAYG SQL license type for MSSQL virtual machines"
     }
 ]
