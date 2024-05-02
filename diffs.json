@@ -30,7 +30,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["digitalocean", "not_relevant"],
+    "codes": ["digitalocean", "no_cost_change"],
     "notes": "The commit only adds code to provision a Digital Ocean droplet"
   },
   {
@@ -143,7 +143,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -170,7 +170,7 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "Only changes the name of a variable (billing_account to billing_account_id)"
   },
   {
@@ -264,7 +264,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit makes prod/non-prod environments configurable for potential cost savings in non-prod, but the cost savings are not implemented"
   },
   {
@@ -329,7 +329,7 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -375,7 +375,7 @@
       "awareness",
       "policy"
     ],
-    "codes": ["oracle", "not_relevant"],
+    "codes": ["oracle", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -402,7 +402,7 @@
       "awareness",
       "policy"
     ],
-    "codes": ["oracle", "not_relevant"],
+    "codes": ["oracle", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -422,7 +422,7 @@
       "increase",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit enables functionality with 'negligible' cost"
   },
   {
@@ -499,7 +499,7 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit adds a variable for a billing account"
   },
   {
@@ -575,7 +575,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit enables cost management functionality, but there is no cost smell"
   },
   {
@@ -707,7 +707,7 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit set read/write capacity to 0 if billing mode is PAY_PER_REQUEST, but this does not do anything"
   },
   {
@@ -927,7 +927,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Move to a larger/more expensive instance due to CPU limitations"
   },
   {
@@ -966,7 +966,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Move to a larger/more expensive instance to reduce computation time; cost is not affected according to the commit"
   },
   {
@@ -985,7 +985,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Move to a larger/more expensive instance due to CPU limits, without affecting cost"
   },
   {
@@ -1020,7 +1020,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -1039,7 +1039,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Move to a larger/more expensive instance due to RAM limitations, without affecting cost"
   },
   {
@@ -1060,7 +1060,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Move to a larger/more expensive instance due to CPU limitations, increasing cost"
   },
   {
@@ -1088,7 +1088,7 @@
       "instance",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Move to a larger/more expensive instance due to RDS limitations, increasing cost"
   },
   {
@@ -1116,7 +1116,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "No change, only abstracting an instance type to a variable"
   },
   {
@@ -2381,7 +2381,7 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["ovh", "not_relevant"],
+    "codes": ["ovh", "no_cost_change"],
     "notes": "The commit increases node count and enables monthly billing, which immediately charges for a full month, hence increasing costs when experimenting"
   },
   {
@@ -2533,7 +2533,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -2567,7 +2567,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit message mentions cost, but there is no cost smell"
   },
   {
@@ -3018,7 +3018,7 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Reverts the prior commit which was meant to make the infrastructure more cost effective"
   },
   {
@@ -3176,7 +3176,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit lays groundwork for cost savings, but the commit itself does not address a cost smell"
   },
   {
@@ -3390,7 +3390,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -3745,7 +3745,7 @@
       "saving",
       "provider"
     ],
-    "codes": ["not_relevant"],
+    "codes": ["no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -3771,7 +3771,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -3962,7 +3962,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -4006,7 +4006,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "This commit only removes variables, likely due to being missed in a previous commit"
   },
   {
@@ -4025,7 +4025,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit only updates the source of an external module related to billing alarms"
   },
   {
@@ -4354,7 +4354,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes, only introduces 'cost-optimized EBS'"
   },
   {
@@ -4437,7 +4437,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit introduces a module for billing budget alerts, but there is no cost smell"
   },
   {
@@ -4511,7 +4511,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit only mentions low-cost without any related change; it also mentions that Terraform did not support lifecycle management for S3 buckets at that time, which it now does"
   },
   {
@@ -4692,7 +4692,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -4853,7 +4853,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit updates a cost estimation in the readme, there are no relevant changes to Terraform files"
   },
   {
@@ -5032,7 +5032,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit moves to a more expensive instance; the keyword 'cost' refers to the new instance costing 2x more"
   },
   {
@@ -5181,7 +5181,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "azure", "gcp", "not_relevant"],
+    "codes": ["aws", "azure", "gcp", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5287,7 +5287,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "azure", "gcp", "not_relevant"],
+    "codes": ["aws", "azure", "gcp", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5347,7 +5347,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit explicitly sets the instance type to m5.large which is supposedly less than the default, but the default value is unknown"
   },
   {
@@ -5391,7 +5391,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5643,7 +5643,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit only adds a variable; the actual change likely reduces the number of NAT gateways, but this cannot be derived from just the variable change"
   },
   {
@@ -5670,7 +5670,7 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The change actually increases cost by using Premium tier in production instead of Developer tier"
   },
   {
@@ -5854,7 +5854,7 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5924,7 +5924,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -5951,7 +5951,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -6108,7 +6108,7 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit moves to a more expensive instance family (t2.xlarge to c4.xlarge)"
   },
   {
@@ -6175,7 +6175,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -6203,7 +6203,7 @@
       "awareness",
       "increase"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -6297,7 +6297,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -6375,7 +6375,7 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit only adds a billing policy to the admin group"
   },
   {
@@ -6430,7 +6430,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -6544,7 +6544,7 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit makes ALB configurable/optional but there is no underlying cost smell"
   },
   {
@@ -6648,7 +6648,7 @@
       "awareness",
       "feature"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit introduces new functionality which does not cost anything"
   },
   {
@@ -6691,7 +6691,7 @@
       "awareness",
       "feature"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit introduces new functionality which does not cost anything"
   },
   {
@@ -6710,7 +6710,7 @@
       "awareness",
       "feature"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit makes a cost-sensitive value (SKU) explicit so developers are aware of it, but there is no clear cost smell"
   },
   {
@@ -7282,7 +7282,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["scaleway", "not_relevant"],
+    "codes": ["scaleway", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -7352,7 +7352,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -7379,7 +7379,7 @@
       "domain",
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -7417,7 +7417,7 @@
     "existing_codes": [
       "increase"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit increases the instance type and size of an autoscaling group, increasing cost"
   },
   {
@@ -7435,7 +7435,7 @@
     "existing_codes": [
       "increase"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit increases the instance size and with it, cost"
   },
   {
@@ -7462,7 +7462,7 @@
       "awareness",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -7671,7 +7671,7 @@
       "awareness",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit increases a timeout which, if too high, might incur costs, but the commit does not address a cost smell itself"
   },
   {
@@ -7851,7 +7851,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit adds chatbot integration to a billing alarm but there is no cost smell"
   },
   {
@@ -8051,7 +8051,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -8094,7 +8094,7 @@
       "awareness",
       "feature"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit only makes an instance type configurable for potential cost savings"
   },
   {
@@ -8113,7 +8113,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["digitalocean", "not_relevant"],
+    "codes": ["digitalocean", "no_cost_change"],
     "notes": "The change increases cost by doubling the number of Droplets"
   },
   {
@@ -8346,7 +8346,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit does not make cost-related changes, only enables Infracost in CI"
   },
   {
@@ -8421,7 +8421,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit renames a custom module related to billing alarms and updates some documentation but there is no cost smell"
   },
   {
@@ -8448,7 +8448,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit renames a variable related to billing alarms but there is no cost smell"
   },
   {
@@ -8522,7 +8522,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit archives costly EKS functionality but there is no cost smell"
   },
   {
@@ -9200,7 +9200,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit moves data into S3 buckets which are cheaper than the previous solution, but there is no underlying cost smell"
   },
   {
@@ -9234,7 +9234,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Updates port configurations which according to the commit message allows for potential future cost savings"
   },
   {
@@ -9741,7 +9741,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["scaleway", "not_relevant"],
+    "codes": ["scaleway", "no_cost_change"],
     "notes": "'Cheap' mentioned in the commit message only refers to using cheap instances, there is no underlying cost smell"
   },
   {
@@ -9835,7 +9835,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -9969,7 +9969,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit increases the instance size"
   },
   {
@@ -10058,7 +10058,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Introduces a Terraform module but there is no underlying cost smell"
   },
   {
@@ -10109,7 +10109,7 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -10168,7 +10168,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -10196,7 +10196,7 @@
       "saving",
       "awareness"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -10473,7 +10473,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -10578,7 +10578,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -10679,7 +10679,7 @@
       "awareness",
       "increase"
     ],
-    "codes": ["digitalocean", "not_relevant"],
+    "codes": ["digitalocean", "no_cost_change"],
     "notes": "The commit moves to a larger instance size which costs more"
   },
   {
@@ -10886,7 +10886,7 @@
       "instance",
       "increase"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -10953,7 +10953,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -10987,7 +10987,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -11238,7 +11238,7 @@
       "saving",
       "area"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit comments out code, but there is no underlying cost smell"
   },
   {
@@ -11624,7 +11624,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit increases ActiveMQ throughput following a risk/cost evaluation that is not publicly accessible"
   },
   {
@@ -11689,7 +11689,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit enables an API service required for billing alerts but does not add said alerts"
   },
   {
@@ -11783,7 +11783,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -11802,7 +11802,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit adds an instance type to a set of variables but there is no cost smell"
   },
   {
@@ -11821,7 +11821,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit adds a set of variables to be able to use cheaper instances for certain tasks, so this could be coded that way, but it is not used elsewhere"
   },
   {
@@ -11840,7 +11840,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit bumps min_size for autoscaling since the authors are using reserved instances which are paid for regardless of use, but there is no clear cost smell"
   },
   {
@@ -11984,7 +11984,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -12141,7 +12141,7 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -12373,7 +12373,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "Increase node count in an AKS cluster, 'cheap' in the commit message refers to this not being a problem"
   },
   {
@@ -12424,7 +12424,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -12462,7 +12462,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit moves to a larger instance size which costs more"
   },
   {
@@ -12505,7 +12505,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -12523,7 +12523,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -12542,7 +12542,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -12560,7 +12560,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit comments out code, but there is no underlying cost smell"
   },
   {
@@ -12658,7 +12658,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -13148,7 +13148,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["digitalocean", "not_relevant"],
+    "codes": ["digitalocean", "no_cost_change"],
     "notes": "The commit removes resources but there is no underlying cost smell"
   },
   {
@@ -13284,7 +13284,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -13368,7 +13368,7 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit only adds a new instance"
   },
   {
@@ -13499,7 +13499,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit fixes a billing alarm but there is no cost smell"
   },
   {
@@ -13655,7 +13655,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -13781,7 +13781,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit message mentions disabling NAT gateway but this does not appear in the commit contents"
   },
   {
@@ -13824,7 +13824,7 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit makes some changes to cost-related notifications but there is no cost smell"
   },
   {
@@ -13907,7 +13907,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -13942,7 +13942,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit moves to a different machine image, but not for cost reasons (the previous one was also free)"
   },
   {
@@ -14177,7 +14177,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -14309,7 +14309,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit makes instances configurable but does not specify an explicit size since it is an example"
   },
   {
@@ -14392,7 +14392,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -14755,7 +14755,7 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -14852,7 +14852,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit modifies a billing alarm but there is no cost smell"
   },
   {
@@ -14906,7 +14906,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit switches to a different type of resources but there is not cost smell"
   },
   {
@@ -15254,7 +15254,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces a NAT gateway which according to the commit message reduces cost"
   },
   {
@@ -15474,7 +15474,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -15605,7 +15605,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["digitalocean", "not_relevant"],
+    "codes": ["digitalocean", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -15687,7 +15687,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit removes several IPs from a list due to 'excessively high bandwidth costs' but it is not clear from the change how this saves on cost"
   },
   {
@@ -15866,7 +15866,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit moves to a more expensive instance type (n1-standard-1 to c2-standard-4)"
   },
   {
@@ -16001,7 +16001,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Removes Fargate ECS without an underlying cost smell other than 'cost monies'"
   },
   {
@@ -16111,7 +16111,7 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -16356,7 +16356,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -16391,7 +16391,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "Removes self-hosted resources in favor of a cloud version, but there is no cost smell"
   },
   {
@@ -16410,7 +16410,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["digitalocean", "not_relevant"],
+    "codes": ["digitalocean", "no_cost_change"],
     "notes": "The commit increases the instance size"
   },
   {
@@ -16444,7 +16444,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -16628,7 +16628,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -16647,7 +16647,7 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit moves back from t3.micro to t2.micro due to cost, but this contradicts commits in other repositories"
   },
   {
@@ -16711,7 +16711,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -16730,7 +16730,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -16776,7 +16776,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit is a release commit and the project moved to using Spot instances, but this change is not included in the commit itself"
   },
   {
@@ -16874,7 +16874,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["azure", "not_relevant"],
+    "codes": ["azure", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -17033,7 +17033,7 @@
       "awareness",
       "provider"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -17254,7 +17254,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -17297,7 +17297,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -17371,7 +17371,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -17580,7 +17580,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["not_relevant"],
+    "codes": ["no_cost_change"],
     "notes": "The commit updates functionality and mentions cost but there is no cost smell"
   },
   {
@@ -17746,7 +17746,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit adds a tag to instances which adds cost management, but there is no cost smell"
   },
   {
@@ -18054,7 +18054,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18153,7 +18153,7 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18232,7 +18232,7 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces a dev environment using preemptible instances and europe-central2 region for cost optimization, but there is not cost smell"
   },
   {
@@ -18275,7 +18275,7 @@
       "saving",
       "cluster"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -18325,7 +18325,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit makes resources configurable, but there is no underlying cost smell"
   },
   {
@@ -18415,7 +18415,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18555,7 +18555,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18682,7 +18682,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -19299,7 +19299,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit updates a billing alarm but there is no cost smell"
   },
   {
@@ -19401,7 +19401,7 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["ibm", "not_relevant"],
+    "codes": ["ibm", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -19466,7 +19466,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["not_relevant"],
+    "codes": ["no_cost_change"],
     "notes": "The commit removes command-line arguments from a certain executable (cache related) due to costs, but this is extremely specific to the use case"
   },
   {
@@ -19525,7 +19525,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit adds functionality to a tool that manages GCP cost, but there are no cost smells in Terraform files"
   },
   {
@@ -19567,7 +19567,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -19641,7 +19641,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -19706,7 +19706,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -19837,7 +19837,7 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The changes are in already commented-out code"
   },
   {
@@ -20009,7 +20009,7 @@
       "awareness",
       "feature"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20044,7 +20044,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -20070,7 +20070,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -20353,7 +20353,7 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20460,7 +20460,7 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit mentions a cost-saving whitepaper and also makes intelligent tiering for S3 optional, but there is no cost smell"
   },
   {
@@ -20480,7 +20480,7 @@
       "increase",
       "provider"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20498,7 +20498,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20592,7 +20592,7 @@
       "saving",
       "cluster"
     ],
-    "codes": ["not_relevant"],
+    "codes": ["no_cost_change"],
     "notes": "The commit specifies explicit cost-optimization values for a Helm deployment but this is highly specific"
   },
   {
@@ -20713,7 +20713,7 @@
       "cluster",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20939,7 +20939,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces a practice project for cost optimization but there is not cost smell"
   },
   {
@@ -20959,7 +20959,7 @@
       "increase",
       "storage"
     ],
-    "codes": ["hcloud", "not_relevant"],
+    "codes": ["hcloud", "no_cost_change"],
     "notes": "The commit increases the instance size from cx11 to cpx11"
   },
   {
@@ -21126,7 +21126,7 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -22085,7 +22085,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -22187,7 +22187,7 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22213,7 +22213,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["gcp", "not_relevant"],
+    "codes": ["gcp", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22351,7 +22351,7 @@
       "saving",
       "policy"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -22427,7 +22427,7 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22526,7 +22526,7 @@
       "domain",
       "saving"
     ],
-    "codes": ["digitalocean", "not_relevant"],
+    "codes": ["digitalocean", "no_cost_change"],
     "notes": "The commit moves from Digital Ocean Kubernetes cluster to a DO app because it's cheaper, but there is no cost smell"
   },
   {
@@ -22577,7 +22577,7 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22968,7 +22968,7 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit fixes a billing alarm but there is no cost smell"
   },
   {
@@ -23093,7 +23093,7 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "not_relevant"],
+    "codes": ["aws", "no_cost_change"],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {

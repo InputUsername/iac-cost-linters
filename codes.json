@@ -1,6 +1,6 @@
 [
     {
-        "name": "not_relevant",
+        "name": "no_cost_change",
         "description": "The commit contents do not reflect a change related to cost awareness or cost savings"
     },
     {
