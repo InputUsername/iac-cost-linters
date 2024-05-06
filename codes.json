@@ -486,5 +486,29 @@
     {
         "name": "cheaper_service_objective",
         "description": "Use a cheaper service objective for an SQL database"
+    },
+    {
+        "name": "remove_container_insights",
+        "description": "Disable Container Insights for an ECS cluster"
+    },
+    {
+        "name": "reduce_cloudwatch_retention",
+        "description": "Reduce the retention period of a CloudWatch log group"
+    },
+    {
+        "name": "remove_rds_instance",
+        "description": "Remove an RDS instance"
+    },
+    {
+        "name": "remove_sqs",
+        "description": "Stop using SQS"
+    },
+    {
+        "name": "lambda_max_concurrency",
+        "description": "Set a maximum concurrency for Lambda functions"
+    },
+    {
+        "name": "remove_log_analytics",
+        "description": "Stop using Azure Log Analytics"
     }
 ]

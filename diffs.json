@@ -2871,8 +2871,8 @@
       "saving",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_private_subnet", "reduce_subnets", "remove_route_table", "remove_alb", "reduce_instance_count"],
+    "notes": "The commit implements multiple cost related changes: removing a private subnet, reducing the number of public subnets, removing route tables, removing ALB and moving functionality into a single instance"
   },
   {
     "url": "https://github.com/InvictrixRom/website-infrastructure/commit/d51caa0c810f6d5ad6f0846a317ec2432835aad7",
@@ -6967,8 +6967,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_container_insights", "reduce_cloudwatch_retention"],
+    "notes": "The commit disables Container Insights on an ECS cluster and reduces log retention from 7 days to 1 day"
   },
   {
     "url": "https://github.com/vx-labs/infra/commit/302b243d09b58375efbff31c9e2dfc60c3d7bb7b",
@@ -7652,8 +7652,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "no_cost_change"],
+    "notes": "The commit introduces a variety of changes but there is no clear cost smell"
   },
   {
     "url": "https://github.com/Crown-Commercial-Service/digitalmarketplace-aws/commit/9928d58017829d85789bdf45f467b6d32c6354b2",
@@ -13413,8 +13413,8 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_rds_instance", "remove_alb", "cheaper_instance"],
+    "notes": "The commit makes an RDS instance and ALB configurable, disabling them by default; also move from m5.large to t2.medium"
   },
   {
     "url": "https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466",
@@ -16590,8 +16590,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_sqs", "lambda_max_concurrency"],
+    "notes": "Remove the use of SQS and limit the max concurrency of Lambda to 1"
   },
   {
     "url": "https://github.com/dylanmtaylor/dylanmtaylor-terraform-aws/commit/44016d6a8e496b69308a81e88af8c9ef8b710ab3",
@@ -18796,8 +18796,8 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["gcp", "no_cost_change"],
+    "notes": "The commit changes the default setting of filtering certain types of logs, but it is not clear how this results in cost savings"
   },
   {
     "url": "https://github.com/hazelops/terraform-aws-ecs-datadog-agent/commit/a10df203e8892e1a868bd88d798589719a582ba6",
@@ -20167,8 +20167,8 @@
       "awareness",
       "storage"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "cheaper_volume"],
+    "notes": "Move from gp2 to sc1"
   },
   {
     "url": "https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305",
@@ -21596,8 +21596,8 @@
       "saving",
       "feature"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["azure", "remove_log_analytics"],
+    "notes": "The commit makes the use of Log Analytics for the AKS cluster optional"
   },
   {
     "url": "https://github.com/nagpach/terraform-example-aws-vpc/commit/35d26fd046185ae079e09fa6435c41ae685e679e",
@@ -21799,8 +21799,8 @@
       "instance",
       "awareness"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": ["aws", "remove_eip"],
+    "notes": "The commit makes an EIP configurable and defaults it to false"
   },
   {
     "url": "https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935",
