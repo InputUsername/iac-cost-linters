@@ -1,0 +1,152 @@
+name,description,count
+
+no_cost_change,The commit contents do not reflect a change related to cost awareness or cost savings,179
+
+aws,Specific to Amazon Web Services,363
+gcp,Specific to Google Cloud Platform,64
+azure,Specific to Azure,52
+digitalocean,Specific to Digital Ocean,12
+scaleway,Specific to Scaleway,3
+hcloud,Specific to Hetzner Cloud,2
+ibm,Specific to IBM Cloud,2
+oracle,Specific to Oracle Cloud,2
+alicloud,Specific to Alibaba Cloud,1
+ovh,Specific to OVHcloud,1
+
+add_billing_alarm,Add a CloudWatch alarm for a monthly billing threshold,17
+add_budget,Use an AWS budget to receive billing alarms,9
+replace_billing_alarm_budget,Use an AWS budget instead of a CloudWatch billing alarm,1
+
+use_spot_instance,Use Spot instances,6
+add_preemptible,Use preemptible compute instances,3
+use_spot_fleet,Use AWS Spot Fleet instead of EC2,2
+use_fargate_spot_capacity_provider,Use Fargate Spot capacity provider for ECS,1
+
+add_lifecycle_rule,Add lifecycle rules to S3 buckets to drop old data,6
+
+cheaper_instance,Use a cheaper compute instance,74
+
+new_gen,Newer resource generations tend to be cheaper,34
+
+cheaper_volume,Use a cheaper storage volume,16
+cheaper_disk_type,Use a cheaper disk type,10
+
+dynamo_on_demand,Use PAY_PER_REQUEST billing type for DynamoDB,20
+dynamo_reduce_rw_capacity,Reduce read/write capacity for DynamoDB,5
+remove_dynamo_global_secondary_indices,Stop using global secondary indices in Dynamo,1
+
+remove_nat_gateway,Disable NAT gateway,22
+reduce_nat_gateways,Reduce the number of NAT gateways,4
+use_ec2_as_nat_gateway,Use EC2 instance as a NAT gateway,4
+remove_nat,Stop using NAT,8
+remove_eip,Remove elastic IP,8
+reduce_eip,Reduce the number of EIPs,2
+remove_private_subnet,Remove private VPC subnet,7
+reduce_subnets,Reduce the number of subnets,2
+reduce_vpc_endpoint_subnets,Reduce the number of VPC endpoint subnets,1
+remove_loadbalancer,Disable load balancer,3
+remove_alb,Remove ALB,3
+use_alb,Use ALB instead of ELB,1
+reduce_nlb,Reduce the number of network load balancers,1
+remove_route_table,Remove route table,2
+remove_route,Remove route,1
+remove_vpn,Remove use of VPN,1
+remove_firewall,Remove firewall,1
+remove_transit_gateway,Stop using a transit gateway,1
+associate_public_ip,Allow public IP addresses on instances instead of using NAT,1
+remove_waf,Disable WAF,1
+
+smaller_disk,Use a smaller disk size,11
+less_memory,Use less memory,4
+less_cpu_cores,Use fewer CPU cores,2
+less_cpu,Reduce CPU utilization,2
+lambda_less_memory,Use less memory for a Lambda,1
+
+remove_status_check,Remove Route53 status check,3
+remove_cloudwatch_metrics,Remove CloudWatch metrics,1
+remove_cloudwatch_logs,Stop using CloudWatch logs,1
+remove_log_analytics,Stop using Azure Log Analytics,1
+remove_container_insights,Disable Container Insights for an ECS cluster,1
+reduce_cloudwatch_retention,Reduce the retention period of a CloudWatch log group,1
+remove_audit_logs,Remove GCP audit logs,1
+remove_cloudfront_logs,Stop using logs for CloudFront,1
+remove_fluentbit_annotations,Disable annotations in Fluent Bit logs to reduce CloudWatch log size,1
+remove_fluentbit_labels,Disable labels in Fluent Bit logs to reduce CloudWatch log size,1
+
+
+
+
+
+explicit_value,Explicitly specify a value because the default is (too) high,7
+
+reduce_instance_count,Reduce the number of instances,7
+
+cheaper_area,Move to a cheaper region/area,6
+reduce_az,Reduce the number of availability zones used,3
+
+cheaper_os,Use a cheaper operating system,5
+cheaper_image,Use cheaper machine image,1
+smaller_image,Use a smaller image size,1
+
+cheaper_provider,Move to a cheaper cloud provider,3
+remove_gcp,Stop using GCP entirely,2
+
+remove_iops,Remove provisioned IOPS to use cheaper storage,2
+reduce_iops,Reduce volume IOPS,1
+
+use_global_loadbalancing,Use global HTTP/TCP proxy load balancing instead of regional network load balancers,2
+add_s3_vpc_endpoint,Add a VPC endpoint for S3,2
+add_iam_policy,Add IAM policy to deny creation of expensive resources,2
+remove_dns_zones,Remove DNS zones,2
+remove_ssm_endpoint,Disable SSM endpoint,2
+reduce_node_count,Reduce the number of nodes used by a node pool,2
+cheaper_container_registry,Use a cheaper container registry,2
+expressroute_local_tier,Use Local tier for ExpressRoute to save egress traffic costs,2
+reduce_mssql_min_capacity,Reduce the minimum capacity of an MSSQL database,2
+use_default_kms_key,Use the default KMS key for a service instead of creating one,2
+remove_dataflow,Stop using Google Dataflow,1
+remove_eks,Stop using EKS,1
+cheaper_redis_cache,Use a cheaper Redis cache,1
+remove_iam,Remove IAM,1
+cheaper_rds_cluster,Use a cheaper RDS instance,1
+auto_stop_1h,Use an auto_stop of at least 1h,1
+use_single_instance_aurora,Use RDS Aurora with one instance instead of a regular RDS instance,1
+add_placement_strategy,Add placement strategies to an ECS service,1
+reduce_cloudfront_cache_allowed_methods,Reduce allowed methods for CloudFront distribution (default) cache behavior,1
+reduce_node_pools,Reduce the number of GKE container node pools,1
+cheaper_service_plan,Move to a cheaper service plan tier,1
+nat_host_custom_machine_type,Use custom machine type for GCE NAT hosts,1
+reduce_rds_capacity,Reduce the maximum RDS cluster capacity,1
+use_same_az_public_private_subnet,Use the same availability zone for public and private subnets,1
+ebs_delete_on_termination,Delete EC2 root block device on termination instead of keeping it in EBS,1
+remove_container_registry,Stop using a specific container registry,1
+remove_glacier_transition,Remove a lifecycle rule transition on S3 buckets to Glacier,1
+remove_dataflow_job,Stop using a Google DataFlow job,1
+reduce_s3_expiration,Reduce the expiration time of S3 data,1
+remove_node_pool_autoscaling,Remove autoscaling from a GCP container node pool,1
+add_ecr_lifecycle_policy,Add a lifecycle policy for ECR to drop images after some time,1
+reduce_dynamo_tables,Reduce the number of DynamoDB tables,1
+remove_external_vpc_endpoint,Remove an external VPC endpoint,1
+use_full_glacier_time,"Use at least 90 days for Glacier S3 archives, since that is the minimum billed period",1
+reduce_efs_ia_transition,Reduce the transition time to Infrequent Access for EFS,1
+cheaper_aks_loadbalancer,Use Basic instead of Standard load balancer SKU for AKS,1
+add_shared_vpc_host_project,Add a shared VPC host project to only allocate one NAT instance,1
+remove_codebuild,Remove CodeBuild,1
+add_delete_marker_replication,Enable delete marker replication on S3 buckets when using a replication configuration,1
+remove_transfer_acceleration,Remove transfer acceleration from S3 buckets,1
+reduce_spot_fleet_price,Use a lower price for Spot fleet requests,1
+add_resource_group_cost_management_export,Add a cost management export to a resource gropu,1
+add_consumption_budget_resource_group,Add a consumption budget for a resource group,1
+use_bucket_key,Use S3 Bucket Keys for SSE-KMS,1
+use_mssql_vm_payg,Use PAYG SQL license type for MSSQL virtual machines,1
+increase_billing_alarm_period,Increase the billing alarm period,1
+use_standard_credit_specification,Use standard credit specification instead of unlimited,1
+cheaper_codebuild_compute,Use cheaper compute for CodeBuild,1
+use_mssql_serverless,Use serverless SKU type for MSSQL database,1
+remove_sns_alarm,Stop using SNS alarms,1
+remove_guard_duty,Stop using GuardDuty,1
+use_standard_sql_db_edition,Use Standard edition for an SQL database,1
+cheaper_service_objective,Use a cheaper service objective for an SQL database,1
+remove_rds_instance,Remove an RDS instance,1
+remove_sqs,Stop using SQS,1
+lambda_max_concurrency,Set a maximum concurrency for Lambda functions,1
