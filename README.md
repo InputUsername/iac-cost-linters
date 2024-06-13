@@ -2,6 +2,7 @@
 
 Code and data for my master's thesis on cost issues in cloud software (Terraform) artifacts.
 
+<!--
 ## Scripts
 - `collect_data.ipynb` is used to collect commit diffs and set up `diffs.json` and `errors.json` files; usage:
   1. create a file `TOKEN.txt` containing a GitHub access token
@@ -20,3 +21,4 @@ Code and data for my master's thesis on cost issues in cloud software (Terraform
     - `codes`
     - `notes`
 - `errors.json` contains commits which caused errors; this is included for completeness but otherwise not used
+-->
