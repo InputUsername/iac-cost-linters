@@ -30,7 +30,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The commit only adds code to provision a Digital Ocean droplet"
   },
   {
@@ -57,7 +60,10 @@
       "networking",
       "awareness"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Comment out the NAT gateway"
   },
   {
@@ -84,7 +90,10 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "cheaper_area"],
+    "codes": [
+      "aws",
+      "cheaper_area"
+    ],
     "notes": "Moving from sa-east-1 to us-east-1 which was cheaper according to the commit message"
   },
   {
@@ -143,7 +152,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -170,7 +182,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "Only changes the name of a variable (billing_account to billing_account_id)"
   },
   {
@@ -229,7 +244,12 @@
       "saving",
       "cluster"
     ],
-    "codes": ["gcp", "smaller_disk", "cheaper_disk_type", "remove_loadbalancer"],
+    "codes": [
+      "gcp",
+      "smaller_disk",
+      "cheaper_disk_type",
+      "remove_loadbalancer"
+    ],
     "notes": "Use a smaller disk (20 -> 10gb), cheaper disk type (pd-ssd -> pd-standard) (both not in a Terraform file); remove the use of a load balancer"
   },
   {
@@ -264,7 +284,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit makes prod/non-prod environments configurable for potential cost savings in non-prod, but the cost savings are not implemented"
   },
   {
@@ -283,7 +306,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -302,7 +328,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Moving from t2.large to t2.medium"
   },
   {
@@ -329,7 +358,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -356,7 +388,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "cheaper_rds_cluster"],
+    "codes": [
+      "aws",
+      "cheaper_rds_cluster"
+    ],
     "notes": "Move from db.r3.large to db.r2.small"
   },
   {
@@ -375,7 +410,10 @@
       "awareness",
       "policy"
     ],
-    "codes": ["oracle", "no_cost_change"],
+    "codes": [
+      "oracle",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -402,7 +440,10 @@
       "awareness",
       "policy"
     ],
-    "codes": ["oracle", "no_cost_change"],
+    "codes": [
+      "oracle",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -422,7 +463,10 @@
       "increase",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit enables functionality with 'negligible' cost"
   },
   {
@@ -456,7 +500,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "lambda_less_memory"],
+    "codes": [
+      "aws",
+      "lambda_less_memory"
+    ],
     "notes": "Reducing the memory size of a Lambda"
   },
   {
@@ -499,7 +546,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit adds a variable for a billing account"
   },
   {
@@ -549,7 +599,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "add_budget"],
+    "codes": [
+      "aws",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -575,7 +628,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit enables cost management functionality, but there is no cost smell"
   },
   {
@@ -634,7 +690,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.nano to t3.nano"
   },
   {
@@ -653,7 +713,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_A0 to Standard_B2s"
   },
   {
@@ -688,7 +751,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "remove_dataflow"],
+    "codes": [
+      "gcp",
+      "remove_dataflow"
+    ],
     "notes": "Stop using Dataflow which is 'prohibitively expensive' according to the commit message"
   },
   {
@@ -707,7 +773,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit set read/write capacity to 0 if billing mode is PAY_PER_REQUEST, but this does not do anything"
   },
   {
@@ -758,7 +827,11 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "reduce_subnets", "remove_nat"],
+    "codes": [
+      "aws",
+      "reduce_subnets",
+      "remove_nat"
+    ],
     "notes": "Move to one subnet, removing 'costly' NAT"
   },
   {
@@ -777,7 +850,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "use_full_glacier_time"],
+    "codes": [
+      "aws",
+      "use_full_glacier_time"
+    ],
     "notes": "Glacier charges an 'early deletion fee' when deleting data before 90 days have passed by charging for the 90 days anyway; using the full 90 days therefore does not cost more and is more cost-effective"
   },
   {
@@ -853,7 +929,11 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from m4.large to m5.large"
   },
   {
@@ -888,7 +968,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from m4.xlarge to m5.xlarge"
   },
   {
@@ -907,7 +991,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from m4.xlarge to m5.xlarge"
   },
   {
@@ -927,7 +1015,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Move to a larger/more expensive instance due to CPU limitations"
   },
   {
@@ -946,7 +1037,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "new_gen"],
+    "codes": [
+      "aws",
+      "new_gen"
+    ],
     "notes": "Move from db.m4.xlarge to db.m5.2xlarge because of CPU limitations; the newer gen is cheaper, but the instance is more expensive"
   },
   {
@@ -966,7 +1060,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Move to a larger/more expensive instance to reduce computation time; cost is not affected according to the commit"
   },
   {
@@ -985,7 +1082,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Move to a larger/more expensive instance due to CPU limits, without affecting cost"
   },
   {
@@ -1020,7 +1120,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -1039,7 +1142,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Move to a larger/more expensive instance due to RAM limitations, without affecting cost"
   },
   {
@@ -1060,7 +1166,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Move to a larger/more expensive instance due to CPU limitations, increasing cost"
   },
   {
@@ -1088,7 +1197,10 @@
       "instance",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Move to a larger/more expensive instance due to RDS limitations, increasing cost"
   },
   {
@@ -1116,7 +1228,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "No change, only abstracting an instance type to a variable"
   },
   {
@@ -1135,7 +1250,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "add_lifecycle_rule"],
+    "codes": [
+      "aws",
+      "add_lifecycle_rule"
+    ],
     "notes": "Add lifecycle rules for S3 buckets to drop old data and save costs"
   },
   {
@@ -1154,7 +1272,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3 which is 'cheaper and faster'"
   },
   {
@@ -1181,7 +1303,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3 which is 'cheaper and faster'"
   },
   {
@@ -1200,7 +1326,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "reduce_nat_gateways"],
+    "codes": [
+      "aws",
+      "reduce_nat_gateways"
+    ],
     "notes": "Reduce the number of NAT gateways, which are expensive (use_single_nat_gateway = true)"
   },
   {
@@ -1219,7 +1348,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Disable the VPC NAT gateway (vpc_enable_nat_gateway = false) to reduce costs"
   },
   {
@@ -1278,7 +1410,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "remove_eks"],
+    "codes": [
+      "aws",
+      "remove_eks"
+    ],
     "notes": "Move from EKS to a self-managed Minikube"
   },
   {
@@ -1305,7 +1440,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "add_preemptible"],
+    "codes": [
+      "gcp",
+      "add_preemptible"
+    ],
     "notes": "Move to preemptible compute instances (preemptible = true) which are cheaper"
   },
   {
@@ -1380,7 +1518,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "reduce_vpc_endpoint_subnets"],
+    "codes": [
+      "aws",
+      "reduce_vpc_endpoint_subnets"
+    ],
     "notes": "Reduce the number of VPC endpoint subnets to 1, saving cost"
   },
   {
@@ -1439,7 +1580,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -1459,7 +1603,10 @@
       "feature",
       "storage"
     ],
-    "codes": ["aws", "remove_iops"],
+    "codes": [
+      "aws",
+      "remove_iops"
+    ],
     "notes": "Remove provisioned IOPS from a DB instance to use cheaper storage"
   },
   {
@@ -1479,7 +1626,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "cheaper_redis_cache"],
+    "codes": [
+      "azure",
+      "cheaper_redis_cache"
+    ],
     "notes": "Move from P3 to P1 Redis cache size"
   },
   {
@@ -1506,7 +1656,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "The commit adds a CloudWatch alarm for billing; there is no cost smell, but this may be useful as a recommendation"
   },
   {
@@ -1541,7 +1694,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -1720,7 +1876,12 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_os", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_os",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from RHEL to CentOS; move from t2 instances to t3"
   },
   {
@@ -1763,7 +1924,10 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "reduce_az"],
+    "codes": [
+      "aws",
+      "reduce_az"
+    ],
     "notes": "Reduce the number of availability zones used for EKS to 1 to save costs"
   },
   {
@@ -2126,7 +2290,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "remove_iam"],
+    "codes": [
+      "aws",
+      "remove_iam"
+    ],
     "notes": "Remove IAM user 'as its just creating cost / confusion issues'"
   },
   {
@@ -2186,7 +2353,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "use_global_loadbalancing"],
+    "codes": [
+      "gcp",
+      "use_global_loadbalancing"
+    ],
     "notes": "Move Ingress from regional network load balancers to global HTTP/TCP Proxy load balancing; Google bills the first 5 global and regional forwarding rules separately."
   },
   {
@@ -2245,7 +2415,11 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_private_subnet", "remove_nat"],
+    "codes": [
+      "aws",
+      "remove_private_subnet",
+      "remove_nat"
+    ],
     "notes": "Remove private subnet and NAT to reduce costs"
   },
   {
@@ -2335,7 +2509,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "reduce_node_count", "cheaper_disk_type"],
+    "codes": [
+      "azure",
+      "reduce_node_count",
+      "cheaper_disk_type"
+    ],
     "notes": "Move from 4 to 3 nodes and from Premium_LRS to Standard_LRS storage"
   },
   {
@@ -2362,7 +2540,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "use_spot_fleet"],
+    "codes": [
+      "aws",
+      "use_spot_fleet"
+    ],
     "notes": "Add support for using AWS Spot Fleet instead of an EC2 instance"
   },
   {
@@ -2381,7 +2562,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["ovh", "no_cost_change"],
+    "codes": [
+      "ovh",
+      "no_cost_change"
+    ],
     "notes": "The commit increases node count and enables monthly billing, which immediately charges for a full month, hence increasing costs when experimenting"
   },
   {
@@ -2408,7 +2592,11 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "reduce_efs_ia_transition", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "reduce_efs_ia_transition",
+      "cheaper_instance"
+    ],
     "notes": "Transition EFS to infrequent access after 7 days instead of 30 and move from m5.xlarge to t2.micro"
   },
   {
@@ -2467,7 +2655,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_vpn"],
+    "codes": [
+      "aws",
+      "remove_vpn"
+    ],
     "notes": "Stop using VPN 'since it is too expensive'"
   },
   {
@@ -2486,7 +2677,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["gcp", "remove_gcp"],
+    "codes": [
+      "gcp",
+      "remove_gcp"
+    ],
     "notes": "The commit moves away from GCP entirely to save on cost"
   },
   {
@@ -2514,7 +2708,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from r5.2xlarge to r5.xlarge"
   },
   {
@@ -2533,7 +2730,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -2567,7 +2767,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit message mentions cost, but there is no cost smell"
   },
   {
@@ -2586,7 +2789,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.medium to t3.medium"
   },
   {
@@ -2606,7 +2813,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from r4.4xlarge to r4.xlarge"
   },
   {
@@ -2705,7 +2915,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3"
   },
   {
@@ -2724,7 +2938,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -2871,7 +3088,14 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "remove_private_subnet", "reduce_subnets", "remove_route_table", "remove_alb", "reduce_instance_count"],
+    "codes": [
+      "aws",
+      "remove_private_subnet",
+      "reduce_subnets",
+      "remove_route_table",
+      "remove_alb",
+      "reduce_instance_count"
+    ],
     "notes": "The commit implements multiple cost related changes: removing a private subnet, reducing the number of public subnets, removing route tables, removing ALB and moving functionality into a single instance"
   },
   {
@@ -3018,7 +3242,10 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Reverts the prior commit which was meant to make the infrastructure more cost effective"
   },
   {
@@ -3054,7 +3281,11 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "remove_private_subnet", "remove_nat"],
+    "codes": [
+      "aws",
+      "remove_private_subnet",
+      "remove_nat"
+    ],
     "notes": "Remove private subnet and NAT to reduce costs"
   },
   {
@@ -3176,7 +3407,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit lays groundwork for cost savings, but the commit itself does not address a cost smell"
   },
   {
@@ -3211,7 +3445,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "remove_gcp"],
+    "codes": [
+      "gcp",
+      "remove_gcp"
+    ],
     "notes": "The commit stops using GCP entirely to save on cost"
   },
   {
@@ -3270,7 +3507,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_dynamo_global_secondary_indices"],
+    "codes": [
+      "aws",
+      "remove_dynamo_global_secondary_indices"
+    ],
     "notes": ""
   },
   {
@@ -3296,7 +3536,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "cheaper_aks_loadbalancer"],
+    "codes": [
+      "azure",
+      "cheaper_aks_loadbalancer"
+    ],
     "notes": "Move from Standard to Basic load balancer SKU"
   },
   {
@@ -3339,7 +3582,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "use_spot_instance"],
+    "codes": [
+      "aws",
+      "use_spot_instance"
+    ],
     "notes": "Use Spot instances 'to get cheaper instances/hour'"
   },
   {
@@ -3390,7 +3636,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -3409,7 +3658,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -3428,7 +3680,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-32 to n1-standard-16"
   },
   {
@@ -3455,7 +3710,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["gcp", "cheaper_disk_type"],
+    "codes": [
+      "gcp",
+      "cheaper_disk_type"
+    ],
     "notes": "Move from pd-balanced to pd-standard"
   },
   {
@@ -3498,7 +3756,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "The commit adds billing alarms, although it does so using an external Terraform module"
   },
   {
@@ -3517,7 +3778,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from t2.medium to t2.small"
   },
   {
@@ -3568,7 +3832,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "auto_stop_1h"],
+    "codes": [
+      "aws",
+      "auto_stop_1h"
+    ],
     "notes": "Set auto_stop for aws_instances to 1h since that is the minimum billing period according to the commit"
   },
   {
@@ -3595,7 +3862,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["azure", "remove_firewall"],
+    "codes": [
+      "azure",
+      "remove_firewall"
+    ],
     "notes": "Stop using firewall because of cost and lack of public IP"
   },
   {
@@ -3678,7 +3948,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.small to t3.small"
   },
   {
@@ -3745,7 +4019,9 @@
       "saving",
       "provider"
     ],
-    "codes": ["no_cost_change"],
+    "codes": [
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -3771,7 +4047,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -3791,7 +4070,10 @@
       "billing_mode",
       "storage"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -3866,7 +4148,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_cloudwatch_metrics"],
+    "codes": [
+      "aws",
+      "remove_cloudwatch_metrics"
+    ],
     "notes": "Made CloudWatch metrics configurable/optional to allow cost saving"
   },
   {
@@ -3925,7 +4210,10 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "cheaper_image"],
+    "codes": [
+      "aws",
+      "cheaper_image"
+    ],
     "notes": "Use a different machine image (AMI) which is cheaper"
   },
   {
@@ -3944,7 +4232,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_cloudwatch_logs"],
+    "codes": [
+      "aws",
+      "remove_cloudwatch_logs"
+    ],
     "notes": "Stop using CloudWatch logs (logging_level = OFF for aws_apigatewayv2_stage) and set limited retention_in_days for CloudWatch log group"
   },
   {
@@ -3962,7 +4253,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -3988,7 +4282,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway", "remove_eip"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway",
+      "remove_eip"
+    ],
     "notes": "Remove NAT gateway and elastic IP to reduce costs"
   },
   {
@@ -4006,7 +4304,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "This commit only removes variables, likely due to being missed in a previous commit"
   },
   {
@@ -4025,7 +4326,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit only updates the source of an external module related to billing alarms"
   },
   {
@@ -4044,7 +4348,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.micro to t3.nano"
   },
   {
@@ -4137,7 +4445,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "use_ec2_as_nat_gateway"],
+    "codes": [
+      "aws",
+      "use_ec2_as_nat_gateway"
+    ],
     "notes": "Add configuration to use an EC2 instance instead of a NAT gateway for cost savings"
   },
   {
@@ -4155,7 +4466,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["alicloud", "less_cpu_cores", "less_memory"],
+    "codes": [
+      "alicloud",
+      "less_cpu_cores",
+      "less_memory"
+    ],
     "notes": "Use fewer CPU cores and less memory for a compute instance"
   },
   {
@@ -4197,7 +4512,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "reduce_az"],
+    "codes": [
+      "aws",
+      "reduce_az"
+    ],
     "notes": "Made using a secondary availability zone configurable/optional"
   },
   {
@@ -4232,7 +4550,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "use_single_instance_aurora"],
+    "codes": [
+      "aws",
+      "use_single_instance_aurora"
+    ],
     "notes": "The commit moves from a regular RDS instance to an Aurora cluster with one instance, which is cheaper according to the commit message"
   },
   {
@@ -4354,7 +4675,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes, only introduces 'cost-optimized EBS'"
   },
   {
@@ -4437,7 +4761,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces a module for billing budget alerts, but there is no cost smell"
   },
   {
@@ -4456,7 +4783,10 @@
       "saving",
       "area"
     ],
-    "codes": ["azure", "cheaper_area"],
+    "codes": [
+      "azure",
+      "cheaper_area"
+    ],
     "notes": "Move from westeurope to northeurope which is 'mo cheapo'"
   },
   {
@@ -4492,7 +4822,11 @@
       "awareness",
       "provider"
     ],
-    "codes": ["digitalocean", "azure", "cheaper_provider"],
+    "codes": [
+      "digitalocean",
+      "azure",
+      "cheaper_provider"
+    ],
     "notes": "The commit moves from Digital Ocean to Azure, since Microsoft provides $5000 of credits to non-profits"
   },
   {
@@ -4511,7 +4845,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit only mentions low-cost without any related change; it also mentions that Terraform did not support lifecycle management for S3 buckets at that time, which it now does"
   },
   {
@@ -4530,7 +4867,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "add_lifecycle_rule"],
+    "codes": [
+      "aws",
+      "add_lifecycle_rule"
+    ],
     "notes": "Add lifecycle rules for S3 buckets to drop old data and save costs"
   },
   {
@@ -4692,7 +5032,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -4734,7 +5077,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "use_alb"],
+    "codes": [
+      "aws",
+      "use_alb"
+    ],
     "notes": ""
   },
   {
@@ -4753,7 +5099,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_E4s_v4 to Standard_B1s"
   },
   {
@@ -4827,7 +5176,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "use_spot_instance"],
+    "codes": [
+      "aws",
+      "use_spot_instance"
+    ],
     "notes": "Add the ability to configure Spot instances and autoscaling groups"
   },
   {
@@ -4853,7 +5205,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit updates a cost estimation in the readme, there are no relevant changes to Terraform files"
   },
   {
@@ -4921,7 +5276,10 @@
       "feature",
       "storage"
     ],
-    "codes": ["aws", "add_lifecycle_rule"],
+    "codes": [
+      "aws",
+      "add_lifecycle_rule"
+    ],
     "notes": "Add a (configurable) lifecycle rule to change storage class after 30 days"
   },
   {
@@ -5012,7 +5370,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["gcp", "reduce_az"],
+    "codes": [
+      "gcp",
+      "reduce_az"
+    ],
     "notes": "Reduce the number of zones used by the GKE master to 1"
   },
   {
@@ -5032,7 +5393,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit moves to a more expensive instance; the keyword 'cost' refers to the new instance costing 2x more"
   },
   {
@@ -5058,7 +5422,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from e2-medium to e2-micro"
   },
   {
@@ -5085,7 +5452,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "add_placement_strategy"],
+    "codes": [
+      "aws",
+      "add_placement_strategy"
+    ],
     "notes": "The commit message mentions that adding placement strategies for ECS saves on EC2 costs"
   },
   {
@@ -5105,7 +5475,10 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "add_s3_vpc_endpoint"],
+    "codes": [
+      "aws",
+      "add_s3_vpc_endpoint"
+    ],
     "notes": "According to the commit message, the lack of a VPC endpoint for S3 has nontrivial cost"
   },
   {
@@ -5123,7 +5496,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "cheaper_instance", "cheaper_disk_type"],
+    "codes": [
+      "azure",
+      "cheaper_instance",
+      "cheaper_disk_type"
+    ],
     "notes": "Move from Standard_D2s_v3 to Standard_DS1_v2"
   },
   {
@@ -5181,7 +5558,12 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "azure", "gcp", "no_cost_change"],
+    "codes": [
+      "aws",
+      "azure",
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5287,7 +5669,12 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "azure", "gcp", "no_cost_change"],
+    "codes": [
+      "aws",
+      "azure",
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5307,7 +5694,10 @@
       "instance",
       "storage"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_D2s_v3 to Standard_DS1_v2"
   },
   {
@@ -5328,7 +5718,11 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3"
   },
   {
@@ -5347,7 +5741,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit explicitly sets the instance type to m5.large which is supposedly less than the default, but the default value is unknown"
   },
   {
@@ -5365,7 +5762,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "explicit_value"],
+    "codes": [
+      "aws",
+      "explicit_value"
+    ],
     "notes": "The commit explicitly specifies storage_type = gp2 for an aws_db_instance, for cost savings"
   },
   {
@@ -5391,7 +5791,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5554,7 +5957,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "add_lifecycle_rule"],
+    "codes": [
+      "aws",
+      "add_lifecycle_rule"
+    ],
     "notes": "Large commit, but the cost-related change is adding lifecycle rules to S3 buckets"
   },
   {
@@ -5597,7 +6003,13 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_eip", "remove_nat_gateway", "remove_route_table", "remove_route"],
+    "codes": [
+      "aws",
+      "remove_eip",
+      "remove_nat_gateway",
+      "remove_route_table",
+      "remove_route"
+    ],
     "notes": "The commit essentially makes the EIP, NAT gateway, route table and route for a private subnet configurable to (optionally) save costs"
   },
   {
@@ -5624,7 +6036,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "reduce_cloudfront_cache_allowed_methods"],
+    "codes": [
+      "aws",
+      "reduce_cloudfront_cache_allowed_methods"
+    ],
     "notes": "The commit message mentions that reducing the number of allowed methods for a cloudfront_distribution's default_cache_behavior reduces cost"
   },
   {
@@ -5643,7 +6058,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit only adds a variable; the actual change likely reduces the number of NAT gateways, but this cannot be derived from just the variable change"
   },
   {
@@ -5670,7 +6088,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The change actually increases cost by using Premium tier in production instead of Developer tier"
   },
   {
@@ -5705,7 +6126,12 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen", "smaller_disk"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen",
+      "smaller_disk"
+    ],
     "notes": "Move from gp2 to gp3 and reduce size, except in production"
   },
   {
@@ -5803,7 +6229,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "reduce_node_pools"],
+    "codes": [
+      "gcp",
+      "reduce_node_pools"
+    ],
     "notes": "The commit consolidates GKE container node pools into one larger node pool to save cost"
   },
   {
@@ -5854,7 +6283,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -5873,7 +6305,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from m4.2xlarge to t3.2xlarge, t2.2xlarge to t3.2xlarge"
   },
   {
@@ -5924,7 +6360,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -5951,7 +6390,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -6003,7 +6445,11 @@
       "instance",
       "provider"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3"
   },
   {
@@ -6022,7 +6468,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["azure", "cheaper_service_plan"],
+    "codes": [
+      "azure",
+      "cheaper_service_plan"
+    ],
     "notes": "Move from Standard S1 to Basic B1"
   },
   {
@@ -6065,7 +6514,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -6108,7 +6560,10 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit moves to a more expensive instance family (t2.xlarge to c4.xlarge)"
   },
   {
@@ -6175,7 +6630,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -6203,7 +6661,10 @@
       "awareness",
       "increase"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -6262,7 +6723,10 @@
       "saving",
       "policy"
     ],
-    "codes": ["aws", "add_iam_policy"],
+    "codes": [
+      "aws",
+      "add_iam_policy"
+    ],
     "notes": "Adds IAM policies to deny creation of expensive EC2, RDS and reserved instances"
   },
   {
@@ -6297,7 +6761,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -6316,7 +6783,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-8 to e1-standard-8"
   },
   {
@@ -6336,7 +6806,11 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from c3.4xlarge to c4.large and t2.medium to t2.micro"
   },
   {
@@ -6356,7 +6830,10 @@
       "saving",
       "awareness"
     ],
-    "codes": ["gcp", "nat_host_custom_machine_type"],
+    "codes": [
+      "gcp",
+      "nat_host_custom_machine_type"
+    ],
     "notes": "Use a custom machine type for NAT hosts 'reducing monthly costs by ~$21/host'"
   },
   {
@@ -6375,7 +6852,10 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit only adds a billing policy to the admin group"
   },
   {
@@ -6402,7 +6882,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from t2.small to t2.nano"
   },
   {
@@ -6430,7 +6913,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -6458,7 +6944,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -6493,7 +6982,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "The commit makes instances configurable and moves from i2.xlarge to r3.2xlarge and from m4.xlarge to m3.medium"
   },
   {
@@ -6544,7 +7036,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit makes ALB configurable/optional but there is no underlying cost smell"
   },
   {
@@ -6563,7 +7058,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.small to t3.small"
   },
   {
@@ -6621,7 +7120,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "smaller_disk", "reduce_instance_count"],
+    "codes": [
+      "aws",
+      "smaller_disk",
+      "reduce_instance_count"
+    ],
     "notes": "The commit makes the size of the root_block_device of aws_launch_configuration instances configurable, and reduces it from 11 to 10 for both control plane and workers; also reduces the number of control plane instances in the control plane auto scaling group from 3 to 1"
   },
   {
@@ -6648,7 +7151,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new functionality which does not cost anything"
   },
   {
@@ -6691,7 +7197,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new functionality which does not cost anything"
   },
   {
@@ -6710,7 +7219,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit makes a cost-sensitive value (SKU) explicit so developers are aware of it, but there is no clear cost smell"
   },
   {
@@ -6737,7 +7249,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from m4.2xlarge to t2.small"
   },
   {
@@ -6764,7 +7279,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "replace_billing_alarm_budget"],
+    "codes": [
+      "aws",
+      "replace_billing_alarm_budget"
+    ],
     "notes": "Replaces the existing CloudWatch billing alarm by an AWS budget"
   },
   {
@@ -6967,7 +7485,11 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_container_insights", "reduce_cloudwatch_retention"],
+    "codes": [
+      "aws",
+      "remove_container_insights",
+      "reduce_cloudwatch_retention"
+    ],
     "notes": "The commit disables Container Insights on an ECS cluster and reduces log retention from 7 days to 1 day"
   },
   {
@@ -7282,7 +7804,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["scaleway", "no_cost_change"],
+    "codes": [
+      "scaleway",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -7318,7 +7843,10 @@
       "awareness",
       "increase"
     ],
-    "codes": ["gcp", "add_shared_vpc_host_project"],
+    "codes": [
+      "gcp",
+      "add_shared_vpc_host_project"
+    ],
     "notes": "Add a shared VPC host project to allow allocating a single cloud NAT instance"
   },
   {
@@ -7352,7 +7880,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -7379,7 +7910,10 @@
       "domain",
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -7399,7 +7933,10 @@
       "awareness",
       "increase"
     ],
-    "codes": ["gcp", "remove_nat"],
+    "codes": [
+      "gcp",
+      "remove_nat"
+    ],
     "notes": "Remove NAT instance because of cost"
   },
   {
@@ -7417,7 +7954,10 @@
     "existing_codes": [
       "increase"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit increases the instance type and size of an autoscaling group, increasing cost"
   },
   {
@@ -7435,7 +7975,10 @@
     "existing_codes": [
       "increase"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit increases the instance size and with it, cost"
   },
   {
@@ -7462,7 +8005,10 @@
       "awareness",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -7505,7 +8051,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "cheaper_os"],
+    "codes": [
+      "aws",
+      "cheaper_os"
+    ],
     "notes": "Move from ami-ubuntu to ami-amazonlinux2"
   },
   {
@@ -7652,7 +8201,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces a variety of changes but there is no clear cost smell"
   },
   {
@@ -7671,7 +8223,10 @@
       "awareness",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit increases a timeout which, if too high, might incur costs, but the commit does not address a cost smell itself"
   },
   {
@@ -7746,7 +8301,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_codebuild"],
+    "codes": [
+      "aws",
+      "remove_codebuild"
+    ],
     "notes": "Remove CodeBuild in favor of CircleCI"
   },
   {
@@ -7773,7 +8331,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "add_lifecycle_rule"],
+    "codes": [
+      "aws",
+      "add_lifecycle_rule"
+    ],
     "notes": "Add lifecycle rules for S3 buckets"
   },
   {
@@ -7792,7 +8353,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "add_delete_marker_replication"],
+    "codes": [
+      "aws",
+      "add_delete_marker_replication"
+    ],
     "notes": "Make sure delete markers on S3 buckets are replicated to reduce storage costs"
   },
   {
@@ -7851,7 +8415,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit adds chatbot integration to a billing alarm but there is no cost smell"
   },
   {
@@ -7878,7 +8445,10 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "remove_transfer_acceleration"],
+    "codes": [
+      "aws",
+      "remove_transfer_acceleration"
+    ],
     "notes": "The commit removes transfer acceleration on an S3 bucket and documents some cost aspects"
   },
   {
@@ -7906,7 +8476,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "cheaper_disk_type"],
+    "codes": [
+      "gcp",
+      "cheaper_disk_type"
+    ],
     "notes": "Move from pd-ssd to pd-balanced"
   },
   {
@@ -7926,7 +8499,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from p2.xlarge + p3.2xlarge to g4dn.xlarge"
   },
   {
@@ -7945,7 +8521,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "associate_public_ip"],
+    "codes": [
+      "aws",
+      "associate_public_ip"
+    ],
     "notes": "Add associate_public_ip_address to aws_instances to save on NAT costs"
   },
   {
@@ -8051,7 +8630,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -8094,7 +8676,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit only makes an instance type configurable for potential cost savings"
   },
   {
@@ -8113,7 +8698,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The change increases cost by doubling the number of Droplets"
   },
   {
@@ -8132,7 +8720,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from t2.micro to t3a.micro"
   },
   {
@@ -8287,7 +8878,11 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway", "use_ec2_as_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway",
+      "use_ec2_as_nat_gateway"
+    ],
     "notes": "The commit makes using a NAT gateway configurable, if disabled it will use a regular EC2 instance as a NAT gateway"
   },
   {
@@ -8346,7 +8941,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes, only enables Infracost in CI"
   },
   {
@@ -8421,7 +9019,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit renames a custom module related to billing alarms and updates some documentation but there is no cost smell"
   },
   {
@@ -8448,7 +9049,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit renames a variable related to billing alarms but there is no cost smell"
   },
   {
@@ -8522,7 +9126,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit archives costly EKS functionality but there is no cost smell"
   },
   {
@@ -8549,7 +9156,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "dynamo_reduce_rw_capacity"],
+    "codes": [
+      "aws",
+      "dynamo_reduce_rw_capacity"
+    ],
     "notes": "Reduce the read and write capacity for DynamoDB from 20 to 1"
   },
   {
@@ -8568,7 +9178,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-1 to g1-small"
   },
   {
@@ -9083,7 +9696,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["azure", "use_spot_instance"],
+    "codes": [
+      "azure",
+      "use_spot_instance"
+    ],
     "notes": "Enables Spot priority on an Azure Kubernetes cluster node pool"
   },
   {
@@ -9102,7 +9718,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "dynamo_reduce_rw_capacity"],
+    "codes": [
+      "aws",
+      "dynamo_reduce_rw_capacity"
+    ],
     "notes": "Reduce the read and write capacity for DynamoDB from 5 to 1"
   },
   {
@@ -9153,7 +9772,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_budget"],
+    "codes": [
+      "aws",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -9172,7 +9794,11 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "cheaper_instance", "new_gen"],
+    "codes": [
+      "azure",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from Standard_DS1_v2 to Standard_B2s and from Standard_F1 to Standard_DS1_v2"
   },
   {
@@ -9200,7 +9826,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit moves data into S3 buckets which are cheaper than the previous solution, but there is no underlying cost smell"
   },
   {
@@ -9234,7 +9863,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Updates port configurations which according to the commit message allows for potential future cost savings"
   },
   {
@@ -9277,7 +9909,10 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "reduce_nlb"],
+    "codes": [
+      "aws",
+      "reduce_nlb"
+    ],
     "notes": "Reduce the number of NLBs to one per cluster"
   },
   {
@@ -9296,7 +9931,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.small to t3.small"
   },
   {
@@ -9388,7 +10027,10 @@
       "instance",
       "storage"
     ],
-    "codes": ["aws", "use_spot_fleet"],
+    "codes": [
+      "aws",
+      "use_spot_fleet"
+    ],
     "notes": "Use AWS Spot Fleet"
   },
   {
@@ -9687,7 +10329,10 @@
       "saving",
       "policy"
     ],
-    "codes": ["aws", "remove_loadbalancer"],
+    "codes": [
+      "aws",
+      "remove_loadbalancer"
+    ],
     "notes": "The commit contains many changes but the cost-related one is removing ALB"
   },
   {
@@ -9706,7 +10351,10 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "reduce_rds_capacity"],
+    "codes": [
+      "aws",
+      "reduce_rds_capacity"
+    ],
     "notes": "Explicitly configure the RDS cluster scaling_configuration max_capacity to limit it to 4"
   },
   {
@@ -9741,7 +10389,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["scaleway", "no_cost_change"],
+    "codes": [
+      "scaleway",
+      "no_cost_change"
+    ],
     "notes": "'Cheap' mentioned in the commit message only refers to using cheap instances, there is no underlying cost smell"
   },
   {
@@ -9760,7 +10411,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_volume"],
+    "codes": [
+      "aws",
+      "cheaper_volume"
+    ],
     "notes": "Move from gp3 to st1"
   },
   {
@@ -9835,7 +10489,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -9950,7 +10607,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["azure", "use_mssql_serverless"],
+    "codes": [
+      "azure",
+      "use_mssql_serverless"
+    ],
     "notes": "Use serverless azurerm_mssql_database instead of azurerm_sql_database"
   },
   {
@@ -9969,7 +10629,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit increases the instance size"
   },
   {
@@ -10004,7 +10667,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "remove_audit_logs"],
+    "codes": [
+      "gcp",
+      "remove_audit_logs"
+    ],
     "notes": "Make audit logs configurable, since using more logs may cost more"
   },
   {
@@ -10023,7 +10689,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "use_spot_instance"],
+    "codes": [
+      "aws",
+      "use_spot_instance"
+    ],
     "notes": "Set spot_price to use Spot instances and reduce cost"
   },
   {
@@ -10058,7 +10727,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Introduces a Terraform module but there is no underlying cost smell"
   },
   {
@@ -10109,7 +10781,10 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -10168,7 +10843,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -10196,7 +10874,10 @@
       "saving",
       "awareness"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -10247,7 +10928,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -10282,7 +10966,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "use_same_az_public_private_subnet"],
+    "codes": [
+      "aws",
+      "use_same_az_public_private_subnet"
+    ],
     "notes": "Using the same availability zone for public and private subnets avoids data transfer costs"
   },
   {
@@ -10325,7 +11012,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Adds a billing alarm (albeit using an external module)"
   },
   {
@@ -10368,7 +11058,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from t2.micro to t2.nano"
   },
   {
@@ -10387,7 +11080,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "less_cpu", "less_memory"],
+    "codes": [
+      "azure",
+      "less_cpu",
+      "less_memory"
+    ],
     "notes": "Reduce CPU from 0.5 to 0.1 and memory from 1.5 to 0.1"
   },
   {
@@ -10422,7 +11119,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_budget"],
+    "codes": [
+      "aws",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -10473,7 +11173,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -10492,7 +11195,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "use_spot_instance"],
+    "codes": [
+      "azure",
+      "use_spot_instance"
+    ],
     "notes": "Use Spot instances"
   },
   {
@@ -10519,7 +11225,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -10578,7 +11287,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -10605,7 +11317,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Adds warning and critical CloudWatch billing alarms"
   },
   {
@@ -10632,7 +11347,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-1 to g1-small"
   },
   {
@@ -10659,7 +11377,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -10679,7 +11400,10 @@
       "awareness",
       "increase"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The commit moves to a larger instance size which costs more"
   },
   {
@@ -10706,7 +11430,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "remove_eip"],
+    "codes": [
+      "aws",
+      "remove_eip"
+    ],
     "notes": "Comment out the EIP"
   },
   {
@@ -10725,7 +11452,12 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance", "smaller_disk", "reduce_spot_fleet_price"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "smaller_disk",
+      "reduce_spot_fleet_price"
+    ],
     "notes": "Move from c5a.large to t3a.medium, reduce root block volume size and reduce spot price"
   },
   {
@@ -10768,7 +11500,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "use_spot_instance"],
+    "codes": [
+      "aws",
+      "use_spot_instance"
+    ],
     "notes": "Use aws_spot_instance_request instead of aws_instance to use Spot instances and save cost"
   },
   {
@@ -10787,7 +11522,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_budget"],
+    "codes": [
+      "aws",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -10886,7 +11624,10 @@
       "instance",
       "increase"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -10953,7 +11694,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -10987,7 +11731,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -11102,7 +11849,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -11121,7 +11871,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from db.r5.large to db.r6g.large"
   },
   {
@@ -11139,7 +11893,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "use_fargate_spot_capacity_provider"],
+    "codes": [
+      "aws",
+      "use_fargate_spot_capacity_provider"
+    ],
     "notes": "Use Fargate Spot capacity provider for ECS instead of regular Fargate using capacity_provider_strategy capacity_provider = 'FARGATE_SPOT'"
   },
   {
@@ -11238,7 +11995,10 @@
       "saving",
       "area"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit comments out code, but there is no underlying cost smell"
   },
   {
@@ -11273,7 +12033,10 @@
       "domain",
       "saving"
     ],
-    "codes": ["gcp", "remove_dns_zones"],
+    "codes": [
+      "gcp",
+      "remove_dns_zones"
+    ],
     "notes": "Made DNS zones configurable/optional"
   },
   {
@@ -11348,7 +12111,10 @@
       "domain",
       "saving"
     ],
-    "codes": ["gcp", "remove_dns_zones"],
+    "codes": [
+      "gcp",
+      "remove_dns_zones"
+    ],
     "notes": "Made DNS zones configurable/optional"
   },
   {
@@ -11407,7 +12173,10 @@
       "saving",
       "area"
     ],
-    "codes": ["azure", "cheaper_area"],
+    "codes": [
+      "azure",
+      "cheaper_area"
+    ],
     "notes": "Move from eastus to eastus2"
   },
   {
@@ -11578,7 +12347,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -11605,7 +12377,11 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume", "remove_iops"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "remove_iops"
+    ],
     "notes": "Remove provisioned IOPS for EBS cost reduction and move from io1 to gp2 disk type"
   },
   {
@@ -11624,7 +12400,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit increases ActiveMQ throughput following a risk/cost evaluation that is not publicly accessible"
   },
   {
@@ -11643,7 +12422,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from c5.9xlarge to m5.8xlarge"
   },
   {
@@ -11662,7 +12444,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from m5.8xlarge to m5.xlarge"
   },
   {
@@ -11689,7 +12474,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit enables an API service required for billing alerts but does not add said alerts"
   },
   {
@@ -11708,7 +12496,11 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "smaller_disk", "reduce_iops"],
+    "codes": [
+      "aws",
+      "smaller_disk",
+      "reduce_iops"
+    ],
     "notes": "Reduce volume disk size from 150GB to 10GB and IOPS from 3000 to 2000"
   },
   {
@@ -11783,7 +12575,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -11802,7 +12597,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit adds an instance type to a set of variables but there is no cost smell"
   },
   {
@@ -11821,7 +12619,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit adds a set of variables to be able to use cheaper instances for certain tasks, so this could be coded that way, but it is not used elsewhere"
   },
   {
@@ -11840,7 +12641,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit bumps min_size for autoscaling since the authors are using reserved instances which are paid for regardless of use, but there is no clear cost smell"
   },
   {
@@ -11891,7 +12695,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_private_subnet"],
+    "codes": [
+      "aws",
+      "remove_private_subnet"
+    ],
     "notes": "'Remove private subnet cuz expensive' by commenting out related code"
   },
   {
@@ -11910,7 +12717,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Sets a variable 'nat_gateway_enabled' to false by default, presumably used to determine whether to create a NAT gateway"
   },
   {
@@ -11984,7 +12794,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -12011,7 +12824,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.medium to t3.medium"
   },
   {
@@ -12030,7 +12847,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB (although this is done using an external module)"
   },
   {
@@ -12049,7 +12869,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "cheaper_disk_type"],
+    "codes": [
+      "gcp",
+      "cheaper_disk_type"
+    ],
     "notes": "Move from PD_SSD to PD_HDD"
   },
   {
@@ -12068,7 +12891,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["gcp", "cheaper_disk_type"],
+    "codes": [
+      "gcp",
+      "cheaper_disk_type"
+    ],
     "notes": "Move from PD_SSD to PD_HDD"
   },
   {
@@ -12087,7 +12913,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_ssm_endpoint"],
+    "codes": [
+      "aws",
+      "remove_ssm_endpoint"
+    ],
     "notes": "Disable SSM endpoint (enable_ssm_endpoint = false in VPC module) since it has an hourly cost"
   },
   {
@@ -12106,7 +12935,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from t3.nano to t3a.nano"
   },
   {
@@ -12141,7 +12973,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -12256,7 +13091,11 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "use_global_loadbalancing", "remove_loadbalancer"],
+    "codes": [
+      "gcp",
+      "use_global_loadbalancing",
+      "remove_loadbalancer"
+    ],
     "notes": "Use global load balancing instead of regional network load balancers, and remove load balancers from worker pools"
   },
   {
@@ -12315,7 +13154,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.small to t3.small"
   },
   {
@@ -12335,7 +13178,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "remove_external_vpc_endpoint"],
+    "codes": [
+      "aws",
+      "remove_external_vpc_endpoint"
+    ],
     "notes": "External VPC endpoints are unnecessary in this specific case and increase the AWS bill by a large amount"
   },
   {
@@ -12354,7 +13200,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "reduce_node_count"],
+    "codes": [
+      "gcp",
+      "reduce_node_count"
+    ],
     "notes": "Use a single node in a node pool instead of two for cost savings"
   },
   {
@@ -12373,7 +13222,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "Increase node count in an AKS cluster, 'cheap' in the commit message refers to this not being a problem"
   },
   {
@@ -12424,7 +13276,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -12443,7 +13298,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_status_check"],
+    "codes": [
+      "aws",
+      "remove_status_check"
+    ],
     "notes": "Removes a module which provides a Route53 status check and CloudWatch alarm costing $2.75/month"
   },
   {
@@ -12462,7 +13320,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit moves to a larger instance size which costs more"
   },
   {
@@ -12505,7 +13366,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -12523,7 +13387,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -12542,7 +13409,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -12560,7 +13430,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit comments out code, but there is no underlying cost smell"
   },
   {
@@ -12588,7 +13461,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "The commit adds new features but this does include a billing alarm for cost awareness"
   },
   {
@@ -12623,7 +13499,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "less_memory"],
+    "codes": [
+      "aws",
+      "less_memory"
+    ],
     "notes": "Reduce memory for ECS tasks from 1900MB to 950MB"
   },
   {
@@ -12658,7 +13537,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -12733,7 +13615,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["gcp", "add_budget"],
+    "codes": [
+      "gcp",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -12832,7 +13717,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -12891,7 +13779,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_D2s_v3 to Standard_B2s"
   },
   {
@@ -12910,7 +13801,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Remove NAT gateway in VPC 'for now' to save costs"
   },
   {
@@ -12929,7 +13823,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Remove NAT gateway in VPC"
   },
   {
@@ -12948,7 +13845,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Remove NAT gateway in VPC"
   },
   {
@@ -12967,7 +13867,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "The commit makes the billing mode configurable to be able to use PAY_PER_REQUEST (although it still defaults to PROVISIONED)"
   },
   {
@@ -12986,7 +13889,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from e2-micro to f1-micro"
   },
   {
@@ -13005,7 +13911,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_DS2 to Standard_DS1"
   },
   {
@@ -13024,7 +13933,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_os"],
+    "codes": [
+      "aws",
+      "cheaper_os"
+    ],
     "notes": "Move to CentOS 7 which is cheaper"
   },
   {
@@ -13075,7 +13987,10 @@
       "saving",
       "area"
     ],
-    "codes": ["gcp", "cheaper_area"],
+    "codes": [
+      "gcp",
+      "cheaper_area"
+    ],
     "notes": "Move region from europe-north1 to europe-west2 and zone from europe-north1-a to europe-west2-b"
   },
   {
@@ -13102,7 +14017,12 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "less_memory", "less_cpu"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "less_memory",
+      "less_cpu"
+    ],
     "notes": "Move from m5.xlarge to m5.large, CPU limit/guarantee from 4/3 to 2/1.5, memory limit/guarantee from 16G/14G to 9.5G/9G"
   },
   {
@@ -13121,7 +14041,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from m5.large to t3.micro and t3.medium"
   },
   {
@@ -13148,7 +14071,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources but there is no underlying cost smell"
   },
   {
@@ -13175,7 +14101,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["gcp", "add_budget"],
+    "codes": [
+      "gcp",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -13201,7 +14130,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "cheaper_container_registry"],
+    "codes": [
+      "gcp",
+      "cheaper_container_registry"
+    ],
     "notes": "Move from gcr.io to eu.gcr.io to save costs"
   },
   {
@@ -13284,7 +14216,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -13311,7 +14246,11 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "smaller_disk", "explicit_value"],
+    "codes": [
+      "aws",
+      "smaller_disk",
+      "explicit_value"
+    ],
     "notes": "Explicitly specify a value for volume size for EKS workers"
   },
   {
@@ -13330,7 +14269,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["azure", "expressroute_local_tier"],
+    "codes": [
+      "azure",
+      "expressroute_local_tier"
+    ],
     "notes": "Move from Standard to Local tier for ExpressRoute to save egress traffic costs"
   },
   {
@@ -13348,7 +14290,11 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "remove_eip", "remove_nat"],
+    "codes": [
+      "aws",
+      "remove_eip",
+      "remove_nat"
+    ],
     "notes": "The commit changes defaults for EIP and NAT to be disabled"
   },
   {
@@ -13368,7 +14314,10 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit only adds a new instance"
   },
   {
@@ -13387,7 +14336,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "The commit increases the number of Spot instances but uses a cheaper instance type (from c5.xlarge to c5.large)"
   },
   {
@@ -13413,7 +14365,12 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "remove_rds_instance", "remove_alb", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "remove_rds_instance",
+      "remove_alb",
+      "cheaper_instance"
+    ],
     "notes": "The commit makes an RDS instance and ALB configurable, disabling them by default; also move from m5.large to t2.medium"
   },
   {
@@ -13480,7 +14437,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -13499,7 +14459,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit fixes a billing alarm but there is no cost smell"
   },
   {
@@ -13518,7 +14481,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.micro to t3.micro"
   },
   {
@@ -13537,7 +14504,11 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume", "explicit_value"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "explicit_value"
+    ],
     "notes": "Explicitly specify gp3 for an EBS volume, which is cheaper"
   },
   {
@@ -13556,7 +14527,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "reduce_instance_count"],
+    "codes": [
+      "aws",
+      "reduce_instance_count"
+    ],
     "notes": "Reduce the instance count for an RDS cluster"
   },
   {
@@ -13575,7 +14549,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Remove NAT gateway in VPC"
   },
   {
@@ -13602,7 +14579,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Remove NAT gateway in VPC"
   },
   {
@@ -13621,7 +14601,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Remove NAT gateway in VPC"
   },
   {
@@ -13655,7 +14638,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -13762,7 +14748,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "The commit message mentions disabling NAT gateway but the only cost-related change is moving from t2.medium to t2.small"
   },
   {
@@ -13781,7 +14770,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit message mentions disabling NAT gateway but this does not appear in the commit contents"
   },
   {
@@ -13824,7 +14816,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit makes some changes to cost-related notifications but there is no cost smell"
   },
   {
@@ -13907,7 +14902,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -13942,7 +14940,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit moves to a different machine image, but not for cost reasons (the previous one was also free)"
   },
   {
@@ -14177,7 +15178,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -14227,7 +15231,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "remove_waf"],
+    "codes": [
+      "aws",
+      "remove_waf"
+    ],
     "notes": "The commit makes WAF configurable and disables it for all sites"
   },
   {
@@ -14309,7 +15316,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit makes instances configurable but does not specify an explicit size since it is an example"
   },
   {
@@ -14392,7 +15402,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit configures Infracost in CI, there are no relevant changes to Terraform files"
   },
   {
@@ -14410,7 +15423,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "remove_status_check"],
+    "codes": [
+      "aws",
+      "remove_status_check"
+    ],
     "notes": "Disables several health checks to reduce costs"
   },
   {
@@ -14452,7 +15468,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "remove_status_check"],
+    "codes": [
+      "aws",
+      "remove_status_check"
+    ],
     "notes": "Makes Route53 status checks configurable/optional to save costs"
   },
   {
@@ -14591,7 +15610,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from t2.small to t2.micro"
   },
   {
@@ -14674,7 +15696,10 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "cheaper_area"],
+    "codes": [
+      "aws",
+      "cheaper_area"
+    ],
     "notes": "Move from eu-west-1 to eu-north-1"
   },
   {
@@ -14701,7 +15726,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_budget"],
+    "codes": [
+      "aws",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -14728,7 +15756,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "ebs_delete_on_termination"],
+    "codes": [
+      "aws",
+      "ebs_delete_on_termination"
+    ],
     "notes": "Delete EC2 root block device on termination instead of keeping it in EBS"
   },
   {
@@ -14755,7 +15786,10 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -14774,7 +15808,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["azure", "add_resource_group_cost_management_export"],
+    "codes": [
+      "azure",
+      "add_resource_group_cost_management_export"
+    ],
     "notes": "Adds a resource group cost management export to monitor costs"
   },
   {
@@ -14809,7 +15846,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -14852,7 +15892,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit modifies a billing alarm but there is no cost smell"
   },
   {
@@ -14879,7 +15922,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "The commit makes the billing mode configurable and defaults it to PAY_PER_REQUEST"
   },
   {
@@ -14906,7 +15952,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit switches to a different type of resources but there is not cost smell"
   },
   {
@@ -15157,7 +16206,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_S1 to Basic_B1"
   },
   {
@@ -15200,7 +16252,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["digitalocean", "hcloud", "cheaper_provider"],
+    "codes": [
+      "digitalocean",
+      "hcloud",
+      "cheaper_provider"
+    ],
     "notes": "Move from DigitalOcean to Hetzner for Kubernetes cluster since it is cheaper"
   },
   {
@@ -15219,7 +16275,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["ibm", "cheaper_instance"],
+    "codes": [
+      "ibm",
+      "cheaper_instance"
+    ],
     "notes": "Move from bx2.4x16 to bx2.2x8"
   },
   {
@@ -15254,7 +16313,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces a NAT gateway which according to the commit message reduces cost"
   },
   {
@@ -15377,7 +16439,10 @@
       "networking",
       "awareness"
     ],
-    "codes": ["aws", "remove_eip"],
+    "codes": [
+      "aws",
+      "remove_eip"
+    ],
     "notes": "Remove an EIP from a particular instance"
   },
   {
@@ -15396,7 +16461,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "reduce_mssql_min_capacity"],
+    "codes": [
+      "azure",
+      "reduce_mssql_min_capacity"
+    ],
     "notes": "Reduce the min_capacity of an MSSQL database from 1 to 0.5"
   },
   {
@@ -15415,7 +16483,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["azure", "reduce_mssql_min_capacity"],
+    "codes": [
+      "azure",
+      "reduce_mssql_min_capacity"
+    ],
     "notes": "Reduce the min_capacity of an MSSQL database from 1 to 0.5"
   },
   {
@@ -15474,7 +16545,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -15605,7 +16679,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -15624,7 +16701,10 @@
       "area",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_area"],
+    "codes": [
+      "aws",
+      "cheaper_area"
+    ],
     "notes": "Move from us-west-2c to us-west-2a for cheaper Spot pricing"
   },
   {
@@ -15650,7 +16730,12 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "cheaper_disk_type", "smaller_disk", "smaller_image"],
+    "codes": [
+      "gcp",
+      "cheaper_disk_type",
+      "smaller_disk",
+      "smaller_image"
+    ],
     "notes": "Move from pd-ssd to pd-standard, move from 60GB to 10GB for disk, and move from 128GB to 40GB for image"
   },
   {
@@ -15669,7 +16754,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-2 to e2-standard-2"
   },
   {
@@ -15687,7 +16775,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit removes several IPs from a list due to 'excessively high bandwidth costs' but it is not clear from the change how this saves on cost"
   },
   {
@@ -15738,7 +16829,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["azure", "add_consumption_budget_resource_group"],
+    "codes": [
+      "azure",
+      "add_consumption_budget_resource_group"
+    ],
     "notes": "Add a consumption budget for a resource group to monitor cost"
   },
   {
@@ -15757,7 +16851,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-2 to n1-standard-1"
   },
   {
@@ -15776,7 +16873,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -15803,7 +16903,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.micro to t3.micro"
   },
   {
@@ -15831,7 +16935,12 @@
       "instance",
       "storage"
     ],
-    "codes": ["gcp", "cheaper_instance", "smaller_disk", "add_preemptible"],
+    "codes": [
+      "gcp",
+      "cheaper_instance",
+      "smaller_disk",
+      "add_preemptible"
+    ],
     "notes": "Move from n1-standard-1 to g1-small, reduce instance boot disk size from 32 to 16, and use preemptible scheduling"
   },
   {
@@ -15866,7 +16975,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit moves to a more expensive instance type (n1-standard-1 to c2-standard-4)"
   },
   {
@@ -15893,7 +17005,11 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "reduce_eip", "reduce_nat_gateways"],
+    "codes": [
+      "aws",
+      "reduce_eip",
+      "reduce_nat_gateways"
+    ],
     "notes": "Made the level of redundancy configurable to reduce the number of EIPs and NAT gateways to 1 in non-production environments"
   },
   {
@@ -15920,7 +17036,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["azure", "remove_container_registry"],
+    "codes": [
+      "azure",
+      "remove_container_registry"
+    ],
     "notes": "Stop using the Azure Container Registry for purported cost savings"
   },
   {
@@ -15963,7 +17082,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "use_default_kms_key"],
+    "codes": [
+      "aws",
+      "use_default_kms_key"
+    ],
     "notes": "Makes KMS key creation optional in favor of the default S3 key"
   },
   {
@@ -15982,7 +17104,11 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3"
   },
   {
@@ -16001,7 +17127,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Removes Fargate ECS without an underlying cost smell other than 'cost monies'"
   },
   {
@@ -16052,7 +17181,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "use_ec2_as_nat_gateway"],
+    "codes": [
+      "aws",
+      "use_ec2_as_nat_gateway"
+    ],
     "notes": "The commit makes using a NAT gateway configurable, if disabled it will use a regular EC2 instance as a NAT gateway"
   },
   {
@@ -16111,7 +17243,10 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -16146,7 +17281,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_ssm_endpoint"],
+    "codes": [
+      "aws",
+      "remove_ssm_endpoint"
+    ],
     "notes": "Remove SSM endpoints due to cost"
   },
   {
@@ -16197,7 +17335,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -16216,7 +17357,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "add_lifecycle_rule"],
+    "codes": [
+      "aws",
+      "add_lifecycle_rule"
+    ],
     "notes": "Add lifecycle rules for S3 buckets to move data to a cheaper storage class"
   },
   {
@@ -16356,7 +17500,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -16391,7 +17538,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Removes self-hosted resources in favor of a cloud version, but there is no cost smell"
   },
   {
@@ -16410,7 +17560,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The commit increases the instance size"
   },
   {
@@ -16444,7 +17597,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -16590,7 +17746,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "remove_sqs", "lambda_max_concurrency"],
+    "codes": [
+      "aws",
+      "remove_sqs",
+      "lambda_max_concurrency"
+    ],
     "notes": "Remove the use of SQS and limit the max concurrency of Lambda to 1"
   },
   {
@@ -16609,7 +17769,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "smaller_disk"],
+    "codes": [
+      "aws",
+      "smaller_disk"
+    ],
     "notes": "Move from 20GB to 15GB for root disk"
   },
   {
@@ -16628,7 +17791,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes unused resources but there is no underlying cost smell"
   },
   {
@@ -16647,7 +17813,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit moves back from t3.micro to t2.micro due to cost, but this contradicts commits in other repositories"
   },
   {
@@ -16666,7 +17835,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t3a.nano to t4g.nano"
   },
   {
@@ -16685,7 +17858,11 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "dynamo_on_demand", "dynamo_reduce_rw_capacity"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand",
+      "dynamo_reduce_rw_capacity"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB and reduce r/w capacity from 5 to 2"
   },
   {
@@ -16711,7 +17888,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -16730,7 +17910,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -16749,7 +17932,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "smaller_disk"],
+    "codes": [
+      "aws",
+      "smaller_disk"
+    ],
     "notes": "Reduce root volume size from 30GB to 20GB"
   },
   {
@@ -16776,7 +17962,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit is a release commit and the project moved to using Spot instances, but this change is not included in the commit itself"
   },
   {
@@ -16874,7 +18063,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["azure", "no_cost_change"],
+    "codes": [
+      "azure",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -16942,7 +18134,10 @@
       "feature",
       "provider"
     ],
-    "codes": ["aws", "use_bucket_key"],
+    "codes": [
+      "aws",
+      "use_bucket_key"
+    ],
     "notes": "Use S3 Bucket Keys for SSE-KMS, which reduce the cost of AWS KMS requests"
   },
   {
@@ -17033,7 +18228,10 @@
       "awareness",
       "provider"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -17083,7 +18281,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["gcp", "add_preemptible"],
+    "codes": [
+      "gcp",
+      "add_preemptible"
+    ],
     "notes": "Add a variable to make instances preemptible (although it defaults to false)"
   },
   {
@@ -17254,7 +18455,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -17297,7 +18501,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -17371,7 +18578,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -17398,7 +18608,12 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_private_subnet", "remove_nat_gateway", "remove_nat"],
+    "codes": [
+      "aws",
+      "remove_private_subnet",
+      "remove_nat_gateway",
+      "remove_nat"
+    ],
     "notes": "Remove private subnets and NAT due to cost"
   },
   {
@@ -17425,7 +18640,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_budget"],
+    "codes": [
+      "aws",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -17580,7 +18798,9 @@
       "alert",
       "awareness"
     ],
-    "codes": ["no_cost_change"],
+    "codes": [
+      "no_cost_change"
+    ],
     "notes": "The commit updates functionality and mentions cost but there is no cost smell"
   },
   {
@@ -17663,7 +18883,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": ""
   },
   {
@@ -17682,7 +18905,10 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Removes the NAT gateway in several modules to save cost"
   },
   {
@@ -17701,7 +18927,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-1 to e2-standard-2"
   },
   {
@@ -17719,7 +18948,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["digitalocean", "cheaper_instance"],
+    "codes": [
+      "digitalocean",
+      "cheaper_instance"
+    ],
     "notes": "Move from s-8vcpu-32gb to s-4vcpu-8gb"
   },
   {
@@ -17746,7 +18978,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit adds a tag to instances which adds cost management, but there is no cost smell"
   },
   {
@@ -17805,7 +19040,11 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "reduce_nat_gateways", "reduce_eip"],
+    "codes": [
+      "aws",
+      "reduce_nat_gateways",
+      "reduce_eip"
+    ],
     "notes": "Makes redundancy of the NAT setup configurable"
   },
   {
@@ -17824,7 +19063,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "use_default_kms_key"],
+    "codes": [
+      "aws",
+      "use_default_kms_key"
+    ],
     "notes": "Use default KMS key for S3 bucket instead of a customer-managed one"
   },
   {
@@ -17851,7 +19093,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "remove_glacier_transition"],
+    "codes": [
+      "aws",
+      "remove_glacier_transition"
+    ],
     "notes": "Remove S3 bucket lifecycle rule transitions to Glacier which is expensive"
   },
   {
@@ -18054,7 +19299,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18153,7 +19401,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18171,7 +19422,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_D2_v2 to Standard_DS2_v2"
   },
   {
@@ -18189,7 +19443,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["azure", "cheaper_disk_type"],
+    "codes": [
+      "azure",
+      "cheaper_disk_type"
+    ],
     "notes": "Move from Premium_LRS to Standard_LRS for OS disk"
   },
   {
@@ -18232,7 +19489,10 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces a dev environment using preemptible instances and europe-central2 region for cost optimization, but there is not cost smell"
   },
   {
@@ -18275,7 +19535,10 @@
       "saving",
       "cluster"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -18325,7 +19588,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit makes resources configurable, but there is no underlying cost smell"
   },
   {
@@ -18415,7 +19681,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18489,7 +19758,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t3a.micro to t3a.nano, move from t3a.medium to t3a.nano, move from t2.medium to t3a.nano"
   },
   {
@@ -18555,7 +19828,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -18574,7 +19850,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "add_s3_vpc_endpoint"],
+    "codes": [
+      "aws",
+      "add_s3_vpc_endpoint"
+    ],
     "notes": "Enables using an S3 endpoint for the VPC to save on traffic costs routing S3 traffic over the public internet"
   },
   {
@@ -18625,7 +19904,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -18644,7 +19926,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "remove_cloudfront_logs"],
+    "codes": [
+      "aws",
+      "remove_cloudfront_logs"
+    ],
     "notes": "Disable logging for CloudFront distribution (remove logging_config) to save costs"
   },
   {
@@ -18663,7 +19948,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "remove_dataflow_job"],
+    "codes": [
+      "gcp",
+      "remove_dataflow_job"
+    ],
     "notes": ""
   },
   {
@@ -18682,7 +19970,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -18796,7 +20087,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit changes the default setting of filtering certain types of logs, but it is not clear how this results in cost savings"
   },
   {
@@ -18815,7 +20109,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "cheaper_container_registry"],
+    "codes": [
+      "aws",
+      "cheaper_container_registry"
+    ],
     "notes": "Use public.ecr.aws instead of default container registry for reduced network costs"
   },
   {
@@ -18833,7 +20130,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "reduce_instance_count"],
+    "codes": [
+      "aws",
+      "reduce_instance_count"
+    ],
     "notes": "The commit reduces instance count (although through an external module)"
   },
   {
@@ -18924,7 +20224,11 @@
       "awareness",
       "provider"
     ],
-    "codes": ["aws", "remove_fluentbit_annotations", "remove_fluentbit_labels"],
+    "codes": [
+      "aws",
+      "remove_fluentbit_annotations",
+      "remove_fluentbit_labels"
+    ],
     "notes": "Disable annotations and labels in Fluent Bit logs to reduce CloudWatch logs size"
   },
   {
@@ -19039,7 +20343,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-1 to e2-standard-2"
   },
   {
@@ -19074,7 +20381,12 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway", "remove_eip", "remove_private_subnet"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway",
+      "remove_eip",
+      "remove_private_subnet"
+    ],
     "notes": "Move to a public-only setup to save on NAT gateway, EIP, private subnet costs"
   },
   {
@@ -19109,7 +20421,11 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3"
   },
   {
@@ -19127,7 +20443,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["azure", "cheaper_instance"],
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
     "notes": "Move from Standard_D2a_v4 to Standard_B2s"
   },
   {
@@ -19146,7 +20465,12 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "explicit_value", "less_cpu_cores", "cheaper_disk_type"],
+    "codes": [
+      "aws",
+      "explicit_value",
+      "less_cpu_cores",
+      "cheaper_disk_type"
+    ],
     "notes": "Explicitly specify single core and specify standard root block device instead of EBS"
   },
   {
@@ -19165,7 +20489,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "reduce_s3_expiration"],
+    "codes": [
+      "aws",
+      "reduce_s3_expiration"
+    ],
     "notes": "Reduce S3 data expiration time from 90 to 14 days"
   },
   {
@@ -19280,7 +20607,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -19299,7 +20629,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit updates a billing alarm but there is no cost smell"
   },
   {
@@ -19326,7 +20659,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["azure", "use_mssql_vm_payg"],
+    "codes": [
+      "azure",
+      "use_mssql_vm_payg"
+    ],
     "notes": "Use pay-as-you-go (PAYG) instead of Azure Hybrid Benefit (AHUB) for MSSQL VMs SQL license type"
   },
   {
@@ -19401,7 +20737,10 @@
       "billing_mode",
       "awareness"
     ],
-    "codes": ["ibm", "no_cost_change"],
+    "codes": [
+      "ibm",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -19420,7 +20759,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t3.micro to t4g.nano"
   },
   {
@@ -19439,7 +20782,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Use t4g.nano, previous instance is unknown but cheaper according to the commit message"
   },
   {
@@ -19466,7 +20812,9 @@
       "saving",
       "feature"
     ],
-    "codes": ["no_cost_change"],
+    "codes": [
+      "no_cost_change"
+    ],
     "notes": "The commit removes command-line arguments from a certain executable (cache related) due to costs, but this is extremely specific to the use case"
   },
   {
@@ -19525,7 +20873,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit adds functionality to a tool that manages GCP cost, but there are no cost smells in Terraform files"
   },
   {
@@ -19567,7 +20918,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -19641,7 +20995,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not make cost-related changes"
   },
   {
@@ -19660,7 +21017,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -19679,7 +21039,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "reduce_nat_gateways"],
+    "codes": [
+      "aws",
+      "reduce_nat_gateways"
+    ],
     "notes": "Use single_nat_gateway = true in vpc module"
   },
   {
@@ -19706,7 +21069,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -19725,7 +21091,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "The commit makes the billing mode configurable and defaults it to PAY_PER_REQUEST"
   },
   {
@@ -19768,7 +21137,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "reduce_instance_count"],
+    "codes": [
+      "aws",
+      "reduce_instance_count"
+    ],
     "notes": "Reduce the number of instances created"
   },
   {
@@ -19786,7 +21158,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["gcp", "remove_node_pool_autoscaling"],
+    "codes": [
+      "gcp",
+      "remove_node_pool_autoscaling"
+    ],
     "notes": "Remove autoscaling from a container node pool"
   },
   {
@@ -19837,7 +21212,10 @@
       "saving",
       "area"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The changes are in already commented-out code"
   },
   {
@@ -19864,7 +21242,11 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_eip", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_eip",
+      "remove_nat_gateway"
+    ],
     "notes": "Made the NAT gateway and EIP configurable/optional"
   },
   {
@@ -19907,7 +21289,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_budget"],
+    "codes": [
+      "aws",
+      "add_budget"
+    ],
     "notes": "Adds a budget to receive billing alarms"
   },
   {
@@ -19958,7 +21343,10 @@
       "saving",
       "provider"
     ],
-    "codes": ["gcp", "cheaper_instance"],
+    "codes": [
+      "gcp",
+      "cheaper_instance"
+    ],
     "notes": "Move from n1-standard-1 to g1-small"
   },
   {
@@ -20009,7 +21397,10 @@
       "awareness",
       "feature"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20044,7 +21435,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -20070,7 +21464,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -20113,7 +21510,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "remove_transit_gateway"],
+    "codes": [
+      "aws",
+      "remove_transit_gateway"
+    ],
     "notes": "Makes using a transit gateway configurable (although defaulted to true)"
   },
   {
@@ -20148,7 +21548,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "add_ecr_lifecycle_policy"],
+    "codes": [
+      "aws",
+      "add_ecr_lifecycle_policy"
+    ],
     "notes": "Add lifecycle policies for ECR images to drop old versions after 14 days"
   },
   {
@@ -20167,7 +21570,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume"],
+    "codes": [
+      "aws",
+      "cheaper_volume"
+    ],
     "notes": "Move from gp2 to sc1"
   },
   {
@@ -20186,7 +21592,10 @@
       "awareness",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume"],
+    "codes": [
+      "aws",
+      "cheaper_volume"
+    ],
     "notes": "Move from gp2 to sc1 for launch configuration root block device"
   },
   {
@@ -20286,7 +21695,11 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_volume", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "new_gen"
+    ],
     "notes": "Move from gp2 to gp3"
   },
   {
@@ -20353,7 +21766,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20460,7 +21876,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit mentions a cost-saving whitepaper and also makes intelligent tiering for S3 optional, but there is no cost smell"
   },
   {
@@ -20480,7 +21899,10 @@
       "increase",
       "provider"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20498,7 +21920,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20573,7 +21998,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from cache.m3.medium to cache.t4g.micro"
   },
   {
@@ -20592,7 +22020,9 @@
       "saving",
       "cluster"
     ],
-    "codes": ["no_cost_change"],
+    "codes": [
+      "no_cost_change"
+    ],
     "notes": "The commit specifies explicit cost-optimization values for a Helm deployment but this is highly specific"
   },
   {
@@ -20627,7 +22057,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_sns_alarm"],
+    "codes": [
+      "aws",
+      "remove_sns_alarm"
+    ],
     "notes": "Disable SNS alarms in development"
   },
   {
@@ -20646,7 +22079,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "remove_guard_duty"],
+    "codes": [
+      "aws",
+      "remove_guard_duty"
+    ],
     "notes": "Set check_guard_duty to false (using the trussworks/config/aws external module)"
   },
   {
@@ -20713,7 +22149,10 @@
       "cluster",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -20939,7 +22378,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces a practice project for cost optimization but there is not cost smell"
   },
   {
@@ -20959,7 +22401,10 @@
       "increase",
       "storage"
     ],
-    "codes": ["hcloud", "no_cost_change"],
+    "codes": [
+      "hcloud",
+      "no_cost_change"
+    ],
     "notes": "The commit increases the instance size from cx11 to cpx11"
   },
   {
@@ -20978,7 +22423,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "reduce_dynamo_tables"],
+    "codes": [
+      "aws",
+      "reduce_dynamo_tables"
+    ],
     "notes": "Reduce the number of DynamoDB tables"
   },
   {
@@ -21021,7 +22469,11 @@
       "domain",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway", "remove_private_subnet"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway",
+      "remove_private_subnet"
+    ],
     "notes": ""
   },
   {
@@ -21056,7 +22508,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -21075,7 +22530,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "increase_billing_alarm_period"],
+    "codes": [
+      "aws",
+      "increase_billing_alarm_period"
+    ],
     "notes": "Increase the billing alarm period to reduce cost"
   },
   {
@@ -21126,7 +22584,10 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -21154,7 +22615,10 @@
       "feature",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_os"],
+    "codes": [
+      "aws",
+      "cheaper_os"
+    ],
     "notes": "Move to official Fedora CoreOS AMIs"
   },
   {
@@ -21541,7 +23005,11 @@
       "saving",
       "provider"
     ],
-    "codes": ["aws", "gcp", "cheaper_provider"],
+    "codes": [
+      "aws",
+      "gcp",
+      "cheaper_provider"
+    ],
     "notes": "Move from AWS to GCP"
   },
   {
@@ -21561,7 +23029,11 @@
       "awareness",
       "increase"
     ],
-    "codes": ["aws", "cheaper_codebuild_compute", "cheaper_os"],
+    "codes": [
+      "aws",
+      "cheaper_codebuild_compute",
+      "cheaper_os"
+    ],
     "notes": "Move from BUILD_GENERAL1_2XLARGE to BUILD_GENERAL1_LARGE and from aws/codebuild/standard:5.0 to aws/codebuild/amazonlinux2-x86_64-standard:3.0"
   },
   {
@@ -21596,7 +23068,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["azure", "remove_log_analytics"],
+    "codes": [
+      "azure",
+      "remove_log_analytics"
+    ],
     "notes": "The commit makes the use of Log Analytics for the AKS cluster optional"
   },
   {
@@ -21616,7 +23091,11 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "remove_nat", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat",
+      "remove_nat_gateway"
+    ],
     "notes": "Disable NAT gateway in custom VPC module"
   },
   {
@@ -21635,7 +23114,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from r3.xlarge to r4.xlarge"
   },
   {
@@ -21654,7 +23137,11 @@
       "saving",
       "cluster"
     ],
-    "codes": ["aws", "cheaper_instance", "reduce_instance_count"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "reduce_instance_count"
+    ],
     "notes": "Move from r4.xlarge to t3.large, reduce min/desired/max instances of ElasticSearch cluster"
   },
   {
@@ -21673,7 +23160,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["scaleway", "cheaper_instance"],
+    "codes": [
+      "scaleway",
+      "cheaper_instance"
+    ],
     "notes": "Move from GP1-XS to DEV1-M"
   },
   {
@@ -21700,7 +23190,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "reduce_instance_count"],
+    "codes": [
+      "aws",
+      "reduce_instance_count"
+    ],
     "notes": "The commit comments out several instances to reduce costs"
   },
   {
@@ -21799,7 +23292,10 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "remove_eip"],
+    "codes": [
+      "aws",
+      "remove_eip"
+    ],
     "notes": "The commit makes an EIP configurable and defaults it to false"
   },
   {
@@ -21819,7 +23315,11 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_volume", "explicit_value"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "explicit_value"
+    ],
     "notes": "Explicitly specify gp3 for an instance root volume"
   },
   {
@@ -21846,7 +23346,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Makes the NAT gateway configurable (terraform-aws-modules/vpc module enable_nat_gateway)"
   },
   {
@@ -21873,7 +23376,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "remove_alb"],
+    "codes": [
+      "aws",
+      "remove_alb"
+    ],
     "notes": "Comment out ALB-related code to save on costs and deploy time"
   },
   {
@@ -21908,7 +23414,10 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "add_iam_policy"],
+    "codes": [
+      "aws",
+      "add_iam_policy"
+    ],
     "notes": "Adds IAM policies to deny creation of EC2 instances"
   },
   {
@@ -21967,7 +23476,11 @@
       "instance",
       "awareness"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.nano to t3.nano"
   },
   {
@@ -21986,7 +23499,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway"
+    ],
     "notes": "Remove aws_nat_gateway"
   },
   {
@@ -22085,7 +23601,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -22104,7 +23623,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "dynamo_reduce_rw_capacity"],
+    "codes": [
+      "aws",
+      "dynamo_reduce_rw_capacity"
+    ],
     "notes": "Reduce the read and write capacity for DynamoDB from 20 to 1"
   },
   {
@@ -22123,7 +23645,12 @@
       "awareness",
       "storage"
     ],
-    "codes": ["azure", "explicit_value", "use_standard_sql_db_edition", "cheaper_service_objective"],
+    "codes": [
+      "azure",
+      "explicit_value",
+      "use_standard_sql_db_edition",
+      "cheaper_service_objective"
+    ],
     "notes": "Explicitly specify edition = 'Standard' and requested_service_objective_name = 'S0'"
   },
   {
@@ -22150,7 +23677,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["digitalocean", "cheaper_instance"],
+    "codes": [
+      "digitalocean",
+      "cheaper_instance"
+    ],
     "notes": "Move from medium to small droplet"
   },
   {
@@ -22169,7 +23699,10 @@
       "saving",
       "instance"
     ],
-    "codes": ["digitalocean", "cheaper_instance"],
+    "codes": [
+      "digitalocean",
+      "cheaper_instance"
+    ],
     "notes": "Move from large to small droplet"
   },
   {
@@ -22187,7 +23720,10 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22213,7 +23749,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22257,7 +23796,11 @@
       "saving",
       "awareness"
     ],
-    "codes": ["aws", "remove_nat_gateway", "use_ec2_as_nat_gateway"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway",
+      "use_ec2_as_nat_gateway"
+    ],
     "notes": "Remove NAT gateway in favor of regular EC2 Spot instances configured as NAT boxes"
   },
   {
@@ -22332,7 +23875,11 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "cheaper_volume", "smaller_disk"],
+    "codes": [
+      "aws",
+      "cheaper_volume",
+      "smaller_disk"
+    ],
     "notes": "Move from io1-expand to gp2-expand and 750Gi to 75Gi in non-production, on a configurable basis"
   },
   {
@@ -22351,7 +23898,10 @@
       "saving",
       "policy"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit does not contain enough context to determine what costs are saved"
   },
   {
@@ -22370,7 +23920,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["azure", "expressroute_local_tier"],
+    "codes": [
+      "azure",
+      "expressroute_local_tier"
+    ],
     "notes": "Move from Standard to Local tier for ExpressRoute to save egress traffic costs"
   },
   {
@@ -22389,7 +23942,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "dynamo_reduce_rw_capacity"],
+    "codes": [
+      "aws",
+      "dynamo_reduce_rw_capacity"
+    ],
     "notes": "Reduce the read and write capacity for DynamoDB from 20 to 1"
   },
   {
@@ -22408,7 +23964,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -22427,7 +23986,10 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22526,7 +24088,10 @@
       "domain",
       "saving"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The commit moves from Digital Ocean Kubernetes cluster to a DO app because it's cheaper, but there is no cost smell"
   },
   {
@@ -22577,7 +24142,10 @@
       "saving",
       "feature"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit removes resources because they cost money but there is no underlying smell"
   },
   {
@@ -22748,7 +24316,11 @@
       "networking",
       "saving"
     ],
-    "codes": ["aws", "remove_nat_gateway", "remove_nat"],
+    "codes": [
+      "aws",
+      "remove_nat_gateway",
+      "remove_nat"
+    ],
     "notes": "Makes NAT and NAT gateway configurable, although defaulting to true"
   },
   {
@@ -22767,7 +24339,11 @@
       "awareness",
       "policy"
     ],
-    "codes": ["aws", "explicit_value", "use_standard_credit_specification"],
+    "codes": [
+      "aws",
+      "explicit_value",
+      "use_standard_credit_specification"
+    ],
     "notes": "Explicitly set credit specification to standard because T3 instances are unlimited by default"
   },
   {
@@ -22786,7 +24362,11 @@
       "saving",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.micro to t3.micro"
   },
   {
@@ -22933,7 +24513,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "add_billing_alarm"],
+    "codes": [
+      "aws",
+      "add_billing_alarm"
+    ],
     "notes": "Add a CloudWatch billing alarm"
   },
   {
@@ -22968,7 +24551,10 @@
       "alert",
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit fixes a billing alarm but there is no cost smell"
   },
   {
@@ -23003,7 +24589,10 @@
       "saving",
       "storage"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -23093,7 +24682,10 @@
     "existing_codes": [
       "awareness"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces new features and mentions cost, but there is no cost smell"
   },
   {
@@ -23112,7 +24704,10 @@
       "saving",
       "billing_mode"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   }
 ]
