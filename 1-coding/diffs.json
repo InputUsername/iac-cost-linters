@@ -25452,7 +25452,11 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.nano to t3a.nano"
   },
   {
@@ -25470,7 +25474,10 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": ["aws", "add_cost_anomaly_alert"],
+    "codes": [
+      "aws",
+      "add_cost_anomaly_alert"
+    ],
     "notes": "Adds a Cost Explorer cost anomaly alert and subscription to be notified of cost anomalies"
   },
   {
@@ -25528,7 +25535,10 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": ["aws", "replace_budget_with_cost_anomaly_alert"],
+    "codes": [
+      "aws",
+      "replace_budget_with_cost_anomaly_alert"
+    ],
     "notes": "Refactors cost alerting to only be based on Cost Explorer anomaly alerts instead of budgets"
   },
   {
@@ -25556,7 +25566,10 @@
       "feature",
       "change"
     ],
-    "codes": ["gcp", "remove_gcp_kms"],
+    "codes": [
+      "gcp",
+      "remove_gcp_kms"
+    ],
     "notes": "Removes the use of GCP KMS"
   },
   {
@@ -25664,7 +25677,12 @@
       "feature",
       "change"
     ],
-    "codes": ["aws", "gcp", "remove_gcp_kms", "remove_aws_kms"],
+    "codes": [
+      "aws",
+      "gcp",
+      "remove_gcp_kms",
+      "remove_aws_kms"
+    ],
     "notes": "Removes the use of KMS for both AWS and GCP to save on costs"
   },
   {
@@ -25684,7 +25702,10 @@
       "saving",
       "change"
     ],
-    "codes": ["aws", "cheaper_volume"],
+    "codes": [
+      "aws",
+      "cheaper_volume"
+    ],
     "notes": "Move from io1 to gp3 storage for root and data disks"
   },
   {
@@ -25712,7 +25733,11 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from t2.small to t4g.small"
   },
   {
@@ -25732,7 +25757,11 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from db.t3.small to db.t4g.small"
   },
   {
@@ -25795,7 +25824,10 @@
       "storage",
       "change"
     ],
-    "codes": ["aws", "dynamo_on_demand"],
+    "codes": [
+      "aws",
+      "dynamo_on_demand"
+    ],
     "notes": "Use PAY_PER_REQUEST billing mode for DynamoDB"
   },
   {
@@ -25815,7 +25847,11 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "cheaper_instance", "new_gen"],
+    "codes": [
+      "aws",
+      "cheaper_instance",
+      "new_gen"
+    ],
     "notes": "Move from cache.t2.small to cache.t4g.micro"
   },
   {
@@ -25843,7 +25879,10 @@
       "feature",
       "change"
     ],
-    "codes": ["aws", "remove_redis"],
+    "codes": [
+      "aws",
+      "remove_redis"
+    ],
     "notes": "Remove the use of Redis for testing to save costs"
   },
   {
@@ -25975,7 +26014,10 @@
       "storage",
       "change"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "The commit introduces functionality without additional cost"
   },
   {
@@ -26003,7 +26045,10 @@
       "cluster",
       "change"
     ],
-    "codes": ["digitalocean", "no_cost_change"],
+    "codes": [
+      "digitalocean",
+      "no_cost_change"
+    ],
     "notes": "The commit turns off several resources in preparation of full shutdown for cost savings"
   },
   {
@@ -26032,7 +26077,10 @@
       "policy",
       "change"
     ],
-    "codes": ["aws", "increase_lambda_timeout"],
+    "codes": [
+      "aws",
+      "increase_lambda_timeout"
+    ],
     "notes": "The commit defines Lambda timeouts which are increased from the previous value; higher values incur more cost"
   },
   {
@@ -26052,7 +26100,10 @@
       "feature",
       "alert"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Moves Cost & Usage reports to us-east-1 because it is only available there, but there is no underlying cost issue"
   },
   {
@@ -26107,7 +26158,10 @@
       "increase",
       "change"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Move from db.t3.medium to db.r5.large in staging which increases cost"
   },
   {
@@ -26126,7 +26180,10 @@
       "policy",
       "change"
     ],
-    "codes": ["aws", "add_ecr_lifecycle_policy"],
+    "codes": [
+      "aws",
+      "add_ecr_lifecycle_policy"
+    ],
     "notes": "Add an ECR lifecycle policy to only keep images for 100 days to save cost"
   },
   {
@@ -26163,7 +26220,10 @@
       "memory",
       "change"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Increases memory size of a Lambda for negligable extra cost"
   },
   {
@@ -26842,7 +26902,10 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": ["aws", "increase_budget_threshold"],
+    "codes": [
+      "aws",
+      "increase_budget_threshold"
+    ],
     "notes": "Increases budget thresholds which might increase cost"
   },
   {
@@ -26870,7 +26933,10 @@
       "instance",
       "change"
     ],
-    "codes": ["azure", "cheaper_redis_cache"],
+    "codes": [
+      "azure",
+      "cheaper_redis_cache"
+    ],
     "notes": "Move from P to C family for Redis"
   },
   {
@@ -26890,7 +26956,10 @@
       "instance",
       "change"
     ],
-    "codes": ["azure", "cheaper_redis_cache"],
+    "codes": [
+      "azure",
+      "cheaper_redis_cache"
+    ],
     "notes": "Move from P to C family for Redis"
   },
   {
@@ -26944,7 +27013,10 @@
       "saving",
       "change"
     ],
-    "codes": ["aws", "remove_eks_cloudwatch_agent"],
+    "codes": [
+      "aws",
+      "remove_eks_cloudwatch_agent"
+    ],
     "notes": "Disables EKS CloudWatch agent by default to save costs"
   },
   {
@@ -26972,7 +27044,10 @@
       "feature",
       "change"
     ],
-    "codes": ["aws", "use_bucket_key"],
+    "codes": [
+      "aws",
+      "use_bucket_key"
+    ],
     "notes": "Use S3 bucket keys to reduce requests to KMS from S3 and save costs"
   },
   {
@@ -27000,7 +27075,10 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Gives certain accounts permission to create expensive resources, but there is no clear cost smell"
   },
   {
@@ -27020,7 +27098,10 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Updates permissions to create expensive resources, but there is no clear cost smell"
   },
   {
@@ -27038,7 +27119,10 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "Adds permissions to an account to create billing alerts, but there is no clear cost smell"
   },
   {
@@ -27096,7 +27180,10 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": ["gcp", "no_cost_change"],
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
     "notes": "Adds support for exporting cost data to a Kubernetes cluster, but there is no clear cost smell"
   },
   {
@@ -27206,7 +27293,10 @@
       "storage",
       "change"
     ],
-    "codes": ["aws", "increase_volume_size"],
+    "codes": [
+      "aws",
+      "increase_volume_size"
+    ],
     "notes": "Increases the volume size, reportedly for negligible cost increase"
   },
   {
@@ -27240,7 +27330,10 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": ["aws", "no_cost_change"],
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
     "notes": "Removes billing alarms because they have not been effective"
   },
   {
@@ -27275,7 +27368,13 @@
       "increase",
       "change"
     ],
-    "codes": ["aws", "add_vpc", "add_nat_gateway", "add_eip", "add_route"],
+    "codes": [
+      "aws",
+      "add_vpc",
+      "add_nat_gateway",
+      "add_eip",
+      "add_route"
+    ],
     "notes": "Re-enables (uncomments) costly networking resources"
   },
   {
@@ -27301,7 +27400,11 @@
     "existing_codes": [
       "saving"
     ],
-    "codes": ["aws", "explicit_value", "add_kms_deletion_window"],
+    "codes": [
+      "aws",
+      "explicit_value",
+      "add_kms_deletion_window"
+    ],
     "notes": "Adds a deletion window to a KMS key to save costs"
   },
   {
@@ -27386,7 +27489,9 @@
       "saving",
       "change"
     ],
-    "codes": ["reduce_argo_log_level"],
+    "codes": [
+      "reduce_argo_log_level"
+    ],
     "notes": "Reduces the logging level of Argo CD to save on log storage costs"
   },
   {
@@ -27405,7 +27510,9 @@
       "saving",
       "change"
     ],
-    "codes": ["remove_prometheus_kube_api_scraping"],
+    "codes": [
+      "remove_prometheus_kube_api_scraping"
+    ],
     "notes": "Disables scraping the Kubernetes API server with Prometheus which is expensive"
   },
   {
@@ -27547,7 +27654,10 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "add_rds_auto_start_stop"],
+    "codes": [
+      "aws",
+      "add_rds_auto_start_stop"
+    ],
     "notes": "Enables RDS instances to automatically stop outside of business hours by applying specific tags to save costs"
   },
   {
@@ -27599,7 +27709,10 @@
       "instance",
       "change"
     ],
-    "codes": ["aws", "add_rds_auto_start_stop"],
+    "codes": [
+      "aws",
+      "add_rds_auto_start_stop"
+    ],
     "notes": "Enables RDS instances to automatically stop outside of business hours by applying specific tags to save costs"
   },
   {
@@ -27620,7 +27733,10 @@
       "test",
       "instance"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Adds the ability to move from m6g.4xlarge to r6g.large instances for an autoscaling group to save costs"
   },
   {
@@ -27662,7 +27778,9 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": ["add_spacelift_infracost"],
+    "codes": [
+      "add_spacelift_infracost"
+    ],
     "notes": "Adds Spacelift's Infracost integration"
   },
   {
@@ -27690,7 +27808,10 @@
       "networking",
       "vpn"
     ],
-    "codes": ["aws", "cheaper_instance"],
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
     "notes": "Move from t3.small to t3.micro"
   },
   {
@@ -27710,7 +27831,10 @@
       "domain",
       "change"
     ],
-    "codes": ["aws", "remove_service_discovery"],
+    "codes": [
+      "aws",
+      "remove_service_discovery"
+    ],
     "notes": "Removes unused service discovery resources to save cost"
   }
 ]
