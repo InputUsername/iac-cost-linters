@@ -44,6 +44,14 @@
         "description": "Specific to OVHcloud"
     },
     {
+        "name": "fastly",
+        "description": "Specific to Fastly"
+    },
+    {
+        "name": "datadog",
+        "description": "Specific to Datadog"
+    },
+    {
         "name": "smaller_disk",
         "description": "Use a smaller disk size"
     },
@@ -510,5 +518,93 @@
     {
         "name": "remove_log_analytics",
         "description": "Stop using Azure Log Analytics"
+    },
+    {
+        "name": "cheaper_elasticsearch_instance",
+        "description": "Use a cheaper instance type for an AWS ElasticSearch cluster"
+    },
+    {
+        "name": "fastly_compute_compress_s3_logs",
+        "description": "Compress Fastly compute S3 logs"
+    },
+    {
+        "name": "replace_lambda_functions_with_cloudfront_functions",
+        "description": "Replace Lambda functions with CloudFront functions"
+    },
+    {
+        "name": "remove_datadog_aws_lambda_integration",
+        "description": "Remove Datadog's AWS Lambda integration"
+    },
+    {
+        "name": "reduce_eks_managed_node_groups_max_size",
+        "description": "Reduce the max size of EKS managed node groups to prevent unexpected spikes in billing"
+    },
+    {
+        "name": "add_cost_anomaly_alert",
+        "description": "Adds a Cost Explorer cost anomaly alert"
+    },
+    {
+        "name": "replace_budget_with_cost_anomaly_alert",
+        "description": "Replace the use of budgets with Cost Explorer anomaly alerts"
+    },
+    {
+        "name": "remove_gcp_kms",
+        "description": "Stop using GCP KMS"
+    },
+    {
+        "name": "remove_aws_kms",
+        "description": "Stop using AWS KMS"
+    },
+    {
+        "name": "remove_redis",
+        "description": "Stop using Redis"
+    },
+    {
+        "name": "increase_lambda_timeout",
+        "description": "Increasing Lambda timeout incurs additional cost"
+    },
+    {
+        "name": "increase_budget_threshold",
+        "description": "Increase a budget threshold, possibly increasing cost"
+    },
+    {
+        "name": "increase_volume_size",
+        "description": "Increase the size of a storage volume, increasing cost"
+    },
+    {
+        "name": "add_vpc",
+        "description": "Adds a VPC which is costly"
+    },
+    {
+        "name": "add_nat_gateway",
+        "description": "Adds a NAT gateway which is costly"
+    },
+    {
+        "name": "add_eip",
+        "description": "Adds an elastic IP which is costly"
+    },
+    {
+        "name": "add_route",
+        "description": "Adds a route which is costly"
+    },
+    {
+        "name": "add_kms_deletion_window",
+        "description": "Add a deletion window to a KMS key"
+    },
+    {
+        "name": "reduce_argo_log_level",
+        "description": "Reduce the log level of Argo CD to reduce log storage costs"
+    },
+    {
+        "name": "remove_prometheus_kube_api_scraping",
+        "description": "Stop scraping the Kubernetes API server from Prometheus which is expensive"
+    },
+    {
+        "name": "add_rds_auto_start_stop",
+        "description": "Automatically start and stop RDS instances at certain times to save cost"
+    },
+    {
+        "name": "add_spacelift_infracost",
+        "description": "Add Spacelift's Infracost integration for cost insights"
     }
 ]
