@@ -1,0 +1,64 @@
+URL,Context,From,To,Comments
+https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb,aws_instance.instance_type,t2.nano,t3.nano,
+https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4,,m4.large,m5.large,"Not on a resource, but a module argument named “instance_type”"
+https://github.com/alphagov/govuk-aws/commit/aeb3bfbe393cdfc02e62b812843ed75cf5f245e4,,m4.xlarge,m5.xlarge,Module argument named “instance_type”
+https://github.com/alphagov/govuk-aws/commit/5fa5da9756f12559b490217dd5b173db48e7f2a9,,m4.xlarge,m5.xlarge,Module argument named “instance_type”
+https://github.com/alphagov/govuk-aws/commit/19d187e4a29147cbcf1cfae456cfcbfa8ad52b45,,db.m4.xlarge,db.m5.2xlarge,Module argument named “instance_class”; “db.” prefix for RDS instances; also increase size
+https://github.com/alphagov/govuk-aws/commit/806b1a2a47f2f4e580e524b2cf8cc5928749d972,aws_ebs_volume.type,gp2,gp3,
+https://github.com/alphagov/govuk-aws/commit/8d7d2ebe0dbe9ebf8009572d1d710c4700cf245e,aws_ebs_volume.type,gp2,gp3,Change made along with abstracting to variable; should be OK if tfvars file available
+https://github.com/greenbrian/musical-spork/commit/24c07bfd5c31438fff6374e9ba3d577e6402d777,aws_instance.instance_type,t2.medium,t3.medium,
+,aws_instance.instance_type,t2.small,t3.small,
+,aws_instance.instance_type,t2.small,t3.small,
+,,t2.large,t3.large,"Change is to default value of a variable named ""instance_type"""
+,aws_instance.instance_type,t2.small,t3.small,
+https://github.com/dotancohen81/Rancher/commit/90944271b4e8bd46e3d42ac64bc4964a33a8fdc3,,t2.medium,t3.medium,"Change is in a file ""<prefix>.tfvars.example"" to variable named ""type"""
+https://github.com/cisagov/cyhy_amis/commit/7b8d9247a679295e0e1791b13d6c437c473e44b8,aws_instance.root_block_device.volume_type,gp2,gp3,
+https://github.com/yardbirdsax/elasticsearch-the-hard-way/commit/521bae59a4002a616eac44c1681ca5066bbd00c8,aws_instance.instance_type,t2.small,t3.small,Change along with abstracting to variable; set in default.tfvars
+https://github.com/GBergeret/tf-vpc-module/commit/34d80ece7d0ef598414baffceb074c6580dd819b,aws_instance.instance_type,t2.micro,t3.nano,Also changed size
+https://github.com/cisagov/vulnerable-instances/commit/f70410061b8c6b9249895571e05dfb7a142efb18,aws_instance.root_block_device.volume_type,gp2,gp3,
+https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6,,gp2,gp3,"Change is to default value of a map variable named ""<prefix>_volume_type"""
+,,gp2,gp3,^
+,,gp2,gp3,^
+,,gp2,gp3,^
+,,gp2,gp3,^
+https://github.com/circleci/enterprise-setup/commit/26cc5295c2bb9d8756e450712e0f5f75af440c4a,,t2.2xlarge,t3.2xlarge,"Change is in file ""terraform.tfvars-dev.template"" to variable named ""<prefix>_instance_type"""
+,,t2.2xlarge,t3.2xlarge,^
+https://github.com/bh1m2rn/gitlab-environment-toolkit/commit/b9750f0bb88bc22256085b6bc8f060055e90a8c4,,gp2,gp3,"Change is to default value of variable named ""default_disk_type"""
+https://github.com/travis-ci/terraform-config/commit/4f641b162fa877aef842481631906d5bfe874781,,c3.4xlarge,c4.large,"Module argument named ""<prefix>_instance_type"""
+,,c3.4xlarge,c4.large,^
+https://github.com/byu-oit/terraform-aws-rds/commit/86a0795540edb426c3226775d73fcd4ce807d36a,,db.t2.small,db.t3.small,"Module argument named ""instance_class"""
+https://github.com/poseidon/terraform-azure-kubernetes/commit/633eb938742a43be09612b944c29aaaf70dac119,,Standard_F1,Standard_DS1_v2,"Variable named ""worker_type""; also not sure if actually saves cost"
+https://github.com/poseidon/terraform-aws-kubernetes/commit/e09126b45746f1c967d1990fa04ce781a0478c6d,,t2.small,t3.small,"Variable ""controller_type"""
+,,t2.small,t3.small,"Variable ""worker_type"""
+https://github.com/deadlysyn/terraform-keycloak-aws/commit/1c982ac4120ae3ed5a88c38f2a4d568ad9a83d22,,db.r5.large,db.r6g.large,"Change is in file ""terraform.tfvars"" to variable ""db_instance_type"""
+https://github.com/ONSdigital/eq-terraform/commit/79845fe095cd87287346f40d2adce9b28a32ef35,,t2.medium,t3.medium,"Variable named ""ecs_instance_type"""
+https://github.com/kinvolk-archives/lokomotive-kubernetes/commit/f2f4deb8bb44988eeb0b64b919e51fb556aef4fb,,t2.small,t3.small,"Variable ""controller_type"""
+,,t2.small,t3.small,"Variable ""worker_type"""
+,,t2.small,t3.small,"Variable ""controller_type"""
+,,t2.small,t3.small,"Variable ""worker_type"""
+https://github.com/smarman85/a_new_hope/commit/de97a6b8033c866c3b711468207aa4890049daaa,,t2.micro,t3.micro,"Default value of variable ""instance_type"""
+https://github.com/kmishra9/PL2-AWS-Setup/commit/0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a,,t2.micro,t3.micro,"Value in ""example.tfvars.example"" for variable ""instance_type"""
+https://github.com/cisagov/cool-sharedservices-nessus/commit/5403a8978053a1299b0afe8d7fc59e914fc5e354,aws_instance.root_block_device.volume_type,gp2,gp3,
+https://github.com/guillaumekh/wg-terraform-template/commit/effee9cbc473af5d07cfc3aacece50aa6e59753a,aws_instance.instance_type,t3a.nano,t4g.nano,
+https://github.com/ninthnails/terraform-aws-camellia/commit/0019704e14723aaf326840ab36c594c3f514a2d4,,t2.micro,t3a.micro,"Variable named ""instance_type"""
+,,t2.micro,t3a.micro,"Variable named ""instance_type"""
+https://github.com/openaustralia/infrastructure/commit/63ee190c0ae1832bb72681e1e4b1b14a9367b4bb,aws_ebs_volume.type,gp2,gp3,
+,aws_ebs_volume.type,gp2,gp3,
+,aws_ebs_volume.type,gp2,gp3,
+https://github.com/openaustralia/infrastructure/commit/63ee190c0ae1832bb72681e1e4b1b14a9367b4bb,,t3.micro,t4g.nano,"Local named ""development"""
+https://github.com/cisagov/cool-assessment-terraform/commit/3138943ab4d15cc256d322e1128862ef11383c73,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_ebs_volume.type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_ebs_volume.type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+,aws_instance.root_block_device.volume_type,gp2,gp3,
+https://github.com/pelias/terraform-elasticsearch/commit/21c1827f4507eae217d43d99ad8cb1bbb1337e21,,r3.xlarge,r4.xlarge,"Variable named ""elasticsearch_instance_type"""
+https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb,aws_instance.instance_type,t2.nano,t3.nano,
+https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354,,t2.micro,t3.micro,"Variable named ""instance_type"""
