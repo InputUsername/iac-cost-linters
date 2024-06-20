@@ -1,0 +1,1644 @@
+[
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/AJarombek/global-aws-infrastructure/commit/4a89f4b8235961275fa0e6aaf20848f2b8b7e733",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04089890000068408
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.048809251999045955
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/MartinFeineis-terraform-359ba426393c78b78695797f9bdd6a08c0455720/before-a78936b97d7c08b1f82e01361ba27def21aa8f00/backend.tf line 28:\n  28: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.05172510400007013
+      }
+    ],
+    "after": {
+      "return_code": 2,
+      "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/MartinFeineis-terraform-359ba426393c78b78695797f9bdd6a08c0455720/after/backend.tf line 28:\n  28: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+      "stderr": "",
+      "duration_seconds": 0.054979640000965446
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/stuartellis/stuartellis-org-tf-modules/commit/39a9cabac6765c75591ba258fef0d10ba7ae0f9e",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04413187399950402
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0399422800001048
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/forgotpw/forgotpw-infrastructure/commit/f4363ad27d366385f2388d073ce8af796e035406",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.043957121000858024
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.038519854000696796
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/Katesagay/terraform-repo/commit/9aacfbe12e3e7c1e726b9a3d834211aae01f419c",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04143318600108614
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04296830499879434
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/darogina/terragrunt-aws-modules/commit/9c84d03bde131e7f349dcd493ba5b7e55bf8ae2c",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.0429994580008497
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04197952300091856
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/chetanbothra/Terraform_AWS_Billing_Alert/commit/43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a",
+    "before": [],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/chetanbothra-Terraform_AWS_Billing_Alert-43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a/after/variable.tf:2,12-20: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\"., and 5 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/chetanbothra-Terraform_AWS_Billing_Alert-43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a/after/variable.tf line 2, in variable \"accesskey\":\n   2:     type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/chetanbothra-Terraform_AWS_Billing_Alert-43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a/after/variable.tf line 7, in variable \"secretkey\":\n   7:    type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/chetanbothra-Terraform_AWS_Billing_Alert-43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a/after/variable.tf line 12, in variable \"region\":\n  12:     type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/chetanbothra-Terraform_AWS_Billing_Alert-43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a/after/variable.tf line 17, in variable \"name\":\n  17:     type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/chetanbothra-Terraform_AWS_Billing_Alert-43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a/after/variable.tf line 21, in variable \"threshold\":\n  21:     type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/chetanbothra-Terraform_AWS_Billing_Alert-43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a/after/variable.tf line 26, in variable \"email\":\n  26:     type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+      "duration_seconds": 0.01680530400153657
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/ntk1000/aws-terraform-template/commit/d016b96d89370b8039817fabdfa055576cf6b4cc",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to load configurations; snapshots/ntk1000-aws-terraform-template-d016b96d89370b8039817fabdfa055576cf6b4cc/before-bc5ac1cae3443cd5439d2f130ba587296dddb77c/s3.tf:11,9-10: Invalid argument name; Argument names must not be quoted.:\n\n\u001b[31mError\u001b[0m: Invalid argument name\n\n  on snapshots/ntk1000-aws-terraform-template-d016b96d89370b8039817fabdfa055576cf6b4cc/before-bc5ac1cae3443cd5439d2f130ba587296dddb77c/s3.tf line 11, in resource \"aws_s3_bucket\" \"project\":\n  11:         \u001b[1;4m\"\u001b[0mproject\" = \"${var.project}\"\n\nArgument names must not be quoted.\n\n",
+        "duration_seconds": 0.014759743000468006
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/ntk1000-aws-terraform-template-d016b96d89370b8039817fabdfa055576cf6b4cc/after/s3.tf:11,9-10: Invalid argument name; Argument names must not be quoted.:\n\n\u001b[31mError\u001b[0m: Invalid argument name\n\n  on snapshots/ntk1000-aws-terraform-template-d016b96d89370b8039817fabdfa055576cf6b4cc/after/s3.tf line 11, in resource \"aws_s3_bucket\" \"project\":\n  11:         \u001b[1;4m\"\u001b[0mproject\" = \"${var.project}\"\n\nArgument names must not be quoted.\n\n",
+      "duration_seconds": 0.01669236800080398
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/StratusGrid/terraform-aws-single-account-starter/commit/c291c0954c89e1bfbdb76d4c8990baf9db986343",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/StratusGrid-terraform-aws-single-account-starter-c291c0954c89e1bfbdb76d4c8990baf9db986343/before-5de02c8e78749821974fefc84e93fef698867070/-versions.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.06625408800027799
+      }
+    ],
+    "after": {
+      "return_code": 2,
+      "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/StratusGrid-terraform-aws-single-account-starter-c291c0954c89e1bfbdb76d4c8990baf9db986343/after/-versions.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+      "stderr": "",
+      "duration_seconds": 0.06139662299938209
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/nsbno/terraform-aws-cost-alarm/commit/7e135499d33f0a5c51602a506fefe258cac072c6",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05108113500136824
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0572947220007336
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/64kramsystem/ultimate_aws_certified_cloud_practitioner_course_terraform_configuration/commit/2f36b8a5f2f818138da72d218c1f3c9666ed54aa",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05759707299876027
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05489162599951669
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/kelledge/idkfa/commit/25cda0b77ff329a89551cc6f14fe8c62820fd424",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04878877499868395
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05842216400014877
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/oke-py/aws-tf/commit/ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/oke-py-aws-tf-ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced/before-e1ba5488bf305f1b994f7372a3b4253b8ddc4029/main.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.0599963900003786
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.048779717999423156
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/cob16/aws_static_website/commit/0d4fbd0a7b296a5c9377a835dff89d1499716082",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/cob16-aws_static_website-0d4fbd0a7b296a5c9377a835dff89d1499716082/before-72fc12cd9571f293152dc8ddf9fe1b0b983020f2/main.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.053405393000502954
+      }
+    ],
+    "after": {
+      "return_code": 2,
+      "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/cob16-aws_static_website-0d4fbd0a7b296a5c9377a835dff89d1499716082/after/main.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+      "stderr": "",
+      "duration_seconds": 0.06770824900013395
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/mintak21/terraform-old/commit/c10b476d869282ed6cf55def47445b9c703788fe",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05402661399966746
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05127112499940267
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/alphagov/govwifi-terraform/commit/348b52a2ae5d6d242c8802644f9e3a5e6460de1d",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05572689900145633
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05911242899856006
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/eladidan/speedyhead.xyz-terraform/commit/71f034f3e13e9118a2a954e1fc3c0d35153184f0",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.052239059999919846
+      }
+    ],
+    "after": {
+      "return_code": 2,
+      "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/eladidan-speedyhead.xyz-terraform-71f034f3e13e9118a2a954e1fc3c0d35153184f0/after/backend.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+      "stderr": "",
+      "duration_seconds": 0.05864196800030186
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/coremaker/terraform-google-nucleus/commit/11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/coremaker-terraform-google-nucleus-11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49/before-e9b5b2ea9c1c83c0c60d32153d11ff6e415040c3/providers.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.05892554700039909
+      }
+    ],
+    "after": {
+      "return_code": 2,
+      "stdout": "1 issue(s) found:\n\nNotice: no budget defined (cost_aws_budget)\n\n  on snapshots/coremaker-terraform-google-nucleus-11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49/after/providers.tf line 1:\n   1: terraform {\n\nReference: https://search-rug.github.io/iac-cost-patterns/budget/\n\n",
+      "stderr": "",
+      "duration_seconds": 0.06626081800095562
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/robgmills/jumpbox/commit/028bbe114d099b0388be9a46adcab80d9383a518",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.048533732999203494
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.047381942998981685
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/AdrianNeatu/blog-terraform/commit/3ba302c69eb2a491a5b23e94084b4ddd24a4a703",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04897243300001719
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04833317500015255
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/richardhughes/infra-modules/commit/48015a86eda461d99b580b69db5922acbe5bd28e",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.0469484300010663
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04636438499983342
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/patheard/terraform-cantrill-aws-associate/commit/bc7484cd34698f2724e5d9f241fd9f53d953e3a3",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04791041399948881
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0493986199999199
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/alghanmi/terraform-modules/commit/f4e8069ff11b7ca7a15ce25843b26d00fb399ade",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04498483300085354
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04779936700106191
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/cds-snc/cloud-based-sensor/commit/10bb572d477197bd3874532bfd364de1cb496d05",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04649667999910889
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.046617271000286564
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/rmaheshvarma/terraform/commit/c866a7dd2575dd2a3f4af83f5f081a5004d0e478",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.046562883000660804
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04847701400103688
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/akerl/aws-account/commit/91967d4089ad9580ceae62f7845581935c892455",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04235443699872121
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.046136906999890925
+    }
+  },
+  {
+    "pattern": "Budget",
+    "url": "https://github.com/singaporewaketools/iaac/commit/197502b1ac4bab77b9ab017b755c4d75ddaa218b",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04158391899909475
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04260866000004171
+    }
+  },
+  {
+    "pattern": "Object storage lifecycle rules",
+    "url": "https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04048390699972515
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0426406999995379
+    }
+  },
+  {
+    "pattern": "Object storage lifecycle rules",
+    "url": "https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.040593378000266966
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04169472699868493
+    }
+  },
+  {
+    "pattern": "Object storage lifecycle rules",
+    "url": "https://github.com/ExpediaGroup/apiary-data-lake/commit/47e62f2fc73a96611606cd619c084d1ded9d844d",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to load configurations; snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf:9,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\"., and 53 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 9, in variable \"instance_name\":\n   9:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 15, in variable \"apiary_tags\":\n  15:   type        = \u001b[1;4m\"map\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"map\" and write map(string) instead to explicitly indicate that the map elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 20, in variable \"apiary_domain_name\":\n  20:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 26, in variable \"ecs_domain_extension\":\n  26:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 32, in variable \"vpc_id\":\n  32:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 37, in variable \"private_subnets\":\n  37:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 42, in variable \"aws_region\":\n  42:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 47, in variable \"apiary_log_bucket\":\n  47:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 52, in variable \"apiary_log_prefix\":\n  52:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 58, in variable \"enable_hive_metastore_metrics\":\n  58:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 64, in variable \"apiary_shared_schemas\":\n  64:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 70, in variable \"apiary_managed_schemas\":\n  70:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 76, in variable \"external_data_buckets\":\n  76:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 82, in variable \"external_database_host\":\n  82:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 88, in variable \"apiary_customer_accounts\":\n  88:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 93, in variable \"apiary_producer_iamroles\":\n  93:   type        = \u001b[1;4m\"map\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"map\" and write map(string) instead to explicitly indicate that the map elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 99, in variable \"apiary_rds_additional_sg\":\n  99:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 105, in variable \"apiary_database_name\":\n 105:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 111, in variable \"db_master_username\":\n 111:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 117, in variable \"db_rw_secret_name\":\n 117:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 123, in variable \"db_ro_secret_name\":\n 123:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 129, in variable \"db_instance_class\":\n 129:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 134, in variable \"db_instance_count\":\n 134:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 140, in variable \"db_backup_retention\":\n 140:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 145, in variable \"db_apply_immediately\":\n 145:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 151, in variable \"db_backup_window\":\n 151:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 157, in variable \"db_maintenance_window\":\n 157:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 163, in variable \"hms_log_level\":\n 163:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 173, in variable \"hms_ro_heapsize\":\n 173:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 182, in variable \"hms_rw_heapsize\":\n 182:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 192, in variable \"hms_ro_cpu\":\n 192:   type    = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 203, in variable \"hms_rw_cpu\":\n 203:   type    = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 209, in variable \"hms_nofile_ulimit\":\n 209:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 215, in variable \"hms_docker_image\":\n 215:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 220, in variable \"hms_docker_version\":\n 220:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 225, in variable \"hms_rw_ecs_task_count\":\n 225:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 231, in variable \"hms_ro_ecs_task_count\":\n 231:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 237, in variable \"elb_timeout\":\n 237:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 243, in variable \"ingress_cidr\":\n 243:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 248, in variable \"enable_gluesync\":\n 248:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 254, in variable \"enable_metadata_events\":\n 254:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 260, in variable \"table_param_filter\":\n 260:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 266, in variable \"enable_data_events\":\n 266:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 272, in variable \"enable_s3_paid_metrics\":\n 272:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 278, in variable \"ranger_policy_manager_url\":\n 278:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 284, in variable \"ranger_audit_solr_url\":\n 284:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 290, in variable \"ranger_audit_db_url\":\n 290:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 296, in variable \"ranger_audit_secret_name\":\n 296:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 302, in variable \"ldap_url\":\n 302:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 308, in variable \"ldap_ca_cert\":\n 308:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 314, in variable \"ldap_base\":\n 314:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 320, in variable \"ldap_secret_name\":\n 320:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 326, in variable \"secondary_vpcs\":\n 326:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/before-f3c3068c66185f51ba97ed71a14ffdbea2a698b1/variables.tf line 332, in variable \"docker_registry_auth_secret_name\":\n 332:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+        "duration_seconds": 0.07861493899872585
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf:9,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\"., and 55 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 9, in variable \"instance_name\":\n   9:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 15, in variable \"apiary_tags\":\n  15:   type        = \u001b[1;4m\"map\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"map\" and write map(string) instead to explicitly indicate that the map elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 20, in variable \"apiary_domain_name\":\n  20:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 26, in variable \"ecs_domain_extension\":\n  26:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 32, in variable \"vpc_id\":\n  32:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 37, in variable \"private_subnets\":\n  37:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 42, in variable \"aws_region\":\n  42:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 47, in variable \"apiary_log_bucket\":\n  47:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 52, in variable \"apiary_log_prefix\":\n  52:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 58, in variable \"enable_hive_metastore_metrics\":\n  58:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 64, in variable \"apiary_shared_schemas\":\n  64:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 70, in variable \"apiary_managed_schemas\":\n  70:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 76, in variable \"external_data_buckets\":\n  76:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 82, in variable \"external_database_host\":\n  82:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 88, in variable \"apiary_customer_accounts\":\n  88:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 93, in variable \"apiary_producer_iamroles\":\n  93:   type        = \u001b[1;4m\"map\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"map\" and write map(string) instead to explicitly indicate that the map elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 99, in variable \"apiary_rds_additional_sg\":\n  99:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 105, in variable \"apiary_database_name\":\n 105:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 111, in variable \"db_master_username\":\n 111:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 117, in variable \"db_rw_secret_name\":\n 117:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 123, in variable \"db_ro_secret_name\":\n 123:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 129, in variable \"db_instance_class\":\n 129:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 134, in variable \"db_instance_count\":\n 134:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 140, in variable \"db_backup_retention\":\n 140:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 145, in variable \"db_apply_immediately\":\n 145:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 151, in variable \"db_backup_window\":\n 151:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 157, in variable \"db_maintenance_window\":\n 157:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 163, in variable \"hms_log_level\":\n 163:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 173, in variable \"hms_ro_heapsize\":\n 173:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 182, in variable \"hms_rw_heapsize\":\n 182:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 192, in variable \"hms_ro_cpu\":\n 192:   type    = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 203, in variable \"hms_rw_cpu\":\n 203:   type    = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 209, in variable \"hms_nofile_ulimit\":\n 209:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 215, in variable \"hms_docker_image\":\n 215:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 220, in variable \"hms_docker_version\":\n 220:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 225, in variable \"hms_rw_ecs_task_count\":\n 225:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 231, in variable \"hms_ro_ecs_task_count\":\n 231:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 237, in variable \"elb_timeout\":\n 237:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 243, in variable \"ingress_cidr\":\n 243:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 248, in variable \"enable_gluesync\":\n 248:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 254, in variable \"enable_metadata_events\":\n 254:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 260, in variable \"table_param_filter\":\n 260:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 266, in variable \"enable_data_events\":\n 266:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 272, in variable \"enable_s3_paid_metrics\":\n 272:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 278, in variable \"ranger_policy_manager_url\":\n 278:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 284, in variable \"ranger_audit_solr_url\":\n 284:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 290, in variable \"ranger_audit_db_url\":\n 290:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 296, in variable \"ranger_audit_secret_name\":\n 296:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 302, in variable \"ldap_url\":\n 302:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 308, in variable \"ldap_ca_cert\":\n 308:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 314, in variable \"ldap_base\":\n 314:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 320, in variable \"ldap_secret_name\":\n 320:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 326, in variable \"secondary_vpcs\":\n 326:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 332, in variable \"docker_registry_auth_secret_name\":\n 332:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 338, in variable \"s3_storage_class\":\n 338:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ExpediaGroup-apiary-data-lake-47e62f2fc73a96611606cd619c084d1ded9d844d/after/variables.tf line 344, in variable \"s3_lifecycle_policy_transition_period\":\n 344:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+      "duration_seconds": 0.09238290600114851
+    }
+  },
+  {
+    "pattern": "Object storage lifecycle rules",
+    "url": "https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05808134699873335
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05691379199924995
+    }
+  },
+  {
+    "pattern": "Object storage lifecycle rules",
+    "url": "https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04584670899930643
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04308626599959098
+    }
+  },
+  {
+    "pattern": "Object storage lifecycle rules",
+    "url": "https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nNotice: bucket `terraform` does not have a lifecycle configuration or lifecycle rule (cost_aws_object_storage_lifecycle_rule)\n\n  on snapshots/trajano-terraform-s3-backend-cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c/before-666f3510a2b2a97e1bf7f6ee19bb704a09010912/main.tf line 45:\n  45: resource \"aws_s3_bucket\" \"terraform\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/object-storage-lifecycle-rules/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.04863754599864478
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04311085900008038
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04089405300146609
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04468644900043728
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.040438911999444827
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04113841799880902
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/alphagov/govuk-aws/commit/aeb3bfbe393cdfc02e62b812843ed75cf5f245e4",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04299344699938956
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04505715599952964
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/alphagov/govuk-aws/commit/5fa5da9756f12559b490217dd5b173db48e7f2a9",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.038343391999660525
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04017569399911736
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/alphagov/govuk-aws/commit/19d187e4a29147cbcf1cfae456cfcbfa8ad52b45",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.0388452490005875
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04161345399916172
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/alphagov/govuk-aws/commit/806b1a2a47f2f4e580e524b2cf8cc5928749d972",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04048223400059214
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04263720600101806
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/alphagov/govuk-aws/commit/8d7d2ebe0dbe9ebf8009572d1d710c4700cf245e",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04138777699881757
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.03960818399900745
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/greenbrian/musical-spork/commit/24c07bfd5c31438fff6374e9ba3d577e6402d777",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04323044300144829
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04122955599996203
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/dotancohen81/Rancher/commit/90944271b4e8bd46e3d42ac64bc4964a33a8fdc3",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04295882699989306
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04108770600032585
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/cisagov/cyhy_amis/commit/7b8d9247a679295e0e1791b13d6c437c473e44b8",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.06423449399881065
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04609424000045692
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/yardbirdsax/elasticsearch-the-hard-way/commit/521bae59a4002a616eac44c1681ca5066bbd00c8",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.054925833999732276
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05524417700144113
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/GBergeret/tf-vpc-module/commit/34d80ece7d0ef598414baffceb074c6580dd819b",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05119660700074746
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05788433399902715
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/cisagov/vulnerable-instances/commit/f70410061b8c6b9249895571e05dfb7a142efb18",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.06719554499977676
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0561769939995429
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.07142563500019605
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.07278731800033711
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/circleci/enterprise-setup/commit/26cc5295c2bb9d8756e450712e0f5f75af440c4a",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nWarning: older generation volumes might have worse performance and cost more than newer generations (cost_aws_old_generation)\n\n  on snapshots/circleci-enterprise-setup-26cc5295c2bb9d8756e450712e0f5f75af440c4a/before-f8c42ed15fc935c477a213ebdd69ac55af14e932/circleci.tf line 299:\n 299:     volume_type           = \"gp2\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/old-generation/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.09107254999980796
+      }
+    ],
+    "after": {
+      "return_code": 2,
+      "stdout": "1 issue(s) found:\n\nWarning: older generation volumes might have worse performance and cost more than newer generations (cost_aws_old_generation)\n\n  on snapshots/circleci-enterprise-setup-26cc5295c2bb9d8756e450712e0f5f75af440c4a/after/circleci.tf line 299:\n 299:     volume_type           = \"gp2\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/old-generation/\n\n",
+      "stderr": "",
+      "duration_seconds": 0.0902352039993275
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/bh1m2rn/gitlab-environment-toolkit/commit/b9750f0bb88bc22256085b6bc8f060055e90a8c4",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05369006999899284
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0546010779999051
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/travis-ci/terraform-config/commit/4f641b162fa877aef842481631906d5bfe874781",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04523771499953
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.047427423000044655
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/byu-oit/terraform-aws-rds/commit/86a0795540edb426c3226775d73fcd4ce807d36a",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04814078100025654
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05153766200055543
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/poseidon/terraform-azure-kubernetes/commit/633eb938742a43be09612b944c29aaaf70dac119",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.059751668999524554
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05897135499981232
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/poseidon/terraform-aws-kubernetes/commit/e09126b45746f1c967d1990fa04ce781a0478c6d",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to load configurations; snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf:2,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\"., and 22 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 2, in variable \"cluster_name\":\n   2:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 9, in variable \"dns_zone\":\n   9:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 14, in variable \"dns_zone_id\":\n  14:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 21, in variable \"controller_count\":\n  21:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 27, in variable \"worker_count\":\n  27:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 33, in variable \"controller_type\":\n  33:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 39, in variable \"worker_type\":\n  39:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 45, in variable \"os_image\":\n  45:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 51, in variable \"disk_size\":\n  51:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 57, in variable \"disk_type\":\n  57:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 63, in variable \"disk_iops\":\n  63:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 69, in variable \"worker_price\":\n  69:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 75, in variable \"controller_clc_snippets\":\n  75:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 81, in variable \"worker_clc_snippets\":\n  81:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 89, in variable \"ssh_authorized_key\":\n  89:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 95, in variable \"asset_dir\":\n  95:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 100, in variable \"networking\":\n 100:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 106, in variable \"network_mtu\":\n 106:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 112, in variable \"host_cidr\":\n 112:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 118, in variable \"pod_cidr\":\n 118:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 128, in variable \"service_cidr\":\n 128:   type    = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 134, in variable \"cluster_domain_suffix\":\n 134:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/before-9132a70c68178e2a779972a0a7cf478827e920bc/variables.tf line 139, in variable \"enable_reporting\":\n 139:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+        "duration_seconds": 0.03660448699884
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf:2,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\"., and 22 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 2, in variable \"cluster_name\":\n   2:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 9, in variable \"dns_zone\":\n   9:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 14, in variable \"dns_zone_id\":\n  14:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 21, in variable \"controller_count\":\n  21:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 27, in variable \"worker_count\":\n  27:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 33, in variable \"controller_type\":\n  33:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 39, in variable \"worker_type\":\n  39:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 45, in variable \"os_image\":\n  45:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 51, in variable \"disk_size\":\n  51:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 57, in variable \"disk_type\":\n  57:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 63, in variable \"disk_iops\":\n  63:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 69, in variable \"worker_price\":\n  69:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 75, in variable \"controller_clc_snippets\":\n  75:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 81, in variable \"worker_clc_snippets\":\n  81:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 89, in variable \"ssh_authorized_key\":\n  89:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 95, in variable \"asset_dir\":\n  95:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 100, in variable \"networking\":\n 100:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 106, in variable \"network_mtu\":\n 106:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 112, in variable \"host_cidr\":\n 112:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 118, in variable \"pod_cidr\":\n 118:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 128, in variable \"service_cidr\":\n 128:   type    = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 134, in variable \"cluster_domain_suffix\":\n 134:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/poseidon-terraform-aws-kubernetes-e09126b45746f1c967d1990fa04ce781a0478c6d/after/variables.tf line 139, in variable \"enable_reporting\":\n 139:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+      "duration_seconds": 0.036124219001067104
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/deadlysyn/terraform-keycloak-aws/commit/1c982ac4120ae3ed5a88c38f2a4d568ad9a83d22",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04397734899976058
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04537813100068888
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/ONSdigital/eq-terraform/commit/79845fe095cd87287346f40d2adce9b28a32ef35",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to load configurations; snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/before-fbbdc0b0654665f4717592aad90eace7b5fbb711/developer_defaults.tf:29,17-23: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings., and 5 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/before-fbbdc0b0654665f4717592aad90eace7b5fbb711/developer_defaults.tf line 29, in variable \"queue_cidrs\":\n  29:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/before-fbbdc0b0654665f4717592aad90eace7b5fbb711/developer_defaults.tf line 35, in variable \"ecs_application_cidrs\":\n  35:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/before-fbbdc0b0654665f4717592aad90eace7b5fbb711/developer_defaults.tf line 41, in variable \"database_cidrs\":\n  41:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/before-fbbdc0b0654665f4717592aad90eace7b5fbb711/developer_defaults.tf line 47, in variable \"public_cidrs\":\n  47:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/before-fbbdc0b0654665f4717592aad90eace7b5fbb711/developer_defaults.tf line 53, in variable \"application_cidrs\":\n  53:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/before-fbbdc0b0654665f4717592aad90eace7b5fbb711/developer_defaults.tf line 59, in variable \"sdx_cidrs\":\n  59:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n",
+        "duration_seconds": 0.04483399700075097
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/after/survey-runner.tf:669,3-40: Attribute redefined; The argument \"submitted_responses_min_read_capacity\" was already set at snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/after/survey-runner.tf:668,3-40. Each argument may be set only once.:\n\n\u001b[31mError\u001b[0m: Attribute redefined\n\n  on snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/after/survey-runner.tf line 669, in module \"survey-runner-dynamodb\":\n 669:   \u001b[1;4msubmitted_responses_min_read_capacity\u001b[0m  = 1\n\nThe argument \"submitted_responses_min_read_capacity\" was already set at snapshots/ONSdigital-eq-terraform-79845fe095cd87287346f40d2adce9b28a32ef35/after/survey-runner.tf:668,3-40. Each argument may be set only once.\n\n",
+      "duration_seconds": 0.03391868200014869
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/kinvolk-archives/lokomotive-kubernetes/commit/f2f4deb8bb44988eeb0b64b919e51fb556aef4fb",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04409281900007045
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04128043700075068
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/smarman85/a_new_hope/commit/de97a6b8033c866c3b711468207aa4890049daaa",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.0434034049994807
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04119492400059244
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/kmishra9/PL2-AWS-Setup/commit/0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to load configurations; snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf:8,10-18: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\"., and 11 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 8, in variable \"project_name\":\n   8:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 13, in variable \"organization_name\":\n  13:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 18, in variable \"access_key\":\n  18:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 23, in variable \"secret_key\":\n  23:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 28, in variable \"workspaces_public_key_path\":\n  28:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 34, in variable \"workspaces_private_key_path\":\n  34:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 40, in variable \"num_researchers\":\n  40:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 45, in variable \"num_admins\":\n  45:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 50, in variable \"instance_type\":\n  50:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 55, in variable \"root_volume_size\":\n  55:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 61, in variable \"EBS_volume_size\":\n  61:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/before-0c34014d98dd524378cb76bfb7729776fdad774d/variables.tf line 67, in variable \"data_folder_name\":\n  67:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+        "duration_seconds": 0.025317530000393162
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf:8,10-18: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\"., and 11 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 8, in variable \"project_name\":\n   8:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 13, in variable \"organization_name\":\n  13:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 18, in variable \"access_key\":\n  18:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 23, in variable \"secret_key\":\n  23:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 28, in variable \"workspaces_public_key_path\":\n  28:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 34, in variable \"workspaces_private_key_path\":\n  34:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 40, in variable \"num_researchers\":\n  40:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 45, in variable \"num_admins\":\n  45:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 50, in variable \"instance_type\":\n  50:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 55, in variable \"root_volume_size\":\n  55:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 61, in variable \"EBS_volume_size\":\n  61:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/kmishra9-PL2-AWS-Setup-0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a/after/variables.tf line 67, in variable \"data_folder_name\":\n  67:   type = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+      "duration_seconds": 0.0195509499990294
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/cisagov/cool-sharedservices-nessus/commit/5403a8978053a1299b0afe8d7fc59e914fc5e354",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04994724199968914
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04510036099964054
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/guillaumekh/wg-terraform-template/commit/effee9cbc473af5d07cfc3aacece50aa6e59753a",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.046882463999281754
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.048019259000284364
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/ninthnails/terraform-aws-camellia/commit/0019704e14723aaf326840ab36c594c3f514a2d4",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.042549936999421334
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04181235499891045
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/openaustralia/infrastructure/commit/63ee190c0ae1832bb72681e1e4b1b14a9367b4bb",
+    "before": [],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04508632900069642
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/robertdebock/terraform-aws-vault/commit/e3b6520960a88aacbf03339dc1368f680a8bee9a",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.06258380899998883
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.058628140001019347
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/cisagov/cool-assessment-terraform/commit/3138943ab4d15cc256d322e1128862ef11383c73",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to check ruleset; failed to check \"cost_aws_old_generation\" rule: snapshots/cisagov-cool-assessment-terraform-3138943ab4d15cc256d322e1128862ef11383c73/before-a60f13d30a54d149358dd94553c65cd6a38567fb/locals.tf:93,147-150: Invalid index; The given key does not identify an element in this collection value., and 7 other diagnostic(s)\n",
+        "duration_seconds": 0.11896548899858317
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to check ruleset; failed to check \"cost_aws_old_generation\" rule: snapshots/cisagov-cool-assessment-terraform-3138943ab4d15cc256d322e1128862ef11383c73/after/locals.tf:93,147-150: Invalid index; The given key does not identify an element in this collection value., and 7 other diagnostic(s)\n",
+      "duration_seconds": 0.1147622959997534
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/pelias/terraform-elasticsearch/commit/21c1827f4507eae217d43d99ad8cb1bbb1337e21",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05361277399970277
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0458440669990523
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05742773599922657
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05481449800026894
+    }
+  },
+  {
+    "pattern": "Old generation",
+    "url": "https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.056970674000695
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05829526299930876
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04863377000037872
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0519353260006028
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "11 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/eq_session.tf line 1:\n   1: resource \"aws_dynamodb_table\" \"eq_session_table\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/eq_session.tf line 3:\n   3:   read_capacity  = \"${var.eq_session_min_read_capacity}\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/eq_session.tf line 4:\n   4:   write_capacity = \"${var.eq_session_min_write_capacity}\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/questionnaire_state.tf line 1:\n   1: resource \"aws_dynamodb_table\" \"questionnaire_state_table\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/questionnaire_state.tf line 3:\n   3:   read_capacity  = \"${var.questionnaire_state_min_read_capacity}\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/questionnaire_state.tf line 4:\n   4:   write_capacity = \"${var.questionnaire_state_min_write_capacity}\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/submitted_responses.tf line 1:\n   1: resource \"aws_dynamodb_table\" \"submitted_responses_table\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/submitted_responses.tf line 3:\n   3:   read_capacity  = \"${var.submitted_responses_min_read_capacity}\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/submitted_responses.tf line 4:\n   4:   write_capacity = \"${var.submitted_responses_min_write_capacity}\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/used_jti_claim.tf line 1:\n   1: resource \"aws_dynamodb_table\" \"used_jti_claim_table\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/ONSdigital-eq-terraform-dynamodb-40eb651a50d0dfd5cf047ef62c8a6259c1c66e02/before-430de473fe8d95b8a6b69630d0c02b9c4596d9b6/used_jti_claim.tf line 4:\n   4:   write_capacity = \"${var.used_jti_claim_min_write_capacity}\"\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.0950111799993465
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05744530900119571
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "1 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/olliefr-aws-terraform-cloud1-bf753832a519b0649f8d58d93aa643afe3f94fc7/before-d0464cce1d4fe314e9c15354b6567eaea409bbfe/example.tf line 45:\n  45: resource \"aws_dynamodb_table\" \"tfc_example_table\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.05222150499866984
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04942566400131909
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04703173199959565
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.045223136999993585
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.046906511999623035
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.054760932000135654
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04271537600106967
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.043435416999273
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.040821488000801764
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.043520819999685045
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.041388412999367574
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04287801000100444
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "3 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/servers-tf-infrastructure-cc9e50a3864511f9fb9f871293e6a6e7e2719d2c/before-5726052708f978c8f25855ed9e1111a21e690a60/main.tf line 29:\n  29: resource \"aws_dynamodb_table\" \"tf2_competitive_auth\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/servers-tf-infrastructure-cc9e50a3864511f9fb9f871293e6a6e7e2719d2c/before-5726052708f978c8f25855ed9e1111a21e690a60/main.tf line 32:\n  32:     read_capacity  = 5\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/servers-tf-infrastructure-cc9e50a3864511f9fb9f871293e6a6e7e2719d2c/before-5726052708f978c8f25855ed9e1111a21e690a60/main.tf line 33:\n  33:     write_capacity = 5\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.06423361499946623
+      }
+    ],
+    "after": {
+      "return_code": 2,
+      "stdout": "1 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/servers-tf-infrastructure-cc9e50a3864511f9fb9f871293e6a6e7e2719d2c/after/main.tf line 29:\n  29: resource \"aws_dynamodb_table\" \"tf2_competitive_auth\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+      "stderr": "",
+      "duration_seconds": 0.06409929999972519
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04243103600128961
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0425436229998013
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to load configurations; snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/before-e2d4cd25e676ffbfdd7d578795b76ed2866a17f4/developer_defaults.tf:29,17-23: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings., and 5 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/before-e2d4cd25e676ffbfdd7d578795b76ed2866a17f4/developer_defaults.tf line 29, in variable \"queue_cidrs\":\n  29:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/before-e2d4cd25e676ffbfdd7d578795b76ed2866a17f4/developer_defaults.tf line 35, in variable \"ecs_application_cidrs\":\n  35:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/before-e2d4cd25e676ffbfdd7d578795b76ed2866a17f4/developer_defaults.tf line 41, in variable \"database_cidrs\":\n  41:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/before-e2d4cd25e676ffbfdd7d578795b76ed2866a17f4/developer_defaults.tf line 47, in variable \"public_cidrs\":\n  47:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/before-e2d4cd25e676ffbfdd7d578795b76ed2866a17f4/developer_defaults.tf line 53, in variable \"application_cidrs\":\n  53:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/before-e2d4cd25e676ffbfdd7d578795b76ed2866a17f4/developer_defaults.tf line 59, in variable \"sdx_cidrs\":\n  59:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n",
+        "duration_seconds": 0.033683796998957405
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/after/developer_defaults.tf:29,17-23: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings., and 5 other diagnostic(s):\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/after/developer_defaults.tf line 29, in variable \"queue_cidrs\":\n  29:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/after/developer_defaults.tf line 35, in variable \"ecs_application_cidrs\":\n  35:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/after/developer_defaults.tf line 41, in variable \"database_cidrs\":\n  41:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/after/developer_defaults.tf line 47, in variable \"public_cidrs\":\n  47:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/after/developer_defaults.tf line 53, in variable \"application_cidrs\":\n  53:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/ONSdigital-eq-terraform-6eaf697bf9f111214a6d74ee3094e5784a57d1bb/after/developer_defaults.tf line 59, in variable \"sdx_cidrs\":\n  59:   type        = \u001b[1;4m\"list\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"list\" and write list(string) instead to explicitly indicate that the list elements are strings.\n\n",
+      "duration_seconds": 0.033909354999195784
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.057404541001233156
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.05422020500009239
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04364731799978472
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04076257099950453
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.043785541000033845
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04033756799981347
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.06777394700111472
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.06479653000133112
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "3 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/telia-oss-terraform-aws-terraform-init-e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f/before-0af9556c30b2cfe7a4ee68735bdd4c2ac7c9631b/main.tf line 20:\n  20: resource \"aws_dynamodb_table\" \"lock\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/telia-oss-terraform-aws-terraform-init-e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f/before-0af9556c30b2cfe7a4ee68735bdd4c2ac7c9631b/main.tf line 22:\n  22:   read_capacity  = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/telia-oss-terraform-aws-terraform-init-e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f/before-0af9556c30b2cfe7a4ee68735bdd4c2ac7c9631b/main.tf line 23:\n  23:   write_capacity = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.04671410799892328
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04395095900144952
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "3 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/trajano-terraform-s3-backend-f4b61c7bedae856439f01499de1ec9050b4c40fc/before-905fb7012fac44646bdacf83313ea094eb06c446/main.tf line 68:\n  68: resource \"aws_dynamodb_table\" \"terraform\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/trajano-terraform-s3-backend-f4b61c7bedae856439f01499de1ec9050b4c40fc/before-905fb7012fac44646bdacf83313ea094eb06c446/main.tf line 73:\n  73:   read_capacity  = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/trajano-terraform-s3-backend-f4b61c7bedae856439f01499de1ec9050b4c40fc/before-905fb7012fac44646bdacf83313ea094eb06c446/main.tf line 74:\n  74:   write_capacity = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.04899342600037926
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.045552331999715534
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.04936869499942986
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.04513897700053349
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.051790687000902835
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.051102655999784474
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.053120852000574814
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.051871642001060536
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.051461696999467677
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.052409132998946006
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d",
+    "before": [
+      {
+        "return_code": 0,
+        "stdout": "",
+        "stderr": "",
+        "duration_seconds": 0.05292535999979009
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.053634014999261126
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "3 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/dgorbov-terraform-s3-backend-setup-81f82740760a357a86b3a77f9ed400624edcb218/before-d62f3af8c386f277a16f7431e640ed63bc3dcf55/main.tf line 25:\n  25: resource \"aws_dynamodb_table\" \"tf_state_lock\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/dgorbov-terraform-s3-backend-setup-81f82740760a357a86b3a77f9ed400624edcb218/before-d62f3af8c386f277a16f7431e640ed63bc3dcf55/main.tf line 28:\n  28:   read_capacity = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/dgorbov-terraform-s3-backend-setup-81f82740760a357a86b3a77f9ed400624edcb218/before-d62f3af8c386f277a16f7431e640ed63bc3dcf55/main.tf line 29:\n  29:   write_capacity = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.06467148500087205
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.06414977300119062
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93",
+    "before": [
+      {
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Failed to load configurations; snapshots/sbogacz-terraform-aws-state-backend-174486319f3b956807d56e5433880f9978884f93/before-3805b91e9be88937d203663ee5aa89dd4234c980/variables.tf:3,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".:\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/sbogacz-terraform-aws-state-backend-174486319f3b956807d56e5433880f9978884f93/before-3805b91e9be88937d203663ee5aa89dd4234c980/variables.tf line 3, in variable \"bucket_prefix\":\n   3:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+        "duration_seconds": 0.0195922420007264
+      }
+    ],
+    "after": {
+      "return_code": 1,
+      "stdout": "",
+      "stderr": "Failed to load configurations; snapshots/sbogacz-terraform-aws-state-backend-174486319f3b956807d56e5433880f9978884f93/after/variables.tf:3,17-25: Invalid quoted type constraints; Terraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".:\n\n\u001b[31mError\u001b[0m: Invalid quoted type constraints\n\n  on snapshots/sbogacz-terraform-aws-state-backend-174486319f3b956807d56e5433880f9978884f93/after/variables.tf line 3, in variable \"bucket_prefix\":\n   3:   type        = \u001b[1;4m\"string\"\u001b[0m\n\nTerraform 0.11 and earlier required type constraints to be given in quotes, but that form is now deprecated and will be removed in a future version of Terraform. Remove the quotes around \"string\".\n\n",
+      "duration_seconds": 0.020454284000152256
+    }
+  },
+  {
+    "pattern": "AWS - Expensive DynamoDB",
+    "url": "https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028",
+    "before": [
+      {
+        "return_code": 2,
+        "stdout": "3 issue(s) found:\n\nWarning: billing mode is not set to PAY_PER_REQUEST which may be expensive (cost_aws_expensive_dynamodb)\n\n  on snapshots/giuseppeborgese-terraform-locking-s3-state-6b4e59e8b844417dc5c247bdef1b0adb8e2e7028/before-1dd0e57d21744686db703d2491e8a3a39ba69bc7/remote.tf line 33:\n  33: resource \"aws_dynamodb_table\" \"dynamodb-terraform-state-lock\" {\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high read capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/giuseppeborgese-terraform-locking-s3-state-6b4e59e8b844417dc5c247bdef1b0adb8e2e7028/before-1dd0e57d21744686db703d2491e8a3a39ba69bc7/remote.tf line 36:\n  36:   read_capacity = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\nWarning: high write capacity might lead to higher cost (cost_aws_expensive_dynamodb)\n\n  on snapshots/giuseppeborgese-terraform-locking-s3-state-6b4e59e8b844417dc5c247bdef1b0adb8e2e7028/before-1dd0e57d21744686db703d2491e8a3a39ba69bc7/remote.tf line 37:\n  37:   write_capacity = 20\n\nReference: https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/\n\n",
+        "stderr": "",
+        "duration_seconds": 0.06946536099894729
+      }
+    ],
+    "after": {
+      "return_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.0668808190002892
+    }
+  }
+]
