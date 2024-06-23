@@ -606,5 +606,21 @@
   {
     "name": "add_spacelift_infracost",
     "description": "Add Spacelift's Infracost integration for cost insights"
+  },
+  {
+    "name": "remove_cloudwatch_dashboard",
+    "description": "Remove a CloudWatch dashboard"
+  },
+  {
+    "name": "use_kube_resource_report",
+    "description": "Use kube-resource-report to export usage and cost statistics for a Kubernetes cluster"
+  },
+  {
+    "name": "use_kubecost_cost_analyzer",
+    "description": "Use Kubecost cost-analyzer to gain insight in current and historical Kubernetes costs"
+  },
+  {
+    "name": "add_subscription_cost_management_view",
+    "description": "Add a Cost Management View for a Subscription to get insights into costs"
   }
 ]

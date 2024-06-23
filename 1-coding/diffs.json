@@ -25122,8 +25122,11 @@
       "instance",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "cheaper_instance"
+    ],
+    "notes": "Move from m5.4xlarge, m5d.4xlarge, m5a.4xlarge, m5ad.4xlarge, m5n.4xlarge, m5dn.4xlarge to c5.4xlarge, c5a.4xlarge"
   },
   {
     "url": "https://github.com/cds-snc/terraform-modules/commit/a35919a41357a3a306da026e87375dfebb143062",
@@ -25262,8 +25265,11 @@
       "saving",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
+    "notes": "Adds a module that can be used to automatically start and shut down resources, but the module is not used in the commit"
   },
   {
     "url": "https://github.com/web3-storage/ipfs-elastic-provider-infrastructure/commit/7d0d7c43ce35bd107bb107f66eb49f8f4d9fbb83",
@@ -25331,8 +25337,11 @@
       "instance",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
+    "notes": "Move from D2s_v5 to D2as_v5"
   },
   {
     "url": "https://github.com/terraform-google-modules/terraform-example-foundation/commit/a1d636e550d133abffe2240f795d331e9d691c3c",
@@ -25432,8 +25441,11 @@
       "feature",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
+    "notes": "The commit adds information about using default Log Bucket retention of 30 days which does not incur additional cost, but there is no clear cost smell"
   },
   {
     "url": "https://github.com/jg210/aws-experiments/commit/b09b668e5c3a11366551168541480b69e94c8c3a",
@@ -25804,8 +25816,11 @@
       "saving",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
+    "notes": "The commit removes resources for cost reasons, but there is no clear cost smell"
   },
   {
     "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3",
@@ -26138,8 +26153,11 @@
       "saving",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
+    "notes": "The commit comments out several resources for 'cost tuning', but there is no clear cost smell"
   },
   {
     "url": "https://github.com/wellcomecollection/archivematica-infrastructure/commit/aa509685dc323899c9994b36ed53f33b89121b45",
@@ -26380,8 +26398,12 @@
       "saving",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "remove_nat_gateway",
+      "remove_cloudwatch_dashboard"
+    ],
+    "notes": "Disables NAT gateways (vpc module) and CloudWatch dashboards to save cost"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/6184fd167b796d7ef8f04aea5962c0b2774c6371",
@@ -26463,8 +26485,12 @@
       "awareness",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "use_kube_resource_report",
+      "use_kubecost_cost_analyzer"
+    ],
+    "notes": "Enables kube-resource-report and Kubecost cost-analyzer for a Kubernetes cluster to gain insights in Kubernetes spending"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/d23805c6946ed012570e3ce9d3e82c427f7ed4b6",
@@ -26618,8 +26644,11 @@
       "alert",
       "domain"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
+    "notes": "Adds resources to Infracost, but this is not a change in a Terraform file"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/c5a84d5ab4ebf305d6ccdcf17227623c9f7fa008",
@@ -26884,8 +26913,11 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
+    "notes": "Adds permissions to view cost reports, but there is no clear cost change"
   },
   {
     "url": "https://github.com/binbashar/le-tf-infra-aws/commit/bfef0567030f6c4443222187cafa23628b2acfe2",
@@ -26993,8 +27025,11 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "azure",
+      "add_subscription_cost_management_view"
+    ],
+    "notes": "Adds a Cost Management View for a Subscription"
   },
   {
     "url": "https://github.com/dfds/infrastructure-modules/commit/1c9c92d966c342d42ac5c915a7c01f6a98a38122",
@@ -27273,8 +27308,11 @@
     "existing_codes": [
       "alert"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "aws",
+      "no_cost_change"
+    ],
+    "notes": "Turns cost usage reports into a reusable module but there is no clear cost smell"
   },
   {
     "url": "https://github.com/wellcomecollection/buildkite-infrastructure/commit/50957e0478fd4c4d945ac593822436f6a7ec8111",
@@ -27440,8 +27478,11 @@
       "saving",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "gcp",
+      "remove_prometheus_kube_api_scraping"
+    ],
+    "notes": "Disables Prometheus API server ingestion to save costs. Change is in a JSON blob inside Terraform resources"
   },
   {
     "url": "https://github.com/matihost/monorepo/commit/0f5e7454d1213d34b8771d9a3829baf4a606f82f",
@@ -27468,8 +27509,11 @@
       "feature",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "gcp",
+      "no_cost_change"
+    ],
+    "notes": "Prevents Prometheus from scraping metrics to reduce ingestion cost, but the change is in a shell script"
   },
   {
     "url": "https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e",
@@ -27581,8 +27625,11 @@
       "saving",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
+    "notes": "Move from D2s_v5 to D2as_v5"
   },
   {
     "url": "https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db",
@@ -27626,8 +27673,11 @@
       "saving",
       "change"
     ],
-    "codes": [],
-    "notes": ""
+    "codes": [
+      "azure",
+      "cheaper_instance"
+    ],
+    "notes": "Move from D2s_v5 to D2as_v5"
   },
   {
     "url": "https://github.com/ministryofjustice/cloud-platform-terraform-rds-instance/commit/0e825c32901df9df18ec219f32a2a0ea9bb3dc59",
