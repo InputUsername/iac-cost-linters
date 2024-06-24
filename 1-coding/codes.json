@@ -622,5 +622,25 @@
   {
     "name": "add_subscription_cost_management_view",
     "description": "Add a Cost Management View for a Subscription to get insights into costs"
+  },
+  {
+    "name": "replace_jenkins_sync_with_bucket_replication",
+    "description": "Replace Jenkins sync with standard bucket replication which is cheaper"
+  },
+  {
+    "name": "remove_provider",
+    "description": "Fully move away from a cloud provider"
+  },
+  {
+    "name": "remove_scaleway_rdb",
+    "description": "Stop using Scaleway relational databases"
+  },
+  {
+    "name": "remove_eks_cloudwatch_agent",
+    "description": "Stop using EKS CloudWatch agents"
+  },
+  {
+    "name": "remove_service_discovery",
+    "description": "Remove service discovery resources"
   }
 ]
