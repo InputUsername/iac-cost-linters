@@ -1,0 +1,4 @@
+pattern,precision,recall
+AWS - Expensive DynamoDB,0.7142857142857143,1.0
+Object storage lifecycle rules,0.75,1.0
+Old generation,0.6060606060606061,0.6060606060606061
