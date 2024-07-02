@@ -128,23 +128,23 @@ Old generation,https://github.com/cisagov/cool-assessment-terraform/commit/31389
 Old generation,https://github.com/pelias/terraform-elasticsearch/commit/21c1827f4507eae217d43d99ad8cb1bbb1337e21
 Old generation,https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb
 Old generation,https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354
-Expensive disk type,https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
-Expensive disk type,https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54
-Expensive disk type,https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be
-Expensive disk type,https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b
-Expensive disk type,https://github.com/falldamagestudio/UE4-GHA-BuildSystem/commit/e58083adbf91e7daa8ddb5db6c3b2e5c8c0a906c
-Expensive disk type,https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d
-Expensive disk type,https://github.com/ministryofjustice/hmpps-env-configs/commit/0328838420ac0d3754cf772a7d2f5bb1612193ed
-Expensive disk type,https://github.com/travis-infrastructure/terraform-stuff/commit/1e208af4c83d093c900f4cccedbca6183142a07f
-Expensive disk type,https://github.com/sdcote/cloudsql/commit/dfe44fcf8f5a477e1fbc354f1b1d87af28895c0f
-Expensive disk type,https://github.com/wellcomecollection/archivematica-infrastructure/commit/ce576be106257496e20d946d6eab5f8783dada92
-Expensive disk type,https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841
-Expensive disk type,https://github.com/TimonB/tf-azure-example/commit/b49579fbecbe8002932fdfb86146f83efd60bfcf
-Expensive disk type,https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3
-Expensive disk type,https://github.com/bhfsystem/fogg/commit/81e606a72e7c2e06c2f6d9c204086157aa82eac3
-Expensive disk type,https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305
-Expensive disk type,https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935
-Expensive disk type,https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
+Expensive storage type,https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
+Expensive storage type,https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54
+Expensive storage type,https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be
+Expensive storage type,https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b
+Expensive storage type,https://github.com/falldamagestudio/UE4-GHA-BuildSystem/commit/e58083adbf91e7daa8ddb5db6c3b2e5c8c0a906c
+Expensive storage type,https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d
+Expensive storage type,https://github.com/ministryofjustice/hmpps-env-configs/commit/0328838420ac0d3754cf772a7d2f5bb1612193ed
+Expensive storage type,https://github.com/travis-infrastructure/terraform-stuff/commit/1e208af4c83d093c900f4cccedbca6183142a07f
+Expensive storage type,https://github.com/sdcote/cloudsql/commit/dfe44fcf8f5a477e1fbc354f1b1d87af28895c0f
+Expensive storage type,https://github.com/wellcomecollection/archivematica-infrastructure/commit/ce576be106257496e20d946d6eab5f8783dada92
+Expensive storage type,https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841
+Expensive storage type,https://github.com/TimonB/tf-azure-example/commit/b49579fbecbe8002932fdfb86146f83efd60bfcf
+Expensive storage type,https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3
+Expensive storage type,https://github.com/bhfsystem/fogg/commit/81e606a72e7c2e06c2f6d9c204086157aa82eac3
+Expensive storage type,https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305
+Expensive storage type,https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935
+Expensive storage type,https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
 Expensive network resource,https://github.com/stealthHat/k8s-terraform/commit/681a3f8b4942be495b3f2528fb9ee40d7a4eb08a
 Expensive network resource,https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
 Expensive network resource,https://github.com/structurefall/jamulus-builder/commit/7190744187e0aed2df8ce84f2a944294d6d4fc5b
