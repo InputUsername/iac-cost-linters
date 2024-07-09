@@ -1,0 +1,802 @@
+[
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/modernisation-platform/commit/a2f96249b44f2500d030284936d582ba80c7fff5",
+    "content": {
+      "message": "Add Cost Explorer Create Report permission for Data Engineers"
+    },
+    "codes": [
+      "awareness",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/alphagov/govuk-aws/commit/ffa75257747f225577616e6cf517eee965221041",
+    "content": {
+      "message": "Use cheaper and faster gp3 block storage for mirrorer."
+    },
+    "codes": [
+      "saving",
+      "storage",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/alphagov/govuk-aws/commit/9b54cd6e875843c3ecade45ce37e863357b6e0e9",
+    "content": {
+      "message": "Remove UK Cloud VPN\n\nThis is no longer required because we've worked with Civica to allowlist the\nIPs of our AWS NAT Gateways for the vast majority of their local authority\ncustomers.\n\nAdditionally, UK Cloud is in liquidation and is being shut down. The\nliquidators only expect the platform to be operational until 10 February 2023,\nand in the meantime the liquidators have been increasing prices exponentially\nto cover the costs of operating the platform with an ever diminished customer\nbase.\n\nI have notified UK Cloud and the liquidators that from the end of December 2022\nwe no longer require our account."
+    },
+    "codes": [
+      "saving",
+      "networking",
+      "vpn",
+      "nat",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/alphagov/govuk-aws/commit/c1d29a6caabcd4f041d87d76a10f2deef06685ef",
+    "content": {
+      "message": "Replicate assets bucket from prod to non-prod envs.\n\nThis replaces the sync_assets Jenkins cronjob (and is cheaper, more\nreliable, uses less resources and works continuously instead of\nnightly).\n\n- govuk-assets-production replicates to staging and integration.\n- govuk-assets-production still replicates to\n  govuk-assets-backup-production as before.\n- govuk-assets-backup-production keeps object versions indefinitely (but\n  it's still not really a backup in the full sense; we should get Object\n  Lock enabled on it and set a retention window).\n\nAlso update to AWS TF provider 5."
+    },
+    "codes": [
+      "storage",
+      "saving",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/public-transport/infrastructure/commit/0a5968285a08bd6d07f79fa1f5a55756622fcfa9",
+    "content": {
+      "message": "remove scaleway rdb (hosted in the cluster now, to save costs)"
+    },
+    "codes": [
+      "saving",
+      "cluster",
+      "storage",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/a72b2d8b8ef52f6934b01e7f8f02042cac15b5e5",
+    "content": {
+      "message": "Scale down elastic search clusters (#1914)\n\n* Scale down elastic search clusters\r\n\r\nThis is to reduce costs."
+    },
+    "codes": [
+      "saving",
+      "cluster",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/Accurate0/infrastructure/commit/bd63efe7cf8fd2d9ae3a1497c342f97a7d22a7f5",
+    "content": {
+      "message": "containerInsights just cost me $5"
+    },
+    "codes": [
+      "awareness",
+      "feature"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5",
+    "content": {
+      "message": "pay per request + delete prot"
+    },
+    "codes": [
+      "billing_mode",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/rust-lang/simpleinfra/commit/05370cc8f9852987e20cf5c659e5249dd1f2181c",
+    "content": {
+      "message": "Compress request logs from Fastly\n\nGiven the volume of traffic and logs, it seems prudent to compress the\nlogs to save on storage and bandwidth costs."
+    },
+    "codes": [
+      "feature",
+      "saving",
+      "storage",
+      "networking",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/rust-lang/simpleinfra/commit/e464783f88a901d49bd64d8b42cabe2eea08c90c",
+    "content": {
+      "message": "Use CloudFront functions for crates.io\n\nInstead of using AWS Lambda functions to rewrite URLs, we are using\nCloudFront functions which are simpler and cheaper."
+    },
+    "codes": [
+      "saving",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/rust-lang/simpleinfra/commit/638991a8940fe3a68bda9bdb2ac0b2f41e619796",
+    "content": {
+      "message": "Disable monitoring of Lambda functions\n\nDatadog can monitor Lambda functions, but charges a fee for each\nfunction. This is quite expensive for us, since every routing function\nwe use in CloudFront is globally distributed and is billed multiple\ntimes (once per region).\n\nFor now, we are just going to disable the Lambda integration. Later, we\nmight want to enable it again, but add a tag and filter to selectively\nmonitor specific functions."
+    },
+    "codes": [
+      "feature",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/2adef81da634947aff8010580941aaba975a37b5",
+    "content": {
+      "message": "chore(deps): update terraform aws to v5.43.0 (#280)\n\n[![Mend\nRenovate](https://app.renovatebot.com/images/banner.svg)](https://renovatebot.com)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [aws](https://registry.terraform.io/providers/hashicorp/aws)\n([source](https://togithub.com/hashicorp/terraform-provider-aws)) |\nrequired_provider | minor | `5.42.0` -> `5.43.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>hashicorp/terraform-provider-aws (aws)</summary>\n\n###\n[`v5.43.0`](https://togithub.com/hashicorp/terraform-provider-aws/blob/HEAD/CHANGELOG.md#5430-March-28-2024)\n\n[Compare\nSource](https://togithub.com/hashicorp/terraform-provider-aws/compare/v5.42.0...v5.43.0)\n\nFEATURES:\n\n- **New Data Source:** `aws_resourceexplorer2_search`\n([#&#8203;36560](https://togithub.com/hashicorp/terraform-provider-aws/issues/36560))\n- **New Data Source:** `aws_servicecatalogappregistry_application`\n([#&#8203;36596](https://togithub.com/hashicorp/terraform-provider-aws/issues/36596))\n- **New Resource:** `aws_cloudfrontkeyvaluestore_key`\n([#&#8203;36534](https://togithub.com/hashicorp/terraform-provider-aws/issues/36534))\n- **New Resource:** `aws_devopsguru_notification_channel`\n([#&#8203;36557](https://togithub.com/hashicorp/terraform-provider-aws/issues/36557))\n- **New Resource:** `aws_ec2_instance_metadata_defaults`\n([#&#8203;36589](https://togithub.com/hashicorp/terraform-provider-aws/issues/36589))\n- **New Resource:** `aws_lakeformation_resource_lf_tag`\n([#&#8203;36537](https://togithub.com/hashicorp/terraform-provider-aws/issues/36537))\n- **New Resource:** `aws_m2_application`\n([#&#8203;35399](https://togithub.com/hashicorp/terraform-provider-aws/issues/35399))\n- **New Resource:** `aws_m2_deployment`\n([#&#8203;35408](https://togithub.com/hashicorp/terraform-provider-aws/issues/35408))\n- **New Resource:** `aws_m2_environment`\n([#&#8203;35311](https://togithub.com/hashicorp/terraform-provider-aws/issues/35311))\n- **New Resource:** `aws_redshiftserverless_custom_domain_association`\n([#&#8203;35865](https://togithub.com/hashicorp/terraform-provider-aws/issues/35865))\n- **New Resource:** `aws_servicecatalogappregistry_application`\n([#&#8203;36277](https://togithub.com/hashicorp/terraform-provider-aws/issues/36277))\n\nENHANCEMENTS:\n\n- data-source/aws_cloudfront_function: Add\n`key_value_store_associations` attribute\n([#&#8203;36585](https://togithub.com/hashicorp/terraform-provider-aws/issues/36585))\n- data-source/aws_db_snapshot: Add `original_snapshot_create_time`\nattribute\n([#&#8203;36544](https://togithub.com/hashicorp/terraform-provider-aws/issues/36544))\n- resource/aws_cloudfront_function: Add `key_value_store_associations`\nargument\n([#&#8203;36585](https://togithub.com/hashicorp/terraform-provider-aws/issues/36585))\n- resource/aws_ec2\\_host: Add user configurable timeouts\n([#&#8203;36538](https://togithub.com/hashicorp/terraform-provider-aws/issues/36538))\n- resource/aws_glacier_vault_lock: Allow `policy` to have leading\nwhitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_iam_group_policy: Allow `policy` to have leading\nwhitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_iam_policy: Allow `policy` to have leading whitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_iam_role: Allow `assume_role_policy` and\n`inline_policy.*.policy` to have leading whitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_iam_role_policy: Allow `policy` to have leading\nwhitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_iam_user_policy: Allow `policy` to have leading\nwhitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_kinesisanalyticsv2\\_application: Add support for\n`FLINK-1_18` `runtime_environment` value\n([#&#8203;36562](https://togithub.com/hashicorp/terraform-provider-aws/issues/36562))\n- resource/aws_media_store_container_policy: Allow `policy` to have\nleading whitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_ssoadmin_permission_set_inline_policy: Allow\n`inline_policy` to have leading whitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_transfer_access: Allow `policy` to have leading\nwhitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_transfer_user: Allow `policy` to have leading whitespace\n([#&#8203;36597](https://togithub.com/hashicorp/terraform-provider-aws/issues/36597))\n- resource/aws_vpc_ipam: Add `tier` argument\n([#&#8203;36504](https://togithub.com/hashicorp/terraform-provider-aws/issues/36504))\n\nBUG FIXES:\n\n- data-source/aws_cur_report_definition: Direct all API calls to the\n`us-east-1` endpoint as this is the only Region in which AWS Cost and\nUsage Reports is available\n([#&#8203;36540](https://togithub.com/hashicorp/terraform-provider-aws/issues/36540))\n- resource/aws_applicationinsights_application: Make `ACTIVE` a valid\ncreate target status\n([#&#8203;36615](https://togithub.com/hashicorp/terraform-provider-aws/issues/36615))\n- resource/aws_autoscaling_group: Don't attempt to remove scale-in\nprotection from instances that don't have the feature enabled\n([#&#8203;36586](https://togithub.com/hashicorp/terraform-provider-aws/issues/36586))\n- resource/aws_cur_report_definition: Direct all API calls to the\n`us-east-1` endpoint as this is the only Region in which AWS Cost and\nUsage Reports is available\n([#&#8203;36540](https://togithub.com/hashicorp/terraform-provider-aws/issues/36540))\n- resource/aws_elasticsearch_domain_policy: Handle delayed domain status\npropagation, preventing a `ValidationException`.\n([#&#8203;36592](https://togithub.com/hashicorp/terraform-provider-aws/issues/36592))\n- resource/aws_iam_instance_profile: Detect when the associated `role`\nno longer exists\n([#&#8203;34099](https://togithub.com/hashicorp/terraform-provider-aws/issues/34099))\n- resource/aws_instance: Replace an instance when an `instance_type`\nchange also requires an architecture change, such as x86\\_64 to arm64\n([#&#8203;36590](https://togithub.com/hashicorp/terraform-provider-aws/issues/36590))\n- resource/aws_opensearch_domain_policy: Handle delayed domain status\npropagation, preventing a `ValidationException`.\n([#&#8203;36592](https://togithub.com/hashicorp/terraform-provider-aws/issues/36592))\n- resource/aws_quicksight_dashboard: Fix failure when updating a\ndashboard takes a while\n([#&#8203;34227](https://togithub.com/hashicorp/terraform-provider-aws/issues/34227))\n- resource/aws_quicksight_template: Fix \"Invalid address to set\" errors\n([#&#8203;34227](https://togithub.com/hashicorp/terraform-provider-aws/issues/34227))\n- resource/aws_quicksight_template: Fix \"a number is required\" errors\nwhen state contains an empty string\n([#&#8203;34227](https://togithub.com/hashicorp/terraform-provider-aws/issues/34227))\n- resource/aws_redshift_cluster: Fix `InvalidParameterCombination`\nerrors when updating only `skip_final_snapshot`\n([#&#8203;36635](https://togithub.com/hashicorp/terraform-provider-aws/issues/36635))\n- resource/aws_route53\\_zone: Prevent re-creation when `name` casing\nchanges\n([#&#8203;36563](https://togithub.com/hashicorp/terraform-provider-aws/issues/36563))\n- resource/aws_secretsmanager_secret_version: Fix to handle versions\ndeleted out-of-band without raising an `InvalidRequestException`\n([#&#8203;36609](https://togithub.com/hashicorp/terraform-provider-aws/issues/36609))\n- resource/aws_ssm_parameter: force create a new SSM parameter when\n`data_type` is updated.\n([#&#8203;35960](https://togithub.com/hashicorp/terraform-provider-aws/issues/35960))\n\n</details>\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: Branch creation - At any time (no schedule defined),\nAutomerge - At any time (no schedule defined).\n\n\ud83d\udea6 **Automerge**: Enabled.\n\n\u267b **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n\ud83d\udd15 **Ignore**: Close this PR and you won't be reminded about this update\nagain.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR has been generated by [Mend\nRenovate](https://www.mend.io/free-developer-tools/renovate/). View\nrepository job log\n[here](https://developer.mend.io/github/Hapag-Lloyd/terraform-aws-bastion-host-ssm).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzNy4yNjkuMiIsInVwZGF0ZWRJblZlciI6IjM3LjI2OS4yIiwidGFyZ2V0QnJhbmNoIjoibWFpbiJ9-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    "codes": [
+      "awareness",
+      "feature",
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/jenkins-infra/aws/commit/586fde061356513609fe4f2014a11ddcec849c35",
+    "content": {
+      "message": "feat(eks) split and optimize node pools for ci.jenkins.io usage (bom vs. plugins) (#388)\n\n* fix(eks) select cheaper instances with a lower eviction rate\r\n\r\nSigned-off-by: Damien Duportal <damien.duportal@gmail.com>\r\n\r\n* feat(eks) add a new node pool for BOM builds with 23 pods per node\r\n\r\nSigned-off-by: Damien Duportal <damien.duportal@gmail.com>\r\n\r\n---------\r\n\r\nSigned-off-by: Damien Duportal <damien.duportal@gmail.com>"
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/cds-snc/terraform-modules/commit/a35919a41357a3a306da026e87375dfebb143062",
+    "content": {
+      "message": "feat: schedule resource startup and shutdown (#326)\n\nAdd a module that allows for ECS clusters and RDS clusters\r\nto be shutdown and started on a schedule to save costs\r\nduring off-hours."
+    },
+    "codes": [
+      "cluster",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/web3-storage/ipfs-elastic-provider-infrastructure/commit/7d0d7c43ce35bd107bb107f66eb49f8f4d9fbb83",
+    "content": {
+      "message": "fix: add subnets to allow 20+ nodes to run (#220)\n\nprod is \"DEGREADED\" with only 19 nodes coming up due to\r\n\r\n> Amazon AutoScaling was unable to launch instances because there are not enough free addresses in the subnet associated with your AutoScaling group(s).\r\n\r\nso we add more subnets here.\r\n\r\nAlso prod is running with `desired_size: 20` so we up that here to match reality... and we dial down max_size as we dont want any suprise spikes in billing.\r\n\r\nLicense: MIT\r\n\r\nSigned-off-by: Oli Evans <oli@protocol.ai>"
+    },
+    "codes": [
+      "awareness",
+      "policy",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/poseidon/terraform-azure-kubernetes/commit/4989bf2d4a5eed7f1fcb01f63db5624afa113232",
+    "content": {
+      "message": "Switch to Flatcar Azure gen2 images and change worker type\n\n* Switch from Azure Hypervisor generation 1 to generation 2\n* Change default Azure `worker_type` from Standard_DS1_v2 to Standard_D2as_v5\n  * Get 2 VCPU, 7 GiB, 12500Mbps (vs 1 VCPU, 3.5GiB, 750 Mbps)\n  * Small increase in pay-as-you-go price ($53.29 -> $62.78)\n  * Small increase in spot price ($5.64/mo -> $7.37/mo)\n  * Change from Intel to AMD EPYC (`D2as_v5` cheaper than `D2s_v5`)\n\nNotes: Azure makes you accept terms for each plan:\n\n```\naz vm image terms accept --publish kinvolk --offer flatcar-container-linux-free --plan stable-gen2\n```\n\nRel:\n\n* https://learn.microsoft.com/en-us/azure/virtual-machines/dasv5-dadsv5-series#dasv5-series\n* https://learn.microsoft.com/en-us/azure/virtual-machines/dv2-dsv2-series#dsv2-series"
+    },
+    "codes": [
+      "saving",
+      "increase",
+      "billing_mode",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/terraform-google-modules/terraform-example-foundation/commit/a1d636e550d133abffe2240f795d331e9d691c3c",
+    "content": {
+      "message": "feat: Modularize logging components (#781)\n\n* Initial commit\r\n\r\n* New inline Centralized Logging module\r\n\r\n* New logbucket destination module path\r\n\r\n* -Using new inline centralized logging module for log\r\n-Added logbucket as new logging destination\r\n\r\n* Fix missing logbucket name in doc\r\n\r\n* Add support to Cloud KMS CryptoKey\r\n\r\n* Fix typos\r\n\r\n* Reviewed module documentation\r\n\r\n* Fix readme log sink filter\r\n\r\n* Fix variable description and improve module documentation\r\n\r\n* Project id removed from Log Bucket name because it is not global unique as storage names\r\n\r\n* Added information about Log bucket free cost\r\n\r\n* Added link with additional information\r\n\r\nCo-authored-by: Daniel Andrade <dandrade@ciandt.com>\r\n\r\n* Added links with additional information about sink destinations\r\n\r\nCo-authored-by: Daniel Andrade <dandrade@ciandt.com>\r\n\r\n* Improve to clarify documentation\r\n\r\nCo-authored-by: Daniel Andrade <dandrade@ciandt.com>\r\n\r\n* Added link with additional info\r\n\r\n* Clean unused locals\r\n\r\n* Fix example codes\r\n\r\n* -Improve auto-generated names for sinks and target\r\n-Improve code readability using maps and lookup\r\n\r\n* Fix var description\r\n\r\nCo-authored-by: Bharath KKB <bharathkrishnakb@gmail.com>\r\n\r\n* Refactor all destinations in one module call\r\n\r\n* Duplicated validation Removed\r\n\r\n* Fix handle retention_policy object\r\n\r\n* Fix added logbucket default location\r\n\r\n* Fix test output values to not break module\r\n\r\n* Fix PR reviews\r\n\r\n* Fix outputs and remote state vars\r\n\r\nCo-authored-by: Daniel Andrade <dandrade@ciandt.com>\r\nCo-authored-by: Bharath KKB <bharathkrishnakb@gmail.com>"
+    },
+    "codes": [
+      "awareness",
+      "storage",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/jg210/aws-experiments/commit/b09b668e5c3a11366551168541480b69e94c8c3a",
+    "content": {
+      "message": "t3a.nano is cheaper and better than t2.nano."
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/nsbno/terraform-aws-cost-alarm/commit/be2ef8e22c98140716d46500520e04fcb132cbd1",
+    "content": {
+      "message": "Update with cost anomaly alarm"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/nsbno/terraform-aws-cost-alarm/commit/1b8cec87b9bc03a93c22a300ee87e6fca8b12052",
+    "content": {
+      "message": "Refactor cost alarm to be only anomaly-based"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/VJftw/infrastructure/commit/a10d125aaa93e0c2ce8adb22d5dcab04634c725a",
+    "content": {
+      "message": "cost reduction: remove gcp audit KMS (#91)\n\n* [cost reduction] remove gcp audit KMS\r\n\r\n* update opa deleted_addresses_allowlist"
+    },
+    "codes": [
+      "saving",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/VJftw/infrastructure/commit/5c28d23cfa0c3488d5546ffdc1783c745a1e9239",
+    "content": {
+      "message": "Remove futher kms for cost reduction (#93)\n\n* remove use of CMKs entirely from GCP and AWS to reduce costs\r\n\r\n* Update Terraform and some provider versions"
+    },
+    "codes": [
+      "saving",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2",
+    "content": {
+      "message": "EBS vols cost optimisation in delius-prod"
+    },
+    "codes": [
+      "storage",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/ce502048eb3cd95e708f4575efefaf8dc60d7722",
+    "content": {
+      "message": "Change prisoner money test DB instance type\n\u2026from t2 to t4g, which is cheaper and more performant/energy-efficient. Apparently, cross-architecture migrations are possible (t4g is an AWS Graviton2 / ARM type) but this is a test DB so doesn't matter if it is destroyed."
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/b6cea25115ac93a788cdedc2fe2f94d2c7ff6658",
+    "content": {
+      "message": "LAA Apply Bot: Update RDS from 11 to 14 (#8375)\n\n* LAA Apply Bot: Update RDS from 11 to 14\r\n\r\nThe service has had a skipfile created and it is acknolwedged that this\r\nappraoch will cause a time of unavailibility, it's being done to see\r\nwhat impact this will have on the services and to document for\r\nother services the team maintain\r\n\r\n* Update RDS instance class to t3.small\r\n\r\n* Replace t3 small with t4g small\r\n\r\nTry and leverage the cost savings"
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/e7237276b72926d4a38ff099bc2f6260ef6e5675",
+    "content": {
+      "message": "Remove aws resources in abundant namespace\n\nThis is for cost saving, can be added back when testing modules"
+    },
+    "codes": [
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3",
+    "content": {
+      "message": "Change billing mode in our dynamodb table"
+    },
+    "codes": [
+      "billing_mode",
+      "storage",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/aa07f2d9772cc376589bec2cbb42f9ba849927db",
+    "content": {
+      "message": "Upgrade redis type to cache.t4g.micro\n\nNow that we've updated to Redis 7 we can change to a new instance type that should be more cost effective: https://user-guide.cloud-platform.service.justice.gov.uk/documentation/deploying-an-app/redis/create.html#table-of-instance-types"
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/d1b215a95b022200162bbf5b74d339f2c06cf066",
+    "content": {
+      "message": "clean up testing redis to save cost and revert team name for test ns"
+    },
+    "codes": [
+      "saving",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/alphagov/govwifi-terraform/commit/971ea5a81ca8325e9c91ab98ed2c799598c41fad",
+    "content": {
+      "message": "Add Automatic Snapshot Volume Backups for Prometheus and Grafana\n\nWhat\nThis enables the data for Prometheus, and the Grafana configuration to be\nrecovered if the volumes or instances are deleted. The snapshots are created\nand managed using Amazon Data Lifecycle Manager, which incurs no extra cost\n(https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html).\n\nWhy\nIt is best practice to have a backup of our data"
+    },
+    "codes": [
+      "awareness",
+      "storage",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/fluent-labs/infrastructure/commit/cc24cbd52867dcb699dea4a66c7124cbb96f5179",
+    "content": {
+      "message": "Prepare to turn off infrastructure (#186)\n\nPutting this project on hold for now, no need to keep paying for a full kubernetes cluster. This removes all things on the cluster in preparation for shutdown."
+    },
+    "codes": [
+      "saving",
+      "cluster",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/nationalarchives/tdr-terraform-environments/commit/30fe6243dd0d1f42beb56c4df72fd8c82d155faf",
+    "content": {
+      "message": "Increase the lambda timeout to 60s.\n\nWe had a timeout with it set to 15 seconds. This may need a bit of\ntweaking but this should be enough for now.\n\nAny longer and it takes too long to fail and it costs us more."
+    },
+    "codes": [
+      "awareness",
+      "feature",
+      "policy",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/Echo-Stream/terraform-aws-control/commit/444efbbc1864b08406dfbf50fe1e56cbb0f51ace",
+    "content": {
+      "message": "Cost & Usage only in us-east-1"
+    },
+    "codes": [
+      "awareness",
+      "feature",
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/aeternity/terraform-aws-devnet/commit/6b3bc5a88895b6f6030f40a357ae316c3a979951",
+    "content": {
+      "message": "Cost tuning (#37)\n\n* Update to latest aenode module (3.0.0)\r\n* Destroy next environment\r\n* Destroy integration_sync environment"
+    },
+    "codes": [
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/wellcomecollection/archivematica-infrastructure/commit/aa509685dc323899c9994b36ed53f33b89121b45",
+    "content": {
+      "message": "Increase the RDS instance size in staging\n\nIt's more expensive, but we get literally 10x the database connections,\nand we're starving Archivematica when there are lots of files."
+    },
+    "codes": [
+      "awareness",
+      "increase",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/wellcomecollection/archivematica-infrastructure/commit/dd8b902b9ff336784cf3c73bd39f9061a32561ed",
+    "content": {
+      "message": "Add a repo policy to avoid ECR costs getting out-of-hand"
+    },
+    "codes": [
+      "policy",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/wellcomecollection/archivematica-infrastructure/commit/7acf12dce8c0a1117ec7a3003ca36afa3af9523f",
+    "content": {
+      "message": "Increase the memory available to the transfer_monitor_lambda\n\nWe've noticed this lambda failing through timeouts. Upon investigation it appeas the lambda has been conistently using its entire allocation of 128MB which suggested that it was insufficiciently resourced resulting in it locking up and timing out.\n\nAfter experimentation is seems that 512MB is sufficient to cause the transfer lambda to succeed. This change will result in some increased cost but as this lambda runs quite infrequently the cost change is negligable."
+    },
+    "codes": [
+      "increase",
+      "feature",
+      "memory",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e",
+    "content": {
+      "message": "BBL-541: cost optimization - update natgw and cloudwatch (#452)\n\n* BBL-541: cost optimization - update natgw and cloudwatch\r\n\r\n* BBL-541: add k8s-eks layer to infracost"
+    },
+    "codes": [
+      "networking",
+      "feature",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/binbashar/le-tf-infra-aws/commit/6184fd167b796d7ef8f04aea5962c0b2774c6371",
+    "content": {
+      "message": "Add FinOps tools (#492)\n\n* Grant SSO Devops role permissions on SecretsManager\r\n\r\n* Add kube-resource-report for cost optimization and fix externaldns chart repo\r\n\r\n* Add Cost Analyzer for FinOps\r\n\r\n* Add kube-resource-report for cost optimization and fix externaldns chart repo\r\n\r\n* Add Cost Analyzer for FinOps\r\n\r\n---------\r\n\r\nCo-authored-by: Exequiel Barrirero <exequielrafaela@users.noreply.github.com>"
+    },
+    "codes": [
+      "awareness",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/binbashar/le-tf-infra-aws/commit/d23805c6946ed012570e3ce9d3e82c427f7ed4b6",
+    "content": {
+      "message": "Feature |\u00a0add binbash.co dns hosted zone +  redirect from binbash.com.ar (#520)\n\n* updating build.env to use terraform 1.3.x based image dependency for implemented module\r\n\r\n* shared/global/base-dns/binbash.co hosted zone and records creation\r\n\r\n* shared/global/base-dns/leverage.binbash.com.ar adding hosted zone to be redirected to leverage.binbash.co\r\n\r\n* shared/global/base-dns/binbash.com.ar record updates + binbash.com.ar redirect to binbash.co\r\n\r\n* shared/global/base-dns/leverage.binbash.com.ar removing not necessary record\r\n\r\n* Adding new shared/global/base-dns layers to infracost.yml\r\n\r\n* levearage tf format for terraform canonical format applied to pass CI check\r\n\r\n* shared/global/base-dns/bibash.co adding google domain and mx validation records\r\n\r\n* fixing vpc-apps-prd remote state key wrongly pointing to inxisting k8s-eks/network layer"
+    },
+    "codes": [
+      "alert",
+      "domain"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/binbashar/le-tf-infra-aws/commit/c5a84d5ab4ebf305d6ccdcf17227623c9f7fa008",
+    "content": {
+      "message": "Costs reporting tool (#535)\n\n* Adding costs notifications layer\r\n\r\n* Adding Lambda permissions on apps-devstg\r\n\r\n* Adding Lambda permissions on apps-prd\r\n\r\n* Adding Lambda permissions on management\r\n\r\n* Adding Lambda permissions on network\r\n\r\n* Adding Lambda permissions on security\r\n\r\n* Adding Lambda permissions on shared\r\n\r\n* Adding policies to management account\r\n\r\n* FIX/ formatting text\r\n\r\n* Adding cde improvements and bugfixes\r\n\r\n* Removing unused function\r\n\r\n---------\r\n\r\nCo-authored-by: Jose Peinado <jose.peinado@olapic.com>\r\nCo-authored-by: Juan Matias Kungfoo de la Camara Beovide <juan.delacamara@binbash.com.ar>"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/binbashar/le-tf-infra-aws/commit/bfef0567030f6c4443222187cafa23628b2acfe2",
+    "content": {
+      "message": "feature | updating cost management budget thresholds (#545)\n\nupdating cost management budget thresholds"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/05328b001621d631332564f9685c7d8de372d8b3",
+    "content": {
+      "message": "scaled redis down for cost and removed rdb backup as it was causing bugs"
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/384db8e54c1e77155c7d8ac99b391b3b58cd122f",
+    "content": {
+      "message": "scaled redis down for cost and removed rdb backup as it was causing bugs"
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/gravicore/terraform-gravicore-modules/commit/2a9045f5caca2824fbe4035020ffaf72d724d179",
+    "content": {
+      "message": "GDEV-342 add cost views and send mail actions"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/dfds/infrastructure-modules/commit/1c9c92d966c342d42ac5c915a7c01f6a98a38122",
+    "content": {
+      "message": "Disable expensive cloudwatch agent globally (#500)"
+    },
+    "codes": [
+      "feature",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/dfds/infrastructure-modules/commit/e4dedd7e1d28f5fab4cd78397a625ec8e8ad2d3e",
+    "content": {
+      "message": "Enable CMK key rotation and S3 bucket keys for CloudTrail. (#892)\n\n- Enable CMK key rotation.\r\n- Enable S3 bucket keys - reduces number of requests (costs) to KMS from S3:\r\nhttps://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html"
+    },
+    "codes": [
+      "saving",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/dfds/infrastructure-modules/commit/b60bee2f190d10e309a6fa14e87ada3195e65d96",
+    "content": {
+      "message": "Exempt from deny creating expensive ec2 (#1200)\n\n* Allow creating g4dn.12xlarge instances\r\n\r\n* Exempt from deny creating expensive ec2\r\n\r\n* Make ec2_exempted_accounts optional"
+    },
+    "codes": [
+      "policy",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/dfds/infrastructure-modules/commit/ba37fc3e2824170a9036a2cf476550b0a5ec7a7c",
+    "content": {
+      "message": "Updated expensive ec2 instance types prevention. (#1225)"
+    },
+    "codes": [
+      "policy",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/commit/0d9fac316a242e1bb4acf67ad683908450dc8ea8",
+    "content": {
+      "message": "FAST: Resman: Update billing.tf (#721)\n\n* FAST: Resman: Update billing.tf\r\n\r\nAdd billing.costsManager to the PF SAs to allow it to create billing alerts.\r\n\r\n* fix linting\r\n\r\nCo-authored-by: Ludovico Magnocavallo <ludomagno@google.com>"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/commit/83d2976949295528f860e6e9ec019ef9df889569",
+    "content": {
+      "message": "add support for cost management to GKE module (#1569)"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/modernisation-platform-environments/commit/237dc81c475dcfe3f44c19a2259f60f2b783c389",
+    "content": {
+      "message": "Planetfm/cost reporting (#4507)\n\n* looking at what this outputs\r\n\r\n* wrong module name\r\n\r\n* add athena resources\r\n\r\n* add s3 prefix (required but not documented)\r\n\r\n* change input output format values\r\n\r\n* update report location\r\n\r\n* change parameters\r\n\r\n* deploy some more changes\r\n\r\n* add column\r\n\r\n* resource table definition is incomplete\r\n\r\n* add remaining cur report definitions\r\n\r\n* set force destroy to true for athena resources also\r\n\r\n* add explicit dependency so bucket is created first\r\n\r\n* make naming generic\r\n\r\n* modularise cost usage report\r\n\r\n* update to module but currently deploys to all environments\r\n\r\n* fix issue where cur report deploy is all or nothing\r\n\r\n* test deploy to dev\r\n\r\n* change partitions\r\n\r\n* update report range\r\n\r\n* forgot to put parameters in quotes\r\n\r\n* update README\r\n\r\n* add comments\r\n\r\n* address pr comments\r\n\r\n* fix variable structure\r\n\r\n* change variable structure and remove un-needed merges\r\n\r\n* address checkov results"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/wellcomecollection/buildkite-infrastructure/commit/50957e0478fd4c4d945ac593822436f6a7ec8111",
+    "content": {
+      "message": "Increase the disk space on the Buildkite instances\n\nWe've been seeing a lot of low disk space errors recently; increasing\nthe disk size is cheap, so let's do it!"
+    },
+    "codes": [
+      "awareness",
+      "storage",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/cds-snc/cloud-based-sensor/commit/d1c2d8dd4ff3d69ee5d1aacbc7607d8064e854ac",
+    "content": {
+      "message": "chore: delete billing alarms in Cloud Based Sensor (#179)\n\nRemove the account billing alarms as the anomaly detection has not\r\nbeen effective in identifying unexpected costs."
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/robertdebock/terraform-aws-vault/commit/4ddd02182a1f210bb9f614fbba5ef11b4fcbe827",
+    "content": {
+      "message": "Enable costly resources."
+    },
+    "codes": [
+      "increase",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/robertdebock/terraform-aws-vault/commit/d287ea8da288c4d188c5d8c4daa0f945b886980c",
+    "content": {
+      "message": "Cheaper is better."
+    },
+    "codes": [
+      "saving"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/matihost/monorepo/commit/6995c99e0561c29b6e8d0ff84d3b2504d1772fe8",
+    "content": {
+      "message": "add GKE dashboard to monitor requested resources and prometheus ingestion rate\n\ndecrease Promethuse ingestion cost by disabling apiserver metrics ingestion"
+    },
+    "codes": [
+      "feature",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/matihost/monorepo/commit/0f5e7454d1213d34b8771d9a3829baf4a606f82f",
+    "content": {
+      "message": "reduce Cloud Logs cost by disablin GKE control plane logs\n\nreduce Prometheus Ingestion cost by removing most costly metrics from being scraped"
+    },
+    "codes": [
+      "saving",
+      "feature",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e",
+    "content": {
+      "message": "Reduce Argo CD log verbosity and log as JSON.\n\nArgo CD notifications-controller and repo-server are quite noisy at\n`loglevel=info`. We don't need these info logs so let's not pay to store\nthem. This should help towards getting us back under our log quota in\nLogIt.\n\nAlso set the log format to JSON so that the logs are easier to search."
+    },
+    "codes": [
+      "storage",
+      "feature",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/alphagov/govuk-infrastructure/commit/6017d0be84adac6b90b46f3d0bc2376a7e9b8e85",
+    "content": {
+      "message": "Stop scraping kube-apiserver.\n\nTurns out scraping the apiservers is surprisingly expensive and we're not\neven using any of those metrics, so let's ditch it. This should make the\nmonitoring we do care about a bit more robust. We don't run the\napiservers anyway; that's in Amazon-land and there are metrics in\nCloudWatch if we ever needed to look."
+    },
+    "codes": [
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/poseidon/typhoon/commit/8d2c8b8db692b27b89d18e47a40cf7b49562694e",
+    "content": {
+      "message": "Switch to Flatcar Azure gen2 images and change worker type\n\n* Switch from Azure Hypervisor generation 1 to generation 2\n* Change default Azure `worker_type` from Standard_DS1_v2 to Standard_D2as_v5\n  * Get 2 VCPU, 7 GiB, 12500Mbps (vs 1 VCPU, 3.5GiB, 750 Mbps)\n  * Small increase in pay-as-you-go price ($53.29 -> $62.78)\n  * Small increase in spot price ($5.64/mo -> $7.37/mo)\n  * Change from Intel to AMD EPYC (`D2as_v5` cheaper than `D2s_v5`)\n\nNotes: Azure makes you accept terms for each plan:\n\n```\naz vm image terms accept --publish kinvolk --offer flatcar-container-linux-free --plan stable-gen2\n```\n\nRel:\n\n* https://learn.microsoft.com/en-us/azure/virtual-machines/dasv5-dadsv5-series#dasv5-series\n* https://learn.microsoft.com/en-us/azure/virtual-machines/dv2-dsv2-series#dsv2-series"
+    },
+    "codes": [
+      "instance",
+      "increase",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db",
+    "content": {
+      "message": "Switch Azure Fedora CoreOS default worker type\n\n* Change default Azure worker_type from Standard_DS1_v2 to Standard_D2as_v5\n  * Get 2 VCPU, 7 GiB, 12500Mbps (vs 1 VCPU, 3.5GiB, 750 Mbps)\n  * Small increase in pay-as-you-go price ($53.29 -> $62.78)\n  * Small increase in spot price ($5.64/mo -> $7.37/mo)\n  * Change from Intel to AMD EPYC (`D2as_v5` cheaper than `D2s_v5`)\n\nRel:\n\n* https://github.com/poseidon/typhoon/pull/1248\n* https://learn.microsoft.com/en-us/azure/virtual-machines/dasv5-dadsv5-series#dasv5-series\n* https://learn.microsoft.com/en-us/azure/virtual-machines/dv2-dsv2-series#dsv2-series"
+    },
+    "codes": [
+      "instance",
+      "increase",
+      "saving",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-terraform-rds-instance/commit/0e825c32901df9df18ec219f32a2a0ea9bb3dc59",
+    "content": {
+      "message": "enable_auto_start_stop\n\nEnable auto start and stop of the RDS instances for cost saving"
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/ministryofjustice/cloud-platform-terraform-rds-instance/commit/bd2cf2621f981fe3537528f33ba975a2b9e2e320",
+    "content": {
+      "message": "Add  enable auto start and stop of the RDS instances\n\nThis is during 10:00 PM - 6:00 AM for cost saving, recommended for non-prod instances\n\nhttps://github.com/ministryofjustice/cloud-platform-terraform-aws-scheduler"
+    },
+    "codes": [
+      "saving",
+      "instance",
+      "change"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411",
+    "content": {
+      "message": "Add ARM-SMALL instance type\n\nSame as in #24 this adds `r6g.large` instances under the\n`ARM-SMALL` label so we can start testing and using those in CI (5x\ncheaper than `m6g.4xlarge`). If that works well we can convert some\nusages over, and if not we can remove this autoscaling group."
+    },
+    "codes": [
+      "saving",
+      "awareness",
+      "test",
+      "instance"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/cloudposse/terraform-spacelift-cloud-infrastructure-automation/commit/f1ad51c1ee8b96d7a60c23dbe49ccd5a3439a3dc",
+    "content": {
+      "message": "Add Infracost (#82)\n\n* Add infracost_enabled\r\n\r\nCo-authored-by: cloudpossebot <11232728+cloudpossebot@users.noreply.github.com>"
+    },
+    "codes": [
+      "alert"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505",
+    "content": {
+      "message": "adding shared/us-east-1/tools-vpn-server to infracost config and updating ec2 size to test"
+    },
+    "codes": [
+      "alert",
+      "networking",
+      "vpn"
+    ]
+  },
+  {
+    "type": "commit",
+    "url": "https://github.com/stephengrier/my-infra/commit/608ccb7425096642b0fb1c48153c23ac7e7c4305",
+    "content": {
+      "message": "Remove service_discovery.tf\n\nThe aws_service_discovery resources were never used. The route53 zone is\ncosting money so remove it."
+    },
+    "codes": [
+      "saving",
+      "domain",
+      "change"
+    ]
+  }
+]

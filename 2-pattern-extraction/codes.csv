@@ -1,34 +1,35 @@
 name,description,count
-aws,Specific to Amazon Web Services,363
-no_cost_change,The commit contents do not reflect a change related to cost awareness or cost savings,179
-cheaper_instance,Use a cheaper compute instance,74
-gcp,Specific to Google Cloud Platform,64
-azure,Specific to Azure,52
-new_gen,Newer resource generations tend to be cheaper,34
-remove_nat_gateway,Disable NAT gateway,22
-dynamo_on_demand,Use PAY_PER_REQUEST billing type for DynamoDB,20
+aws,Specific to Amazon Web Services,413
+no_cost_change,The commit contents do not reflect a change related to cost awareness or cost savings,199
+cheaper_instance,Use a cheaper compute instance,84
+gcp,Specific to Google Cloud Platform,71
+azure,Specific to Azure,58
+new_gen,Newer resource generations tend to be cheaper,39
+remove_nat_gateway,Disable NAT gateway,23
+dynamo_on_demand,Use PAY_PER_REQUEST billing type for DynamoDB,22
+cheaper_volume,Use a cheaper storage volume,18
 add_billing_alarm,Add a CloudWatch alarm for a monthly billing threshold,17
-cheaper_volume,Use a cheaper storage volume,16
-digitalocean,Specific to Digital Ocean,12
+digitalocean,Specific to Digital Ocean,13
 smaller_disk,Use a smaller disk size,11
 cheaper_disk_type,Use a cheaper disk type,10
 add_budget,Use an AWS budget to receive billing alarms,9
 remove_nat,Stop using NAT,8
 remove_eip,Remove elastic IP,8
+explicit_value,Explicitly specify a value because the default is (too) high,8
+reduce_instance_count,Reduce the number of instances,8
 remove_private_subnet,Remove private VPC subnet,7
-explicit_value,Explicitly specify a value because the default is (too) high,7
-reduce_instance_count,Reduce the number of instances,7
 add_lifecycle_rule,Add lifecycle rules to S3 buckets to drop old data,6
 use_spot_instance,Use Spot instances,6
 cheaper_area,Move to a cheaper region/area,6
 cheaper_os,Use a cheaper operating system,5
 dynamo_reduce_rw_capacity,Reduce read/write capacity for DynamoDB,5
+scaleway,Specific to Scaleway,4
 reduce_nat_gateways,Reduce the number of NAT gateways,4
 less_memory,Use less memory,4
 use_ec2_as_nat_gateway,Use EC2 instance as a NAT gateway,4
-scaleway,Specific to Scaleway,3
 remove_loadbalancer,Disable load balancer,3
 add_preemptible,Use preemptible compute instances,3
+cheaper_redis_cache,Use a cheaper Redis cache,3
 reduce_az,Reduce the number of availability zones used,3
 cheaper_provider,Move to a cheaper cloud provider,3
 remove_status_check,Remove Route53 status check,3
@@ -40,6 +41,7 @@ reduce_subnets,Reduce the number of subnets,2
 remove_iops,Remove provisioned IOPS to use cheaper storage,2
 use_global_loadbalancing,Use global HTTP/TCP proxy load balancing instead of regional network load balancers,2
 use_spot_fleet,Use AWS Spot Fleet instead of EC2,2
+remove_vpn,Remove use of VPN,2
 remove_gcp,Stop using GCP entirely,2
 less_cpu_cores,Use fewer CPU cores,2
 add_s3_vpc_endpoint,Add a VPC endpoint for S3,2
@@ -51,17 +53,23 @@ remove_ssm_endpoint,Disable SSM endpoint,2
 reduce_node_count,Reduce the number of nodes used by a node pool,2
 cheaper_container_registry,Use a cheaper container registry,2
 expressroute_local_tier,Use Local tier for ExpressRoute to save egress traffic costs,2
+add_ecr_lifecycle_policy,Add a lifecycle policy for ECR to drop images after some time,2
 reduce_eip,Reduce the number of EIPs,2
 reduce_mssql_min_capacity,Reduce the minimum capacity of an MSSQL database,2
 use_default_kms_key,Use the default KMS key for a service instead of creating one,2
+use_bucket_key,Use S3 Bucket Keys for SSE-KMS,2
+remove_container_insights,Disable Container Insights for an ECS cluster,2
+remove_gcp_kms,Stop using GCP KMS,2
+remove_prometheus_kube_api_scraping,Stop scraping the Kubernetes API server from Prometheus which is expensive,2
+add_rds_auto_start_stop,Automatically start and stop RDS instances at certain times to save cost,2
 alicloud,Specific to Alibaba Cloud,1
 ovh,Specific to OVHcloud,1
+fastly,Specific to Fastly,1
+datadog,Specific to Datadog,1
 remove_dataflow,Stop using Google Dataflow,1
 remove_eks,Stop using EKS,1
 reduce_vpc_endpoint_subnets,Reduce the number of VPC endpoint subnets,1
-cheaper_redis_cache,Use a cheaper Redis cache,1
 remove_iam,Remove IAM,1
-remove_vpn,Remove use of VPN,1
 remove_dynamo_global_secondary_indices,Stop using global secondary indices in Dynamo,1
 remove_firewall,Remove firewall,1
 remove_cloudwatch_metrics,Remove CloudWatch metrics,1
@@ -91,7 +99,6 @@ remove_cloudfront_logs,Stop using logs for CloudFront,1
 remove_dataflow_job,Stop using a Google DataFlow job,1
 reduce_s3_expiration,Reduce the expiration time of S3 data,1
 remove_node_pool_autoscaling,Remove autoscaling from a GCP container node pool,1
-add_ecr_lifecycle_policy,Add a lifecycle policy for ECR to drop images after some time,1
 reduce_dynamo_tables,Reduce the number of DynamoDB tables,1
 remove_external_vpc_endpoint,Remove an external VPC endpoint,1
 use_full_glacier_time,"Use at least 90 days for Glacier S3 archives, since that is the minimum billed period",1
@@ -107,7 +114,6 @@ reduce_spot_fleet_price,Use a lower price for Spot fleet requests,1
 remove_waf,Disable WAF,1
 add_resource_group_cost_management_export,Add a cost management export to a resource gropu,1
 add_consumption_budget_resource_group,Add a consumption budget for a resource group,1
-use_bucket_key,Use S3 Bucket Keys for SSE-KMS,1
 remove_fluentbit_annotations,Disable annotations in Fluent Bit logs to reduce CloudWatch log size,1
 remove_fluentbit_labels,Disable labels in Fluent Bit logs to reduce CloudWatch log size,1
 use_mssql_vm_payg,Use PAYG SQL license type for MSSQL virtual machines,1
@@ -121,9 +127,36 @@ remove_sns_alarm,Stop using SNS alarms,1
 remove_guard_duty,Stop using GuardDuty,1
 use_standard_sql_db_edition,Use Standard edition for an SQL database,1
 cheaper_service_objective,Use a cheaper service objective for an SQL database,1
-remove_container_insights,Disable Container Insights for an ECS cluster,1
 reduce_cloudwatch_retention,Reduce the retention period of a CloudWatch log group,1
 remove_rds_instance,Remove an RDS instance,1
 remove_sqs,Stop using SQS,1
 lambda_max_concurrency,Set a maximum concurrency for Lambda functions,1
 remove_log_analytics,Stop using Azure Log Analytics,1
+cheaper_elasticsearch_instance,Use a cheaper instance type for an AWS ElasticSearch cluster,1
+fastly_compute_compress_s3_logs,Compress Fastly compute S3 logs,1
+replace_lambda_functions_with_cloudfront_functions,Replace Lambda functions with CloudFront functions,1
+remove_datadog_aws_lambda_integration,Remove Datadog's AWS Lambda integration,1
+reduce_eks_managed_node_groups_max_size,Reduce the max size of EKS managed node groups to prevent unexpected spikes in billing,1
+add_cost_anomaly_alert,Adds a Cost Explorer cost anomaly alert,1
+replace_budget_with_cost_anomaly_alert,Replace the use of budgets with Cost Explorer anomaly alerts,1
+remove_aws_kms,Stop using AWS KMS,1
+remove_redis,Stop using Redis,1
+increase_lambda_timeout,Increasing Lambda timeout incurs additional cost,1
+increase_budget_threshold,"Increase a budget threshold, possibly increasing cost",1
+increase_volume_size,"Increase the size of a storage volume, increasing cost",1
+add_vpc,Adds a VPC which is costly,1
+add_nat_gateway,Adds a NAT gateway which is costly,1
+add_eip,Adds an elastic IP which is costly,1
+add_route,Adds a route which is costly,1
+add_kms_deletion_window,Add a deletion window to a KMS key,1
+reduce_argo_log_level,Reduce the log level of Argo CD to reduce log storage costs,1
+add_spacelift_infracost,Add Spacelift's Infracost integration for cost insights,1
+remove_cloudwatch_dashboard,Remove a CloudWatch dashboard,1
+use_kube_resource_report,Use kube-resource-report to export usage and cost statistics for a Kubernetes cluster,1
+use_kubecost_cost_analyzer,Use Kubecost cost-analyzer to gain insight in current and historical Kubernetes costs,1
+add_subscription_cost_management_view,Add a Cost Management View for a Subscription to get insights into costs,1
+replace_jenkins_sync_with_bucket_replication,Replace Jenkins sync with standard bucket replication which is cheaper,1
+remove_provider,Fully move away from a cloud provider,1
+remove_scaleway_rdb,Stop using Scaleway relational databases,1
+remove_eks_cloudwatch_agent,Stop using EKS CloudWatch agents,1
+remove_service_discovery,Remove service discovery resources,1
