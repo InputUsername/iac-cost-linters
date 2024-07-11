@@ -6,7 +6,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -16,7 +16,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -26,7 +26,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -36,7 +36,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -46,7 +46,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -56,7 +56,7 @@
             "replace_billing_alarm_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -66,7 +66,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -76,7 +76,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -86,7 +86,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -96,7 +96,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -106,7 +106,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -116,7 +116,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -126,7 +126,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -136,7 +136,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -146,7 +146,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -156,7 +156,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -166,7 +166,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -176,7 +176,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -186,7 +186,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -196,7 +196,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -206,7 +206,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -216,7 +216,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -226,7 +226,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -236,7 +236,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -246,7 +246,7 @@
             "add_budget"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -256,7 +256,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -266,7 +266,7 @@
             "add_billing_alarm"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -276,7 +276,7 @@
             "add_preemptible"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -286,7 +286,7 @@
             "use_spot_fleet"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -296,7 +296,7 @@
             "use_spot_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -306,7 +306,7 @@
             "use_spot_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -316,7 +316,7 @@
             "use_spot_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -326,7 +326,7 @@
             "use_spot_fleet"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -336,7 +336,7 @@
             "use_spot_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -346,7 +346,7 @@
             "use_spot_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -356,7 +356,7 @@
             "use_spot_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -366,7 +366,7 @@
             "use_fargate_spot_capacity_provider"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -376,7 +376,7 @@
             "add_preemptible"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -386,7 +386,7 @@
             "add_preemptible"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -396,7 +396,7 @@
             "add_lifecycle_rule"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -406,7 +406,7 @@
             "add_lifecycle_rule"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -416,7 +416,7 @@
             "add_lifecycle_rule"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -426,7 +426,7 @@
             "add_lifecycle_rule"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -436,7 +436,7 @@
             "add_lifecycle_rule"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -446,7 +446,7 @@
             "add_lifecycle_rule"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -456,7 +456,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -466,7 +466,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -476,7 +476,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -486,7 +486,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -496,7 +496,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -506,7 +506,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -516,7 +516,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -526,7 +526,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -536,7 +536,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -546,7 +546,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -556,7 +556,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -566,7 +566,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -576,7 +576,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -586,7 +586,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -596,7 +596,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -606,7 +606,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -616,7 +616,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -626,7 +626,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -636,7 +636,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -646,7 +646,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -656,7 +656,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -666,7 +666,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -676,7 +676,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -686,7 +686,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -696,7 +696,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -706,7 +706,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -716,7 +716,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -726,7 +726,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -736,7 +736,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -746,7 +746,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -756,7 +756,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -766,7 +766,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -776,7 +776,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -786,7 +786,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -796,7 +796,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -806,7 +806,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -816,7 +816,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -826,7 +826,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -836,7 +836,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -846,7 +846,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -856,7 +856,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -866,7 +866,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -876,7 +876,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -886,7 +886,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -896,7 +896,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -906,7 +906,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -916,7 +916,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -926,7 +926,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -936,7 +936,7 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -946,7 +946,67 @@
             "cheaper_instance"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive instance",
+        "url": "https://github.com/jenkins-infra/aws/commit/586fde061356513609fe4f2014a11ddcec849c35",
+        "codes": [
+            "cheaper_instance"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive instance",
+        "url": "https://github.com/poseidon/terraform-azure-kubernetes/commit/4989bf2d4a5eed7f1fcb01f63db5624afa113232",
+        "codes": [
+            "cheaper_instance"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive instance",
+        "url": "https://github.com/poseidon/typhoon/commit/8d2c8b8db692b27b89d18e47a40cf7b49562694e",
+        "codes": [
+            "cheaper_instance"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive instance",
+        "url": "https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db",
+        "codes": [
+            "cheaper_instance"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive instance",
+        "url": "https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411",
+        "codes": [
+            "cheaper_instance"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive instance",
+        "url": "https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505",
+        "codes": [
+            "cheaper_instance"
+        ],
+        "technology": [
+            "terraform"
         ]
     },
     {
@@ -956,7 +1016,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -966,7 +1026,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -976,7 +1036,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -986,7 +1046,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -996,7 +1056,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1006,7 +1066,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1016,7 +1076,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1026,7 +1086,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1036,7 +1096,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1046,7 +1106,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1056,7 +1116,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1066,7 +1126,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1076,7 +1136,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1086,7 +1146,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1096,7 +1156,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1106,7 +1166,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1116,7 +1176,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1126,7 +1186,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1136,7 +1196,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1146,7 +1206,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1156,7 +1216,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1166,7 +1226,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1176,7 +1236,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1186,7 +1246,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1196,7 +1256,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1206,7 +1266,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1216,7 +1276,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1226,7 +1286,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1236,7 +1296,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1246,7 +1306,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1256,7 +1316,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1266,7 +1326,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1276,7 +1336,7 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1286,7 +1346,57 @@
             "new_gen"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Old generation",
+        "url": "https://github.com/alphagov/govuk-aws/commit/ffa75257747f225577616e6cf517eee965221041",
+        "codes": [
+            "new_gen"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Old generation",
+        "url": "https://github.com/jg210/aws-experiments/commit/b09b668e5c3a11366551168541480b69e94c8c3a",
+        "codes": [
+            "new_gen"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Old generation",
+        "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/ce502048eb3cd95e708f4575efefaf8dc60d7722",
+        "codes": [
+            "new_gen"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Old generation",
+        "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/b6cea25115ac93a788cdedc2fe2f94d2c7ff6658",
+        "codes": [
+            "new_gen"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Old generation",
+        "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/aa07f2d9772cc376589bec2cbb42f9ba849927db",
+        "codes": [
+            "new_gen"
+        ],
+        "technology": [
+            "terraform"
         ]
     },
     {
@@ -1296,7 +1406,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1306,7 +1416,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1316,7 +1426,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1326,7 +1436,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1336,7 +1446,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1346,7 +1456,7 @@
             "cheaper_volume"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1356,7 +1466,7 @@
             "cheaper_volume"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1366,7 +1476,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1376,7 +1486,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1386,7 +1496,7 @@
             "cheaper_volume"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1396,7 +1506,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1406,7 +1516,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1416,7 +1526,7 @@
             "cheaper_disk_type"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1426,7 +1536,7 @@
             "cheaper_volume"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1436,7 +1546,7 @@
             "cheaper_volume"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1446,7 +1556,7 @@
             "cheaper_volume"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1456,7 +1566,17 @@
             "cheaper_volume"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive storage type",
+        "url": "https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2",
+        "codes": [
+            "cheaper_volume"
+        ],
+        "technology": [
+            "terraform"
         ]
     },
     {
@@ -1466,7 +1586,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1476,7 +1596,7 @@
             "remove_loadbalancer"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1487,7 +1607,7 @@
             "remove_nat"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1497,7 +1617,7 @@
             "reduce_nat_gateways"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1507,7 +1627,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1517,7 +1637,7 @@
             "reduce_vpc_endpoint_subnets"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1528,7 +1648,7 @@
             "remove_nat"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1538,7 +1658,7 @@
             "remove_vpn"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1551,7 +1671,7 @@
             "remove_alb"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1562,7 +1682,7 @@
             "remove_nat"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1572,7 +1692,7 @@
             "remove_firewall"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1583,7 +1703,7 @@
             "remove_eip"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1593,7 +1713,7 @@
             "use_ec2_as_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1603,7 +1723,7 @@
             "use_alb"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1616,7 +1736,7 @@
             "remove_route"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1626,7 +1746,7 @@
             "remove_nat"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1636,7 +1756,7 @@
             "associate_public_ip"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1647,7 +1767,7 @@
             "use_ec2_as_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1657,7 +1777,7 @@
             "reduce_nlb"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1667,7 +1787,7 @@
             "remove_loadbalancer"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1677,7 +1797,7 @@
             "remove_eip"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1687,7 +1807,7 @@
             "remove_private_subnet"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1697,7 +1817,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1707,7 +1827,7 @@
             "remove_loadbalancer"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1717,7 +1837,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1727,7 +1847,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1737,7 +1857,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1748,7 +1868,7 @@
             "remove_nat"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1758,7 +1878,7 @@
             "remove_alb"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1768,7 +1888,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1778,7 +1898,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1788,7 +1908,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1798,7 +1918,7 @@
             "remove_waf"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1808,7 +1928,7 @@
             "remove_eip"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1819,7 +1939,7 @@
             "reduce_nat_gateways"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1829,7 +1949,7 @@
             "use_ec2_as_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1841,7 +1961,7 @@
             "remove_nat"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1851,7 +1971,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1862,7 +1982,7 @@
             "reduce_eip"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1874,7 +1994,7 @@
             "remove_private_subnet"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1884,7 +2004,7 @@
             "reduce_nat_gateways"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1895,7 +2015,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1905,7 +2025,7 @@
             "remove_transit_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1916,7 +2036,7 @@
             "remove_private_subnet"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1927,7 +2047,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1937,7 +2057,7 @@
             "remove_eip"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1947,7 +2067,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1957,7 +2077,7 @@
             "remove_alb"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1967,7 +2087,7 @@
             "remove_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1978,7 +2098,7 @@
             "use_ec2_as_nat_gateway"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -1989,7 +2109,40 @@
             "remove_nat"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive network resource",
+        "url": "https://github.com/alphagov/govuk-aws/commit/9b54cd6e875843c3ecade45ce37e863357b6e0e9",
+        "codes": [
+            "remove_vpn"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive network resource",
+        "url": "https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e",
+        "codes": [
+            "remove_nat_gateway"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive network resource",
+        "url": "https://github.com/robertdebock/terraform-aws-vault/commit/4ddd02182a1f210bb9f614fbba5ef11b4fcbe827",
+        "codes": [
+            "add_vpc",
+            "add_nat_gateway",
+            "add_eip",
+            "add_route"
+        ],
+        "technology": [
+            "terraform"
         ]
     },
     {
@@ -1999,7 +2152,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2009,7 +2162,7 @@
             "lambda_less_memory"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2020,7 +2173,7 @@
             "less_memory"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2030,7 +2183,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2040,7 +2193,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2051,7 +2204,7 @@
             "less_memory"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2061,7 +2214,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2071,7 +2224,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2081,7 +2234,7 @@
             "less_memory"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2092,7 +2245,7 @@
             "less_cpu"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2102,7 +2255,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2112,7 +2265,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2122,7 +2275,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2132,7 +2285,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2142,7 +2295,7 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2152,7 +2305,7 @@
             "less_cpu_cores"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2162,7 +2315,17 @@
             "smaller_disk"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Overprovisioned resources",
+        "url": "https://github.com/wellcomecollection/buildkite-infrastructure/commit/50957e0478fd4c4d945ac593822436f6a7ec8111",
+        "codes": [
+            "increase_volume_size"
+        ],
+        "technology": [
+            "terraform"
         ]
     },
     {
@@ -2172,7 +2335,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2182,7 +2345,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2192,7 +2355,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2202,7 +2365,7 @@
             "remove_dynamo_global_secondary_indices"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2212,7 +2375,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2222,7 +2385,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2232,7 +2395,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2242,7 +2405,7 @@
             "dynamo_reduce_rw_capacity"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2252,7 +2415,7 @@
             "dynamo_reduce_rw_capacity"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2262,7 +2425,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2272,7 +2435,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2282,7 +2445,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2292,7 +2455,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2302,7 +2465,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2312,7 +2475,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2322,7 +2485,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2332,7 +2495,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2343,7 +2506,7 @@
             "dynamo_reduce_rw_capacity"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2353,7 +2516,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2363,7 +2526,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2373,7 +2536,7 @@
             "dynamo_reduce_rw_capacity"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2383,7 +2546,7 @@
             "dynamo_reduce_rw_capacity"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2393,7 +2556,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2403,7 +2566,7 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2413,7 +2576,27 @@
             "dynamo_on_demand"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "AWS - Expensive DynamoDB",
+        "url": "https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5",
+        "codes": [
+            "dynamo_on_demand"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "AWS - Expensive DynamoDB",
+        "url": "https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3",
+        "codes": [
+            "dynamo_on_demand"
+        ],
+        "technology": [
+            "terraform"
         ]
     },
     {
@@ -2423,7 +2606,7 @@
             "remove_cloudwatch_metrics"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2433,7 +2616,7 @@
             "remove_cloudwatch_logs"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2444,7 +2627,7 @@
             "reduce_cloudwatch_retention"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2454,7 +2637,7 @@
             "remove_audit_logs"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2464,7 +2647,7 @@
             "remove_status_check"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2474,7 +2657,7 @@
             "remove_status_check"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2484,7 +2667,7 @@
             "remove_status_check"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2494,7 +2677,7 @@
             "remove_cloudfront_logs"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2505,7 +2688,7 @@
             "remove_fluentbit_labels"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
         ]
     },
     {
@@ -2515,7 +2698,77 @@
             "remove_log_analytics"
         ],
         "technology": [
-            "Terraform"
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "url": "https://github.com/Accurate0/infrastructure/commit/bd63efe7cf8fd2d9ae3a1497c342f97a7d22a7f5",
+        "codes": [
+            "remove_container_insights"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "url": "https://github.com/rust-lang/simpleinfra/commit/05370cc8f9852987e20cf5c659e5249dd1f2181c",
+        "codes": [
+            "fastly_compute_compress_s3_logs"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "url": "https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e",
+        "codes": [
+            "remove_cloudwatch_dashboard"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "url": "https://github.com/dfds/infrastructure-modules/commit/1c9c92d966c342d42ac5c915a7c01f6a98a38122",
+        "codes": [
+            "remove_eks_cloudwatch_agent"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "url": "https://github.com/matihost/monorepo/commit/6995c99e0561c29b6e8d0ff84d3b2504d1772fe8",
+        "codes": [
+            "remove_prometheus_kube_api_scraping"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "url": "https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e",
+        "codes": [
+            "reduce_argo_log_level"
+        ],
+        "technology": [
+            "terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "url": "https://github.com/alphagov/govuk-infrastructure/commit/6017d0be84adac6b90b46f3d0bc2376a7e9b8e85",
+        "codes": [
+            "remove_prometheus_kube_api_scraping"
+        ],
+        "technology": [
+            "terraform"
         ]
     }
 ]
