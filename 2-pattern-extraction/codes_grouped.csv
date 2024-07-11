@@ -1,17 +1,18 @@
 name,description,count
 
-no_cost_change,The commit contents do not reflect a change related to cost awareness or cost savings,179
+no_cost_change,The commit contents do not reflect a change related to cost awareness or cost savings,199
 
-aws,Specific to Amazon Web Services,363
-gcp,Specific to Google Cloud Platform,64
-azure,Specific to Azure,52
-digitalocean,Specific to Digital Ocean,12
-scaleway,Specific to Scaleway,3
+aws,Specific to Amazon Web Services,413
+gcp,Specific to Google Cloud Platform,71
+azure,Specific to Azure,58
+digitalocean,Specific to Digital Ocean,13
+scaleway,Specific to Scaleway,4
 hcloud,Specific to Hetzner Cloud,2
 ibm,Specific to IBM Cloud,2
 oracle,Specific to Oracle Cloud,2
 alicloud,Specific to Alibaba Cloud,1
 ovh,Specific to OVHcloud,1
+fastly,Specific to Fastly,1
 
 add_billing_alarm,Add a CloudWatch alarm for a monthly billing threshold,17
 add_budget,Use an AWS budget to receive billing alarms,9
@@ -24,18 +25,18 @@ use_fargate_spot_capacity_provider,Use Fargate Spot capacity provider for ECS,1
 
 add_lifecycle_rule,Add lifecycle rules to S3 buckets to drop old data,6
 
-cheaper_instance,Use a cheaper compute instance,74
+cheaper_instance,Use a cheaper compute instance,84
 
-new_gen,Newer resource generations tend to be cheaper,34
+new_gen,Newer resource generations tend to be cheaper,39
 
-cheaper_volume,Use a cheaper storage volume,16
+cheaper_volume,Use a cheaper storage volume,18
 cheaper_disk_type,Use a cheaper disk type,10
 
-dynamo_on_demand,Use PAY_PER_REQUEST billing type for DynamoDB,20
+dynamo_on_demand,Use PAY_PER_REQUEST billing type for DynamoDB,22
 dynamo_reduce_rw_capacity,Reduce read/write capacity for DynamoDB,5
 remove_dynamo_global_secondary_indices,Stop using global secondary indices in Dynamo,1
 
-remove_nat_gateway,Disable NAT gateway,22
+remove_nat_gateway,Disable NAT gateway,23
 reduce_nat_gateways,Reduce the number of NAT gateways,4
 use_ec2_as_nat_gateway,Use EC2 instance as a NAT gateway,4
 remove_nat,Stop using NAT,8
@@ -50,36 +51,46 @@ use_alb,Use ALB instead of ELB,1
 reduce_nlb,Reduce the number of network load balancers,1
 remove_route_table,Remove route table,2
 remove_route,Remove route,1
-remove_vpn,Remove use of VPN,1
+remove_vpn,Remove use of VPN,2
 remove_firewall,Remove firewall,1
 remove_transit_gateway,Stop using a transit gateway,1
 associate_public_ip,Allow public IP addresses on instances instead of using NAT,1
 remove_waf,Disable WAF,1
+add_vpc,Adds a VPC which is costly,1
+add_nat_gateway,Adds a NAT gateway which is costly,1
+add_eip,Adds an elastic IP which is costly,1
+add_route,Adds a route which is costly,1
 
 smaller_disk,Use a smaller disk size,11
 less_memory,Use less memory,4
 less_cpu_cores,Use fewer CPU cores,2
 less_cpu,Reduce CPU utilization,2
 lambda_less_memory,Use less memory for a Lambda,1
+increase_volume_size,"Increase the size of a storage volume, increasing cost",1
 
 remove_status_check,Remove Route53 status check,3
 remove_cloudwatch_metrics,Remove CloudWatch metrics,1
 remove_cloudwatch_logs,Stop using CloudWatch logs,1
 remove_log_analytics,Stop using Azure Log Analytics,1
-remove_container_insights,Disable Container Insights for an ECS cluster,1
+remove_container_insights,Disable Container Insights for an ECS cluster,2
 reduce_cloudwatch_retention,Reduce the retention period of a CloudWatch log group,1
 remove_audit_logs,Remove GCP audit logs,1
 remove_cloudfront_logs,Stop using logs for CloudFront,1
 remove_fluentbit_annotations,Disable annotations in Fluent Bit logs to reduce CloudWatch log size,1
 remove_fluentbit_labels,Disable labels in Fluent Bit logs to reduce CloudWatch log size,1
+reduce_argo_log_level,Reduce the log level of Argo CD to reduce log storage costs,1
+remove_cloudwatch_dashboard,Remove a CloudWatch dashboard,1
+fastly_compute_compress_s3_logs,Compress Fastly compute S3 logs,1
+remove_prometheus_kube_api_scraping,Stop scraping the Kubernetes API server from Prometheus which is expensive,2
+remove_eks_cloudwatch_agent,Stop using EKS CloudWatch agents,1
 
 
 
 
 
-explicit_value,Explicitly specify a value because the default is (too) high,7
+explicit_value,Explicitly specify a value because the default is (too) high,8
 
-reduce_instance_count,Reduce the number of instances,7
+reduce_instance_count,Reduce the number of instances,8
 
 cheaper_area,Move to a cheaper region/area,6
 reduce_az,Reduce the number of availability zones used,3
@@ -106,7 +117,7 @@ reduce_mssql_min_capacity,Reduce the minimum capacity of an MSSQL database,2
 use_default_kms_key,Use the default KMS key for a service instead of creating one,2
 remove_dataflow,Stop using Google Dataflow,1
 remove_eks,Stop using EKS,1
-cheaper_redis_cache,Use a cheaper Redis cache,1
+cheaper_redis_cache,Use a cheaper Redis cache,3
 remove_iam,Remove IAM,1
 cheaper_rds_cluster,Use a cheaper RDS instance,1
 auto_stop_1h,Use an auto_stop of at least 1h,1
@@ -124,7 +135,7 @@ remove_glacier_transition,Remove a lifecycle rule transition on S3 buckets to Gl
 remove_dataflow_job,Stop using a Google DataFlow job,1
 reduce_s3_expiration,Reduce the expiration time of S3 data,1
 remove_node_pool_autoscaling,Remove autoscaling from a GCP container node pool,1
-add_ecr_lifecycle_policy,Add a lifecycle policy for ECR to drop images after some time,1
+add_ecr_lifecycle_policy,Add a lifecycle policy for ECR to drop images after some time,2
 reduce_dynamo_tables,Reduce the number of DynamoDB tables,1
 remove_external_vpc_endpoint,Remove an external VPC endpoint,1
 use_full_glacier_time,"Use at least 90 days for Glacier S3 archives, since that is the minimum billed period",1
@@ -137,7 +148,7 @@ remove_transfer_acceleration,Remove transfer acceleration from S3 buckets,1
 reduce_spot_fleet_price,Use a lower price for Spot fleet requests,1
 add_resource_group_cost_management_export,Add a cost management export to a resource gropu,1
 add_consumption_budget_resource_group,Add a consumption budget for a resource group,1
-use_bucket_key,Use S3 Bucket Keys for SSE-KMS,1
+use_bucket_key,Use S3 Bucket Keys for SSE-KMS,2
 use_mssql_vm_payg,Use PAYG SQL license type for MSSQL virtual machines,1
 increase_billing_alarm_period,Increase the billing alarm period,1
 use_standard_credit_specification,Use standard credit specification instead of unlimited,1
@@ -150,3 +161,25 @@ cheaper_service_objective,Use a cheaper service objective for an SQL database,1
 remove_rds_instance,Remove an RDS instance,1
 remove_sqs,Stop using SQS,1
 lambda_max_concurrency,Set a maximum concurrency for Lambda functions,1
+cheaper_elasticsearch_instance,Use a cheaper instance type for an AWS ElasticSearch cluster,1
+replace_lambda_functions_with_cloudfront_functions,Replace Lambda functions with CloudFront functions,1
+remove_datadog_aws_lambda_integration,Remove Datadog's AWS Lambda integration,1
+reduce_eks_managed_node_groups_max_size,Reduce the max size of EKS managed node groups to prevent unexpected spikes in billing,1
+add_cost_anomaly_alert,Adds a Cost Explorer cost anomaly alert,1
+replace_budget_with_cost_anomaly_alert,Replace the use of budgets with Cost Explorer anomaly alerts,1
+remove_aws_kms,Stop using AWS KMS,1
+remove_provider,Fully move away from a cloud provider,1
+remove_redis,Stop using Redis,1
+increase_lambda_timeout,Increasing Lambda timeout incurs additional cost,1
+increase_budget_threshold,"Increase a budget threshold, possibly increasing cost",1
+add_kms_deletion_window,Add a deletion window to a KMS key,1
+add_spacelift_infracost,Add Spacelift's Infracost integration for cost insights,1
+use_kube_resource_report,Use kube-resource-report to export usage and cost statistics for a Kubernetes cluster,1
+use_kubecost_cost_analyzer,Use Kubecost cost-analyzer to gain insight in current and historical Kubernetes costs,1
+add_subscription_cost_management_view,Add a Cost Management View for a Subscription to get insights into costs,1
+replace_jenkins_sync_with_bucket_replication,Replace Jenkins sync with standard bucket replication which is cheaper,1
+remove_scaleway_rdb,Stop using Scaleway relational databases,1
+remove_service_discovery,Remove service discovery resources,1
+remove_gcp_kms,Stop using GCP KMS,2
+add_rds_auto_start_stop,Automatically start and stop RDS instances at certain times to save cost,2
+datadog,Specific to Datadog,1
