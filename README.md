@@ -1,6 +1,6 @@
-# Master's Thesis
+# iac-cost-linters
 
-Code and data for my master's thesis on cost issues in cloud software (Terraform) artifacts.
+This repository hosts supplementary scripts and data for my Master's Thesis titled *"Catching Cost Issues in Infrastructure as Code Artifacts using Linters"*.
 
 The repository is organized as follows:
 
@@ -26,6 +26,8 @@ The repository is organized as follows:
         - `pattern_occurrences.csv`: set of `<pattern>, <occurrence url>` pairs
         - `themes.json`: list of themes/patterns, occurrences per technology and relevant codes
         - `theme_occurrences.json`: list of occurrences with associated theme/pattern and codes
+    - `cooccurrences.py`: helper script to compute co-occurrences of patterns within commits and repositories. Produces:
+        - `cooccurrences_with_commits.csv`: set of `<pattern>, <repository>, <commit hash>` triples for further analysis
 3. **Implementation helpers**
     - `old_gen.py`: helper script to process commits that contain the *Old generation* antipattern
     - `old-generation-analysis.csv`: analysis of the *Old generation* commits to find the most common fixes
