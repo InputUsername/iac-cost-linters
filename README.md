@@ -34,9 +34,11 @@ The repository is organized as follows:
 4. **Evaluation of the implemented linter rules**
     - `before_after.ipynb`: grab repository states before and after commits. Produces:
         - `snapshots/<owner>-<repo>-<original commit hash>/`
-            - `before-<commit hash of parent>` (one per parent commit): repository state before the commit
-            - `after`: repository state after the commit
+            - `before-<commit hash of parent>/` (one per parent commit): repository state before the commit
+            - `after/`: repository state after the commit
+            - `latest/`: repository state after the latest commit
         - `errors.json`: errors while retrieving repository states
-    - `evaluation2.ipynb`: evaluation of Checkov and TFLint rules in terms of precision/recall and performance. Produces:
-        - `results_checkov_2.json`
-        - `results_tflint_2.json`
+    - `benchmark.ipynb`: benchmarks Checkov and TFLint. Produces:
+        - `results/checkov_<timestamp>.json`
+        - `results/tflint_<timestamp>.json`
+    - `evaluation.ipynb`: computes statistics(precision/recall, performance) based on benchmark results.
