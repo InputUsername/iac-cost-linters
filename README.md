@@ -1,6 +1,6 @@
 # iac-cost-linters
 
-This repository hosts supplementary scripts and data for my Master's Thesis titled *"Catching Cost Issues in Infrastructure as Code Artifacts using Linters"*.
+This repository hosts supplementary scripts and data for my Master's Thesis titled *"Catching Cost Issues in Infrastructure as Code Artifacts using Linters"*. In addition, the extensions to [Checkov](https://github.com/InputUsername/checkov/tree/cost-rules) and [TFLint](https://github.com/InputUsername/tflint-ruleset-cost) are available in separate repositories.
 
 The repository is organized as follows:
 
@@ -9,7 +9,7 @@ The repository is organized as follows:
     - `3 - merged.json`: datasets merged after resolution by third rater
     - `4 - updated.json`: dataset updated with additional labels
     - `5 - filtered.json`: dataset without cost-unrelated commits
-    - `agreement.py`: compute agreement (Krippendorf's alpha) between two or more raters
+    - `agreement.py`: compute agreement (Krippendorff's alpha) between two or more raters
     - `conflicts.py`: highlight cases where raters disagree
 1. **Fetching diffs and coding them**
     - `collect_data.ipynb`: script to retrieve commit diffs and set up the dataset for coding. Produces:
