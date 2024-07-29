@@ -41,4 +41,4 @@ The repository is organized as follows:
     - `benchmark.ipynb`: benchmarks Checkov and TFLint. Produces:
         - `results/checkov_<timestamp>.json`
         - `results/tflint_<timestamp>.json`
-    - `evaluation.ipynb`: computes statistics(precision/recall, performance) based on benchmark results.
+    - `evaluation.ipynb`: computes statistics (precision/recall, performance) based on benchmark results.
