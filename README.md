@@ -1,8 +1,10 @@
-# iac-cost-linters
+# Supplementary Code and Data
 
-This repository hosts supplementary scripts and data for my Master's Thesis titled *"Catching Cost Issues in Infrastructure as Code Artifacts using Linters"*.
+This repository hosts supplementary code and data for the Master's Thesis titled *"Catching Cost Issues in Infrastructure as Code Artifacts using Linters"*.
 
 The results of the thematic analysis phase have been further refined and extended in a separate repository, [search-rug/iac-cost-patterns](https://github.com/search-rug/iac-cost-patterns). In addition, the extensions to [Checkov](https://github.com/InputUsername/checkov/tree/cost-rules) and [TFLint](https://github.com/InputUsername/tflint-ruleset-cost) are also available in separate repositories.
+
+## Structure
 
 This repository is organized as follows:
 
@@ -44,3 +46,9 @@ This repository is organized as follows:
         - `results/checkov_<timestamp>.json`
         - `results/tflint_<timestamp>.json`
     - `evaluation.ipynb`: computes statistics (precision/recall, performance) based on benchmark results.
+
+## Licenses
+
+The software in this repository is available under the [MIT license](LICENSE).
+
+The data are licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).
